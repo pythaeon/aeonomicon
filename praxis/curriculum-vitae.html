@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae — The Aeonomicon</title>
+  <meta name="description" content="The Aeonomicon by Donald Coles — Reflections, Theorycraft, and Praxis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+  <style>
+  .essay-body ul {
+    margin: 0.5em 0 0.8em 1.8em;
+    padding: 0;
+  }
+  .essay-body li {
+    margin-bottom: 0.3em;
+    text-align: left;
+  }
+</style>
+</head>
+<body>
+<button class="menu-btn" onclick="toggleNav()">&#9776; Contents</button>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<a class="sidebar-title" href="/">The Aeonomicon</a>
+<button class="nav-toggle" onclick="toggleNav()">✕</button>
+<div class="nav-section">
+<span class="nav-section-label">Front Matter</span>
+<a class="nav-link" href="/front-matter/note-to-the-reader.html">Note to the Reader</a>
+<a class="nav-link" href="/front-matter/preface-storytellers.html">Preface – Storytellers</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume I — Reflections</span>
+<a class="nav-link" href="/reflections/a-portrait-of-the-author-as-a-young-gamer.html">A Portrait of the Author as a Young Gamer</a>
+<a class="nav-link" href="/reflections/aint-no-party-like-a-lan-party.html">Ain’t No Party Like a LAN Party</a>
+<a class="nav-link" href="/reflections/this-is-not-warcraft-in-space.html">This Is Not Warcraft In Space!</a>
+<a class="nav-link" href="/reflections/the-eternal-conflict.html">The Eternal Conflict</a>
+<a class="nav-link" href="/reflections/the-world-is-the-main-character.html">The World is the Main Character</a>
+<a class="nav-link" href="/reflections/crusader.html">Crusader</a>
+<a class="nav-link" href="/reflections/the-cycle.html">The Cycle</a>
+<a class="nav-link" href="/reflections/elegy-of-the-storm.html">Elegy of the Storm</a>
+<a class="nav-link" href="/reflections/you-cant-go-home-again.html">You Can’t Go Home Again</a>
+<a class="nav-link" href="/reflections/the-burden.html">The Burden</a>
+<a class="nav-link" href="/reflections/flow-state.html">Flow State</a>
+<a class="nav-link" href="/reflections/remembrance-of-blizzcon-past.html">Remembrance of BlizzCon Past</a>
+<a class="nav-link" href="/reflections/the-silver-hand.html">The Silver Hand</a>
+<a class="nav-link" href="/reflections/gap-year.html">Gap Year</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume II — Theorycraft</span>
+<a class="nav-link" href="/theorycraft/systems.html">Systems</a>
+<a class="nav-link" href="/theorycraft/agility.html">Agility</a>
+<a class="nav-link" href="/theorycraft/alchemy.html">Alchemy</a>
+<a class="nav-link" href="/theorycraft/the-infinite-game.html">The Infinite Game</a>
+<a class="nav-link" href="/theorycraft/pathfinding.html">Pathfinding</a>
+<a class="nav-link" href="/theorycraft/delivery.html">Delivery</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume III — Praxis</span>
+<a class="nav-link" href="/praxis/how-i-work.html">How I Work</a>
+<a class="nav-link" href="/praxis/case-study-aeoncore-personal-aiservices-platform.html">Case Study – Aeoncore Personal AI/Services Platform</a>
+<a class="nav-link" href="/praxis/case-study-bp-m365-and-digital-transformation.html">Case Study – BP M365 and Digital Transformation</a>
+<a class="nav-link" href="/praxis/case-study-cvs-enterprise-pc-refresh.html">Case Study – CVS Enterprise PC Refresh</a>
+<a class="nav-link active" href="/praxis/curriculum-vitae.html">Curriculum Vitae</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">End Matter</span>
+<a class="nav-link" href="/end-matter/afterword-moonshots.html">Afterword – Moonshots</a>
+<a class="nav-link" href="/end-matter/putting-the-war-in-world-of-warcraft.html">Putting the War in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/parsing-truth-epistemic-decision-making-in-world-of-warcraft.html">Parsing Truth: Epistemic Decision-Making in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/when-games-grew-up-an-ode-to-final-fantasy-tactics.html">When Games Grew Up: An Ode to Final Fantasy Tactics</a>
+<a class="nav-link" href="/end-matter/whats-left-when-meaning-breaks-a-look-at-nier-automata.html">What’s Left When Meaning Breaks: A Look at Nier Automata</a>
+<a class="nav-link" href="/end-matter/dramatis-personae.html">Dramatis Personae</a>
+<a class="nav-link" href="/end-matter/acknowledgements.html">Acknowledgements</a>
+<a class="nav-link" href="/end-matter/about-the-author.html">About the Author</a>
+<a class="nav-link" href="/end-matter/about-the-book.html">About the Book</a>
+</div>
+</nav>
+<main class="content">
+<article class="essay" data-volume="praxis">
+  <header class="essay-header">
+    <div class="volume-label">Volume III — Praxis</div>
+    <h1 class="essay-title">Curriculum Vitae</h1>
+  </header>
+  <!-- HERO IMAGE: remove comment markers and set src/alt to enable
+  <img src="/assets/images/curriculum-vitae.jpg" alt="" class="essay-hero">
+  -->
+  <div class="essay-ornament">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+  <div class="essay-body">
+<h1>Donald L. Coles</h1>
+<p>dlcoles@gmail.com · 713-503-6456
+<br><a href="http://www.linkedin.com/in/donaldcoles">linkedin.com/in/donaldcoles</a> · <a href="http://aeon.ghost.io">aeon.ghost.io</a>
+<br><em>The preceding pages make the case. This is the official record.</em></p>
+<h2>Experience</h2>
+<h3>Platform Architect &amp; Product Owner · Aeoncore</h3>
+<h5><em>September 2025 &ndash; Present · Independent Project</em></h5>
+<p>Designed and built a self-hosted AI and services platform end-to-end: architecture, backlog, iterative delivery, operations, and ongoing maintenance &ndash; solo, no budget, production standards throughout</p>
+<ul>
+  <li>Full-stack hands-on fluency across virtualization, containerization, AI/LLM integration, networking, and security &ndash; applied to a system in daily active use</li>
+  <li>Built for real reliability: automated backups, monitoring, redundancy, and upgrade paths equivalent to production-grade infrastructure</li>
+</ul>
+<br>
+
+<h3>Delivery Program Manager · Sonic Automotive</h3>
+<h5><em>July 2024 &ndash; November 2024 · Remote · Contract</em></h5>
+<p>Inherited a multi-site IT refresh in active distress across 100+ dealerships; diagnosed failure points across six regional leads and 50+ field technicians and rebuilt delivery around clear ownership, sprint cadence, and formal validation checkpoints</p>
+<ul>
+  <li>Designed SMS-first workflow for frontline technicians operating in low-tooling environments, replacing an inconsistent verbal process that was the primary source of delays and rework</li>
+  <li>Reduced escalations 50%+; closed full program scope a full month ahead of revised schedule</li>
+</ul>
+<br>
+
+<h3>Senior Program Manager · United Airlines</h3>
+<h5><em>July 2023 &ndash; November 2023 · Houston / Remote · Contract</em></h5>
+<p>Enterprise program lead across infrastructure and facilities modernization; bridged operational, technical, and executive stakeholders across distributed initiatives</p>
+<ul>
+  <li>Directed discovery and early planning for a 500,000 sq. ft. aircraft parts distribution hub; took over and stabilized a major hangar retrofit at PDX mid-execution</li>
+  <li>Partnered with analytics teams on TSA compliance reporting at Newark; developed custom PMO toolset providing visibility across disparate workstreams</li>
+</ul>
+<br>
+
+<h3>Senior Program Manager · Sysco</h3>
+<h5><em>September 2022 &ndash; April 2023 · Houston / Remote · Contract</em></h5>
+<p>Led program management for Omni, Sysco&#x27;s strategic initiative to realign restaurant customers across its regional OpCo network &ndash; a multi-year migration affecting hundreds of thousands of customer relationships</p>
+<ul>
+  <li>Co-designed the multi-year migration roadmap with regional leadership: wave sequencing, dependency management, milestone governance, and quality checkpoints across the full delivery lifecycle</li>
+  <li>Facilitated cross-functional discovery with stakeholders across operations, finance, sales, HR, and technology; built Smartsheet-based reporting connecting regional leadership to corporate PMO governance</li>
+</ul>
+<br>
+
+<h3>Technical Program Manager · CVS Health</h3>
+<h5><em>February 2022 &ndash; August 2022 · Remote · Contract</em></h5>
+<p>Led enterprise endpoint modernization across CVS Retail, Aetna, and PBM: three distinct organizations, 18,000+ devices, nationwide &ndash; 100% on schedule and under budget</p>
+<ul>
+  <li>Synchronized delivery across all three business units, managing separate change management requirements and technical constraints under unified program governance</li>
+  <li>Applied hybrid delivery: Agile sprint cadence for execution and prioritization; waterfall milestone reporting for executive, compliance, and audit stakeholders</li>
+</ul>
+<br>
+
+<h3>Program Manager, Digital Transformation · BP</h3>
+<h5><em>August 2018 &ndash; March 2020 · Houston</em></h5>
+<p>Directed global M365 rollout for 100,000 users; designed the Champion Network, training, communications, and governance frameworks that increased Teams adoption from 25% to 66% within six months</p>
+<ul>
+  <li>Built adoption metrics and feedback loops connecting real-time engagement data to rollout decisions, enabling evidence-based program management across worldwide regions</li>
+  <li>Scope expanded based on demonstrated performance: transitioned into infrastructure readiness and data remediation leadership for multi-billion-dollar M&amp;A divestitures, coordinating technical, legal, and operations stakeholders under active compliance constraints</li>
+</ul>
+<br>
+
+<h3>Cloud Practice Manager · InterDyn BMI</h3>
+<h5><em>February 2017 &ndash; December 2017 · Houston</em></h5>
+<p>Led practice operations and delivery management for a Microsoft Dynamics partner during a leadership transition; owned full practice P&amp;L across 30&ndash;40 concurrent client projects</p>
+<ul>
+  <li>Delivered 60+ Azure-hosted Dynamics implementations within nine months; maintained delivery accountability, quality standards, and team morale through organizational transition</li>
+  <li>Served as delivery authority in client-facing and pre-close engagements; provided vCIO advisory services on cloud strategy, migration, and cost optimization</li>
+</ul>
+<br>
+
+<h2>Education &amp; Certification</h2>
+<h3>University of Houston-Downtown</h3><p>Bachelor of Science, Interdisciplinary Studies (2013)</p>
+<h3>Project Management Professional (PMP)</h3><p>Project Management Institute (2016 &ndash; current)</p>
+<h3>Six Sigma Yellow Belt / Lean</h3><p>International Association for Six Sigma Certification</p>
+<br>
+<h2>Core Competencies</h2>
+<h3>Delivery &amp; Program Management</h3><p><strong></strong> Agile · Scrum · Kanban · Hybrid Delivery · SDLC · Release Management · Sprint Planning · Backlog Management · Roadmapping · Dependency Management · Risk Management · Stakeholder Management · Change Management · PMO Governance</p>
+<br><h3>Product &amp; Systems Thinking</h3><p><strong></strong> Platform Thinking · Product Discovery · Requirements Definition · Iterative Delivery · Metrics-Driven Decision Making · User-Centric Design · Technical Tradeoff Analysis · Architecture Planning</p>
+<br><h3>Technical Fluency</h3><p><strong></strong> Python · JavaScript · HTML/CSS · SQL · Linux · Docker · Kubernetes · Git · Azure · Microsoft 365 · SharePoint · Proxmox · AI/LLM Platforms · Self-Hosted Infrastructure</p>
+<br><h3>Tools</h3><p><strong></strong> Jira · Confluence · Notion · Smartsheet · Microsoft Project · Visio · Teams · Excel</p>
+  </div>
+
+<nav class="pg-nav"><div class="pg-prev"><span class="pg-label">← Previous</span><a href="/praxis/case-study-cvs-enterprise-pc-refresh.html">Case Study – CVS Enterprise PC Refresh</a></div><div class="pg-next"><span class="pg-label">Next →</span><a href="/end-matter/afterword-moonshots.html">Afterword – Moonshots</a></div></nav>
+</article>
+</main>
+</div>
+<script>
+function toggleNav() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var sb  = document.getElementById('sidebar');
+  var btn = document.querySelector('.menu-btn');
+  if (sb && sb.classList.contains('open') && !sb.contains(e.target) && e.target !== btn) {
+    sb.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>

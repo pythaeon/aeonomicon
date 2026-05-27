@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Aeonomicon — The Aeonomicon</title>
+  <meta name="description" content="The Aeonomicon by Donald Coles — Reflections, Theorycraft, and Praxis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+
+
+
+<div class="cover">
+  <div class="cover-ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+  <h1 class="cover-title">The Aeonomicon</h1>
+  <p class="cover-subtitle">Reflections, Theorycraft, and Praxis</p>
+  <p class="cover-author">Donald Coles</p>
+  <p class="cover-edition">First Edition</p>
+  <div class="cover-rule"></div>
+  <div class="cover-volumes">
+    <a class="vol-card" href="/reflections/a-portrait-of-the-author-as-a-young-gamer.html">
+      <div class="vol-card-label">Volume I</div>
+      <div class="vol-card-name">Reflections</div>
+      <div class="vol-card-desc">Picaresque memoirs told through games. Who I am, and why.</div>
+    </a>
+    <a class="vol-card" href="/theorycraft/systems.html">
+      <div class="vol-card-label">Volume II</div>
+      <div class="vol-card-name">Theorycraft</div>
+      <div class="vol-card-desc">Professional philosophy. How I think about work.</div>
+    </a>
+    <a class="vol-card" href="/praxis/how-i-work.html">
+      <div class="vol-card-label">Volume III</div>
+      <div class="vol-card-name">Praxis</div>
+      <div class="vol-card-desc">Case studies and evidence. What I have actually done.</div>
+    </a>
+  </div>
+  <a href="/front-matter/note-to-the-reader.html" class="cover-cta">Begin Reading</a>
+</div>
+
+
+<script>
+function toggleNav() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var sb  = document.getElementById('sidebar');
+  var btn = document.querySelector('.menu-btn');
+  if (sb && sb.classList.contains('open') && !sb.contains(e.target) && e.target !== btn) {
+    sb.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>

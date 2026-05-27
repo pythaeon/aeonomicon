@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:          #F8F4EA;
+  --bg-2:        #EFE9D8;
+  --ink:         #1A2038;
+  --muted:       #6B7080;
+  --gold:        #C49A28;
+  --gold-lt:     #E8C054;
+  --gold-dim:    rgba(196,154,40,0.22);
+  --silver:      #8E9BAD;
+  --navy:        #0F1828;
+  --navy-2:      #1A2840;
+  --navy-3:      #243252;
+  --nav-link:    #DDE3EF;
+  --border-d:    rgba(196,154,40,0.22);
+  --border-l:    rgba(160,130,60,0.28);
+  --sidebar-w:   290px;
+  --content-max: 70ch;
+  --radius:      4px;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 19px;
+  line-height: 1.78;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+/* ── Layout ── */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ── Sidebar ── */
+.sidebar {
+  width: var(--sidebar-w);
+  flex-shrink: 0;
+  background: var(--navy);
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 4rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--navy-3) transparent;
+}
+
+.sidebar-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  padding: 0 1.5rem 1.5rem;
+  border-bottom: 1px solid var(--border-d);
+  text-decoration: none;
+  display: block;
+}
+.sidebar-title:hover { color: var(--gold-lt); }
+
+.nav-section { margin-top: 1.4rem; }
+
+.nav-section-label {
+  font-family: 'Cinzel', serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  padding: 0 1.5rem 0.35rem;
+  display: block;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.28rem 1.5rem;
+  font-family: 'EB Garamond', serif;
+  font-size: 0.97rem;
+  color: var(--nav-link);
+  text-decoration: none;
+  line-height: 1.35;
+  transition: color 0.15s;
+}
+.nav-link:hover  { color: var(--gold-lt); }
+.nav-link.active { color: var(--gold); font-style: italic; }
+
+/* ── Content area ── */
+.content {
+  flex: 1;
+  min-width: 0;
+  padding: 5rem 4rem 6rem;
+  background: var(--bg);
+}
+
+.content > * {
+  max-width: var(--content-max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── Mobile menu ── */
+.menu-btn {
+  display: none;
+  position: fixed;
+  top: 1rem; left: 1rem;
+  z-index: 200;
+  background: var(--navy);
+  color: var(--gold);
+  border: 1px solid var(--border-d);
+  padding: 0.4rem 0.8rem;
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: var(--radius);
+}
+.nav-toggle { display: none; }
+
+/* ── Essay header ── */
+.essay-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-l);
+}
+
+.volume-label {
+  font-family: 'Cinzel', serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.6rem;
+}
+
+.essay-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.essay-ornament {
+  font-size: 0.88rem;
+  color: var(--gold);
+  letter-spacing: 0.5em;
+  text-align: center;
+  margin: 1.5rem 0 2rem;
+}
+
+/* ── Body text ── */
+.essay-body p {
+  margin-bottom: 0;
+  text-align: justify;
+  hyphens: auto;
+}
+.essay-body p + p { text-indent: 1.6em; }
+.essay-body p.no-indent { text-indent: 0; }
+
+/* Drop cap */
+.essay-body p.no-indent::first-letter {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 4.4rem;
+  line-height: 0.76;
+  float: left;
+  margin: 0.06em 0.1em 0 0;
+  color: var(--gold);
+}
+
+/* Subheadings within essay body */
+.essay-body h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 2.8rem 0 0.9rem;
+  text-indent: 0;
+}
+
+/* Block quotes / pull quotes */
+.essay-body blockquote,
+.essay-body .pull-quote {
+  border-left: 3px solid var(--gold);
+  margin: 1.8rem 0;
+  padding: 0.4rem 0 0.4rem 1.5rem;
+  font-style: italic;
+  color: var(--muted);
+  text-indent: 0;
+}
+
+/* Attribution line (epigraph credit, etc.) */
+.essay-body .attribution {
+  font-family: 'Cinzel', serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  padding-left: 1.5rem;
+  text-indent: 0;
+}
+
+/* Hero image */
+.essay-hero {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+  display: block;
+}
+
+/* Inline images */
+.essay-body figure {
+  margin: 2rem 0;
+  text-align: center;
+  text-indent: 0;
+}
+.essay-body figure img {
+  max-width: 100%;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 14px rgba(15,24,40,0.12);
+}
+.essay-body figcaption {
+  font-family: 'Cinzel', serif;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-top: 0.7rem;
+}
+
+/* ── Footnotes ── */
+.footnotes {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-l);
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.footnotes ol { padding-left: 1.2rem; }
+.footnotes li { margin-bottom: 0.55rem; }
+
+sup.fn-ref {
+  font-size: 0.68em;
+  line-height: 0;
+  vertical-align: super;
+  color: var(--gold);
+  margin-left: 1px;
+}
+
+/* ── Prev / Next ── */
+.pg-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-l);
+  font-family: 'Cinzel', serif;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  gap: 1rem;
+}
+.pg-nav a { color: var(--gold); text-decoration: none; }
+.pg-nav a:hover { color: var(--gold-lt); }
+.pg-prev { text-align: left; }
+.pg-next { text-align: right; }
+.pg-label { color: var(--muted); display: block; margin-bottom: 0.25rem; font-size: 0.7rem; }
+
+/* ── Cover page ── */
+.cover {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(4rem, 10vh, 8rem) clamp(1.5rem, 5vw, 4rem);
+  text-align: center;
+  background: var(--navy);
+  color: var(--silver);
+}
+
+.cover-ornament {
+  font-size: clamp(1rem, 1.8vw, 1.5rem);
+  color: var(--gold);
+  letter-spacing: 0.7em;
+  margin-bottom: clamp(2rem, 4vh, 3.5rem);
+}
+
+.cover-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(2.6rem, 6vw, 7rem);
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  margin-bottom: clamp(0.8rem, 2vh, 1.4rem);
+}
+
+.cover-subtitle {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: clamp(1.1rem, 2.2vw, 1.8rem);
+  color: var(--silver);
+  margin-bottom: clamp(0.5rem, 1.5vh, 1rem);
+}
+
+.cover-author {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(0.8rem, 1.4vw, 1.15rem);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.3rem;
+}
+
+.cover-edition {
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(0.82rem, 1.2vw, 1rem);
+  color: var(--silver);
+  font-style: italic;
+  opacity: 0.65;
+}
+
+.cover-rule {
+  width: clamp(100px, 18vw, 220px);
+  height: 1px;
+  background: var(--gold-dim);
+  margin: clamp(1.5rem, 3.5vh, 2.8rem) auto;
+}
+
+.cover-volumes {
+  display: flex;
+  gap: clamp(0.8rem, 2vw, 1.5rem);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: clamp(2rem, 4vh, 3rem);
+}
+
+.vol-card {
+  border: 1px solid var(--border-d);
+  border-radius: var(--radius);
+  padding: clamp(1.2rem, 2vw, 1.8rem) clamp(1.2rem, 2.5vw, 2.2rem);
+  text-decoration: none;
+  text-align: left;
+  width: clamp(190px, 24vw, 300px);
+  transition: border-color 0.2s, background 0.2s;
+  background: rgba(255,255,255,0.03);
+}
+.vol-card:hover {
+  border-color: var(--gold);
+  background: rgba(196,154,40,0.07);
+}
+
+.vol-card-label {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(0.6rem, 0.9vw, 0.74rem);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.45rem;
+}
+
+.vol-card-name {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(1rem, 1.8vw, 1.4rem);
+  color: #E8EDF5;
+  margin-bottom: 0.5rem;
+}
+
+.vol-card-desc {
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(0.85rem, 1.1vw, 1rem);
+  color: var(--silver);
+  line-height: 1.45;
+  font-style: italic;
+}
+
+.cover-cta {
+  display: inline-block;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-family: 'Cinzel', serif;
+  font-size: clamp(0.68rem, 1vw, 0.82rem);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: clamp(0.55rem, 1vh, 0.8rem) clamp(1.5rem, 3vw, 2.8rem);
+  border-radius: var(--radius);
+  transition: background 0.2s, color 0.2s;
+}
+.cover-cta:hover { background: var(--gold); color: var(--navy); }
+
+/* ── TOC page ── */
+.toc-page h1 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-l);
+}
+
+.toc-volume { margin-bottom: 2rem; }
+
+.toc-volume-title {
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.55rem;
+}
+
+.toc-volume ul { list-style: none; padding: 0; margin: 0; }
+.toc-volume ul li { padding: 0.12rem 0; }
+.toc-volume ul li a {
+  font-size: 1.05rem;
+  color: var(--ink);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.toc-volume ul li a:hover { color: var(--gold); }
+
+/* ── Praxis overrides ── */
+article[data-volume="praxis"] .essay-body p.no-indent::first-letter {
+  font-family: inherit;
+  font-size: 1em;
+  line-height: inherit;
+  float: none;
+  margin: 0;
+  color: inherit;
+}
+article[data-volume="praxis"] .essay-body p + p {
+  text-indent: 0;
+  margin-top: 0.6em;
+}
+article[data-volume="praxis"] .essay-body p {
+  text-align: left;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .sidebar {
+    position: fixed;
+    left: 0; top: 0;
+    height: 100vh;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+  }
+  .sidebar.open { transform: translateX(0); }
+  .menu-btn { display: block; }
+  .nav-toggle {
+    display: block; background: none; border: none; cursor: pointer;
+    position: absolute; top: 1rem; right: 1rem;
+    font-size: 1.2rem; color: var(--silver);
+  }
+  .content { padding: 4rem 1.5rem 5rem; }
+  .cover-volumes { flex-direction: column; align-items: center; }
+  .vol-card { width: min(320px, 90vw); }
+  .essay-hero { max-height: 220px; }
+}
+
+@media (max-width: 520px) {
+  .essay-title { font-size: 1.3rem; }
+  body { font-size: 17px; }
+  .content { padding: 3.5rem 1.2rem 4rem; }
+  .essay-body p.no-indent::first-letter { font-size: 3.6rem; }
+}

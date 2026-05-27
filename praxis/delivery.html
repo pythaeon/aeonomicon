@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery — The Aeonomicon</title>
+  <meta name="description" content="The Aeonomicon by Donald Coles — Reflections, Theorycraft, and Praxis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<button class="menu-btn" onclick="toggleNav()">&#9776; Contents</button>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<a class="sidebar-title" href="/">The Aeonomicon</a>
+<button class="nav-toggle" onclick="toggleNav()">✕</button>
+<div class="nav-section">
+<span class="nav-section-label">Front Matter</span>
+<a class="nav-link" href="/front-matter/note-to-the-reader.html">Note to the Reader</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume I — Reflections</span>
+<a class="nav-link" href="/reflections/preface-storytellers.html">Preface – Storytellers</a>
+<a class="nav-link" href="/reflections/a-portrait-of-the-author-as-a-young-gamer.html">A Portrait of the Author as a Young Gamer</a>
+<a class="nav-link" href="/reflections/aint-no-party-like-a-lan-party.html">Ain’t No Party Like a LAN Party</a>
+<a class="nav-link" href="/reflections/this-is-not-warcraft-in-space.html">This Is Not Warcraft In Space!</a>
+<a class="nav-link" href="/reflections/the-eternal-conflict.html">The Eternal Conflict</a>
+<a class="nav-link" href="/reflections/the-world-is-the-main-character.html">The World is the Main Character</a>
+<a class="nav-link" href="/reflections/crusader.html">Crusader</a>
+<a class="nav-link" href="/reflections/the-cycle.html">The Cycle</a>
+<a class="nav-link" href="/reflections/elegy-of-the-storm.html">Elegy of the Storm</a>
+<a class="nav-link" href="/reflections/you-cant-go-home-again.html">You Can’t Go Home Again</a>
+<a class="nav-link" href="/reflections/the-burden.html">The Burden</a>
+<a class="nav-link" href="/reflections/flow-state.html">Flow State</a>
+<a class="nav-link" href="/reflections/remembrance-of-blizzcon-past.html">Remembrance of BlizzCon Past</a>
+<a class="nav-link" href="/reflections/the-silver-hand.html">The Silver Hand</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume II — Theorycraft</span>
+<a class="nav-link" href="/theorycraft/gap-year.html">Gap Year</a>
+<a class="nav-link" href="/theorycraft/systems.html">Systems</a>
+<a class="nav-link" href="/theorycraft/agility.html">Agility</a>
+<a class="nav-link" href="/theorycraft/alchemy.html">Alchemy</a>
+<a class="nav-link" href="/theorycraft/the-infinite-game.html">The Infinite Game</a>
+<a class="nav-link" href="/theorycraft/pathfinding.html">Pathfinding</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume III — Praxis</span>
+<a class="nav-link active" href="/praxis/delivery.html">Delivery</a>
+<a class="nav-link" href="/praxis/how-i-work.html">How I Work</a>
+<a class="nav-link" href="/praxis/case-study-aeoncore-personal-aiservices-platform.html">Case Study – Aeoncore Personal AI/Services Platform</a>
+<a class="nav-link" href="/praxis/case-study-bp-m365-and-digital-transformation.html">Case Study – BP M365 and Digital Transformation</a>
+<a class="nav-link" href="/praxis/case-study-cvs-enterprise-pc-refresh.html">Case Study – CVS Enterprise PC Refresh</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">End Matter</span>
+<a class="nav-link" href="/end-matter/curriculum-vitae.html">Curriculum Vitae</a>
+<a class="nav-link" href="/end-matter/afterword-moonshots.html">Afterword – Moonshots</a>
+<a class="nav-link" href="/end-matter/putting-the-war-in-world-of-warcraft.html">Putting the War in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/parsing-truth-epistemic-decision-making-in-world-of-warcraft.html">Parsing Truth: Epistemic Decision-Making in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/when-games-grew-up-an-ode-to-final-fantasy-tactics.html">When Games Grew Up: An Ode to Final Fantasy Tactics</a>
+<a class="nav-link" href="/end-matter/whats-left-when-meaning-breaks-a-look-at-nier-automata.html">What’s Left When Meaning Breaks: A Look at Nier Automata</a>
+<a class="nav-link" href="/end-matter/dramatis-personae.html">Dramatis Personae</a>
+<a class="nav-link" href="/end-matter/acknowledgements.html">Acknowledgements</a>
+<a class="nav-link" href="/end-matter/about-the-author.html">About the Author</a>
+<a class="nav-link" href="/end-matter/about-the-book.html">About the Book</a>
+</div>
+</nav>
+<main class="content">
+<article class="essay">
+  <header class="essay-header">
+    <div class="volume-label">Volume III — Praxis</div>
+    <h1 class="essay-title">Delivery</h1>
+  </header>
+  <!-- HERO IMAGE: remove comment markers and set src/alt to enable
+  <img src="/assets/images/delivery.jpg" alt="" class="essay-hero">
+  -->
+  <div class="essay-ornament">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+  <div class="essay-body">
+<p class="no-indent">I have fond memories of the mission briefings from <em>StarCraft</em>. Characters of command or plot significance &ndash; Arcturus Mengsk, The Overmind, or Tassadar, to name a few &ndash; would appear as talking portraits, and convey the narrative, context, and exposition required to understand your upcoming task, then would make your objectives clear. Destroy the Zerg hatcheries. Hold this position until reinforcements arrive. Reach the beacon before the Protoss do. The goal was stated cleanly. Nothing else was given to you.</p>
+<p>Once you got into the game, you could only see what your units could see, sometimes you&#x27;d have a view or marker of where the objective was. Fog of war covered everything beyond your immediate position. You knew where you were starting, and you knew &ndash; roughly &ndash; what you were trying to accomplish. Everything between those two points was obscured until you went and looked at it yourself.</p>
+<p>This is, as it turns out, a precise description of what enterprise delivery actually feels like.</p>
+<p>The objective is rarely the hard part. Someone has usually worked out what needs to happen, what the end state looks like &ndash; a platform migration, a product launch, an operating model that doesn&#x27;t exist yet and needs to be built from scratch. The <em>what</em> arrives, stated clearly or approximately clearly, and then the briefing ends and you&#x27;re left standing at the edge of a blacked-out map with your starting units and a waypoint in the distance.</p>
+<p>What you do next is the whole job.</p>
+<p>The complexity of enterprise delivery is genuinely staggering, and I want to be precise about what I mean by that, because the word gets used casually in ways that undersell it. It isn&#x27;t just scale &ndash; though thousands of users, each with their own workflows and expectations and organizational contexts, are not a small thing. It isn&#x27;t just the technical stack &ndash; though the layers of infrastructure, middleware, integration dependencies, and legacy architecture that most enterprise programs sit on top of constitute their own navigational challenge. It isn&#x27;t even the process surface area &ndash; though the distance from initial concept to deployed, adopted, supported solution is longer and stranger than most people outside it appreciate.</p>
+<p>It&#x27;s all of those things, simultaneously, interacting with each other in ways that don&#x27;t announce themselves in advance. A dependency you didn&#x27;t map surfaces three weeks before go-live. A stakeholder who signed off in planning develops reservations when the rollout hits their division. The adoption curve you projected against one set of user behaviors encounters a different set of user behaviors, because users are not the rational actors that adoption models assume they are. The system you built to specification turns out to be not quite the system people needed, because the specification captured what they said, not what they meant.</p>
+<p>None of this is solvable with a better Gantt chart.</p>
+<p>The orientation that actually works in this environment &ndash; and I mean this structurally, not as a personality preference &ndash; is the one the Systems essay tried to establish at the start of this volume: zoom out far enough to see the whole map, then navigate it with enough discipline to make forward progress without losing sight of where you&#x27;re trying to end up. Systems thinking, expressed as operational practice. The fog of war is always going to be there. The question is whether you&#x27;ve sent enough scouts in the right directions before you committed your main force.</p>
+<p>This is what full-stack ownership means to me in practice, and it is the capability I believe separates good delivery leadership from excellent delivery leadership.</p>
+<p>An average PM can articulate the system they directly inhabit. They know their lane, their dependencies, their stakeholders, their sprint cadence. That&#x27;s the floor of the job, and it&#x27;s necessary. A PM who can&#x27;t navigate their own layer can&#x27;t navigate anything. But their understanding of their system begins and ends at its borders: they can articulate the inputs and outputs, and the process it runs internally, but they don&#x27;t understand how their system integrates into a larger whole. That&#x27;s a problem, because a program at genuine scale doesn&#x27;t live in one layer. It lives across a stack &ndash; from the architectural decisions being made in engineering to the adoption behaviors playing out in end-user populations, with every layer of product ownership, change management, stakeholder alignment, and operational readiness sitting between them. The PM who can only see their own layer is playing with the minimap covered.</p>
+<p>The excellent PM &ndash; not just the good one &ndash; is the one who can move as many levels up or down the stack as the situation demands. That doesn&#x27;t mean they are going to do everyone&#x27;s job, but it does mean that they understand it well enough to see where things connect, where they depend on each other, where the fragile joints are, and where the intervention that looks small on the org chart will have the largest leverage on outcomes. The junior PM can articulate their own system. Where a good PM can go a level or two in either direction, the excellent PM goes as far as the problem requires, and knows when they&#x27;ve reached the edge of their useful understanding. That range is what makes the difference between managing a program and leading one.</p>
+<p>Which is why the gap between <em>delivery</em> and <em>adoption</em> deserves its own treatment, because they are not the same problem.</p>
+<p>Delivery is the technical accomplishment: the thing exists, it works, it shipped on time and within scope. Adoption is the human one: people are actually using it, in the ways it was designed to be used, with a level of fluency that produces the outcomes the delivery was meant to enable. Conflating these two is one of the most expensive mistakes a program can make. A platform can be technically excellent, delivered on schedule, and still fail at scale because the rollout treated behavior change as a communication problem rather than a systems problem. The fix is never a better training deck. It&#x27;s understanding the social architecture of the organization well enough to know where trust lives and how to activate it &ndash; peer networks, champions, early adopters who can translate the new thing into the language of the people who haven&#x27;t adopted it yet. That requires a different kind of map than the technical one, and the PM who can only read one of them is going to hit a wall.</p>
+<p>This is the orientation I&#x27;d carry into game development: not a set of borrowed tools, but a way of reading the problem space before moving through it. The specific stack is different. The stakeholder dynamics have a texture I&#x27;ll spend real time learning. The release pressures and community feedback loops that define live service production are not identical to what I&#x27;ve navigated before, and I won&#x27;t pretend they are.</p>
+<p>What I have done is navigate ambiguity at scale &ndash; repeatedly, in high-stakes environments, without a complete map &ndash; and deliver results that held up over time. The specific ambiguity that games delivery introduces is a new layer. But ambiguity at scale is not a new problem for me. It is, specifically, the problem I have spent my career learning to solve.</p>
+<p>I&rsquo;ll be up-front about all of this: I have not shipped a raid tier. I haven&#x27;t built a dungeon. I haven&#x27;t made a game before. I want to say that plainly, because the reader who has shipped one knows exactly how much that entails, and I have no interest in minimizing it. The domain knowledge is different. There are things I will need to learn that I do not yet know how to learn, because I don&#x27;t yet know I need them. That&#x27;s the nature of every new layer of ambiguity &ndash; the unknown unknowns are the ones that matter most, and you can&#x27;t scout what you don&#x27;t know to look for.</p>
+<p>What I can tell you is what I do when the briefing ends and the map is dark: I send scouts. I map the stack before I commit resources. I find the layers I don&#x27;t understand and develop enough fluency in them to see where they connect to the ones I do. I treat adoption as a separate problem from delivery, and I don&#x27;t declare victory until both are solved. And I operate at the level of the people building the thing, not just the thing itself &ndash; because the people make the decisions that the thing is built from, and a PM who can&#x27;t earn their trust can&#x27;t move the work.</p>
+<p>The briefing is always short. The map is always mostly dark.</p>
+<p>What matters is what you do when the briefing ends.</p>
+  </div>
+
+<nav class="pg-nav"><div class="pg-prev"><span class="pg-label">← Previous</span><a href="/theorycraft/pathfinding.html">Pathfinding</a></div><div class="pg-next"><span class="pg-label">Next →</span><a href="/praxis/how-i-work.html">How I Work</a></div></nav>
+</article>
+</main>
+</div>
+<script>
+function toggleNav() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var sb  = document.getElementById('sidebar');
+  var btn = document.querySelector('.menu-btn');
+  if (sb && sb.classList.contains('open') && !sb.contains(e.target) && e.target !== btn) {
+    sb.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>

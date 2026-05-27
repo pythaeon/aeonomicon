@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>This Is Not Warcraft In Space! — The Aeonomicon</title>
+  <meta name="description" content="The Aeonomicon by Donald Coles — Reflections, Theorycraft, and Praxis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<button class="menu-btn" onclick="toggleNav()">&#9776; Contents</button>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<a class="sidebar-title" href="/">The Aeonomicon</a>
+<button class="nav-toggle" onclick="toggleNav()">✕</button>
+<div class="nav-section">
+<span class="nav-section-label">Front Matter</span>
+<a class="nav-link" href="/front-matter/note-to-the-reader.html">Note to the Reader</a>
+<a class="nav-link" href="/front-matter/preface-storytellers.html">Preface – Storytellers</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume I — Reflections</span>
+<a class="nav-link" href="/reflections/a-portrait-of-the-author-as-a-young-gamer.html">A Portrait of the Author as a Young Gamer</a>
+<a class="nav-link" href="/reflections/aint-no-party-like-a-lan-party.html">Ain’t No Party Like a LAN Party</a>
+<a class="nav-link active" href="/reflections/this-is-not-warcraft-in-space.html">This Is Not Warcraft In Space!</a>
+<a class="nav-link" href="/reflections/the-eternal-conflict.html">The Eternal Conflict</a>
+<a class="nav-link" href="/reflections/the-world-is-the-main-character.html">The World is the Main Character</a>
+<a class="nav-link" href="/reflections/crusader.html">Crusader</a>
+<a class="nav-link" href="/reflections/the-cycle.html">The Cycle</a>
+<a class="nav-link" href="/reflections/elegy-of-the-storm.html">Elegy of the Storm</a>
+<a class="nav-link" href="/reflections/you-cant-go-home-again.html">You Can’t Go Home Again</a>
+<a class="nav-link" href="/reflections/the-burden.html">The Burden</a>
+<a class="nav-link" href="/reflections/flow-state.html">Flow State</a>
+<a class="nav-link" href="/reflections/remembrance-of-blizzcon-past.html">Remembrance of BlizzCon Past</a>
+<a class="nav-link" href="/reflections/the-silver-hand.html">The Silver Hand</a>
+<a class="nav-link" href="/reflections/gap-year.html">Gap Year</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume II — Theorycraft</span>
+<a class="nav-link" href="/theorycraft/systems.html">Systems</a>
+<a class="nav-link" href="/theorycraft/agility.html">Agility</a>
+<a class="nav-link" href="/theorycraft/alchemy.html">Alchemy</a>
+<a class="nav-link" href="/theorycraft/the-infinite-game.html">The Infinite Game</a>
+<a class="nav-link" href="/theorycraft/pathfinding.html">Pathfinding</a>
+<a class="nav-link" href="/theorycraft/delivery.html">Delivery</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume III — Praxis</span>
+<a class="nav-link" href="/praxis/how-i-work.html">How I Work</a>
+<a class="nav-link" href="/praxis/case-study-aeoncore-personal-aiservices-platform.html">Case Study – Aeoncore Personal AI/Services Platform</a>
+<a class="nav-link" href="/praxis/case-study-bp-m365-and-digital-transformation.html">Case Study – BP M365 and Digital Transformation</a>
+<a class="nav-link" href="/praxis/case-study-cvs-enterprise-pc-refresh.html">Case Study – CVS Enterprise PC Refresh</a>
+<a class="nav-link" href="/praxis/curriculum-vitae.html">Curriculum Vitae</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">End Matter</span>
+<a class="nav-link" href="/end-matter/afterword-moonshots.html">Afterword – Moonshots</a>
+<a class="nav-link" href="/end-matter/putting-the-war-in-world-of-warcraft.html">Putting the War in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/parsing-truth-epistemic-decision-making-in-world-of-warcraft.html">Parsing Truth: Epistemic Decision-Making in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/when-games-grew-up-an-ode-to-final-fantasy-tactics.html">When Games Grew Up: An Ode to Final Fantasy Tactics</a>
+<a class="nav-link" href="/end-matter/whats-left-when-meaning-breaks-a-look-at-nier-automata.html">What’s Left When Meaning Breaks: A Look at Nier Automata</a>
+<a class="nav-link" href="/end-matter/dramatis-personae.html">Dramatis Personae</a>
+<a class="nav-link" href="/end-matter/acknowledgements.html">Acknowledgements</a>
+<a class="nav-link" href="/end-matter/about-the-author.html">About the Author</a>
+<a class="nav-link" href="/end-matter/about-the-book.html">About the Book</a>
+</div>
+</nav>
+<main class="content">
+<article class="essay">
+  <header class="essay-header">
+    <div class="volume-label">Volume I — Reflections</div>
+    <h1 class="essay-title">This Is Not Warcraft In Space!</h1>
+  </header>
+  <!-- HERO IMAGE: remove comment markers and set src/alt to enable
+  <img src="/assets/images/this-is-not-warcraft-in-space.jpg" alt="" class="essay-hero">
+  -->
+  <div class="essay-ornament">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+  <div class="essay-body">
+<p class="no-indent">When I heard Blizzard announced <em>StarCraft</em> at E3 in 1996, I was immediately intrigued. The information would have reached me through a magazine &ndash; <em>Game Informer</em> or <em>EGM</em>, most likely &ndash; in the form of screenshots that did the game no particular favors. It looked, and I say this as someone who would eventually come to love it completely, like a direct extension of the <em>Warcraft</em><em> II</em> engine with a space theme laid on top.</p>
+<p>&ldquo;Meh,&rdquo; I thought.</p>
+<p>There were reasons for that beyond the superficial reaction to the graphics. My gaming tastes at the time ran toward swords and sorcery. Outside of gaming on the computer, I was comfortable in the deep roster of RPGs on the Super Nintendo &ndash; <em>Final Fantasy VI, Chrono Trigger, Secret of Mana, Lufia II</em>. Even when those games incorporated technology, it often wrapped in magic<sup class='fn-ref'>2</sup>; the Empire in <em>Final Fantasy VI</em> ran on Magitek, which is essentially the game telling you, in nomenclature, that it hadn&#x27;t forgotten what it was. <em>StarCraft</em> was going somewhere else entirely. No magic. Pure, hard science fiction. </p>
+<p>And the aesthetic really hadn&#x27;t landed. Those early screenshots were visually busy, low-contrast, and cramped in the way that a medieval game engine always will be when you ask it to render a space marine instead of a footman. The <em>Warcraft</em><em> II</em> engine was appropriate to its setting precisely because medieval knights and swords and stone and forest connote a sense of <em>nature.</em> Sci-fi is supposed to look like it came from the <em>future</em>, and this did not.</p>
+<p>Apparently I was not alone in thinking so. Blizzard went back to the drawing board. By 1997 the game had been substantially retooled &ndash; new graphics, an updated interface, and a visual identity that finally looked like it had been built for what it was trying to be rather than simply repurposed from something else. </p>
+<p>Even so, the first copy of <em>StarCraft</em><em> </em>that I purchased wasn&rsquo;t for me. A friend of mine was having a birthday, and a group of our friends pooled our allowances to buy him a copy. I remember standing in his backyard patio while he opened gifts, the image of him tearing off the wrapping, seated at a table littered with the remains of a demolished birthday cake. There was no mistaking the glee on his face, and there was obviously no discussion about how we were going to spend the rest of the party. We followed him to his family&rsquo;s study, watched the installation bar make its slow crawl to the right, clustered around a fifteen-inch monitor because there was nowhere to sit and nobody had thought to find chairs, and because it simply didn&rsquo;t matter. The game finally loaded. He started the Terran campaign. None of us moved.</p>
+<p>That&#x27;s the image I want you to hold: a group of tweens standing shoulder to shoulder, craning over each other to see a screen, wholly enthralled by something unfolding on the other side of it. No comfort, no boredom, no awareness that our feet were sore from standing for hours. There was only us and the game, and the particular electric quality that comes from watching something reveal itself as better than you expected.</p>
+<p>Blizzard had performed the best kind of magic trick. Whatever the original version had been, it was clear that this was not a simple iteration. It was a complete rebirth, and they managed to subvert my expectations entirely. I saved up and bought my own copy as soon as I could.</p>
+<br>
+<p class="no-indent">What impressed me first &ndash; after the visual rehabilitation and the obvious surface polish &ndash; was the question of balance, and how boldly Blizzard had decided to answer it.</p>
+<p><em>Warcraft</em><em> II</em> had two factions, orcs and humans. For most of their unit rosters, those factions were mirrors of each other: grunts and footmen, peons and peasants, archers and headhunters. There was differentiation at the edges &ndash; the Ogre-Mage&#x27;s Bloodlust was, to put it charitably, not precisely calibrated against the Paladin&#x27;s Holy Light &ndash; but the design philosophy was essentially symmetric; even when you knew that the units were not pure mirrors, they were still obvious analogues for one another. </p>
+<p>It turns out that maintaining two factions, and giving them strategic differentiation (to keep it interesting) without affecting the overall balance was a difficult act, so <em>StarCraft</em> took a big swing in a different direction. Rather than two races, there would be three: Terran, Zerg, Protoss. Each felt genuinely different than the other two, and were built around a distinct logic. The Zerg fielded weak early melee units and compensated by fielding twice as many of them. The Protoss had strong early melee but paid for it in supply and resources. The Terran didn&#x27;t get a melee unit at all &ndash; not in any meaningful sense &ndash; and instead had to build their game around range, mobility, and fortification. The asymmetry wasn&#x27;t a flaw, it was the entire point, like a complex game of rock, paper, scissors.</p>
+<p>How do you keep a game like that balanced? The short answer, in retrospect, is that the races were not balanced at release. Not remotely. Certain matchups favored certain factions. But imbalance at that scale doesn&#x27;t kill a game the way you&#x27;d expect. What it does is force creativity in the players &ndash; it makes you learn what your opponent is likely to do and find a way to answer it, which leads to adaptation, which leads to counter-adaptation, which leads to the kind of constantly-evolving metagame that gives a competitive game its legs. <em>StarCraft</em> didn&#x27;t just survive its initial imbalance; I think it grew in popularity as a direct result of it.</p>
+<p>It helped, enormously, that <em>StarCraft</em> launched alongside Battle.net &ndash; and for the first time, playing against another human being wasn&#x27;t a logistical problem to solve. Before Battle.net, player vs. player meant a direct modem dial, two people coordinating schedules around a shared phone line, hoping nobody&#x27;s parent picked up the receiver mid-match. <em>Warcraft</em><em> II</em> had multiplayer in a technical sense. <em>StarCraft</em> had it in a practical one.</p>
+<p>I will be honest about where I stood in all of this: I was probably a very mediocre player, all things considered. I say that with the benefit of hindsight, analyzing the player that I was then. I only had one worker per mineral patch when modern convention suggests closer to two. I only made one or two production buildings of each type, maximum, when the ceiling was considerably higher. I used a defensive, turtling playstyle that felt prudent but was mostly just slow. My early-game scouting needed a lot of work. And my micromanagement skills, on a good day, were limited to pulling a damaged battlecruiser back to friendly lines for repair.</p>
+<p>The professional play that would eventually make <em>StarCraft</em><em>: Brood War</em> the dominant esport in South Korea &ndash; the <em>bonjwas</em>, the tournaments broadcast on dedicated cable channels, the players whose names became shorthand for a standard of excellence &ndash; was mostly invisible to me for the first few years. YouTube wouldn&rsquo;t exist for another ten years. The VODs that did exist lived on sites like SCLegacy and came without English commentary, most of the time, so the only way to understand what was going on was visually, seeing where the production crew spent their focus and attention. My genuine appreciation for that level of play came retrospectively, which is a strange thing to admit: I fell in love with the game years before I understood what it was really capable of.</p>
+<p>But <em>StarCraft</em> had already earned its place in me before I understood any of that. What earned it wasn&#x27;t the balance, or the metagame, or even the multiplayer. It was the story.</p>
+<p>Blizzard made a structural choice with <em>StarCraft</em> that they hadn&#x27;t made before: the campaigns were sequential. In both <em>Warcraft</em><em> </em>games, each faction had a campaign that ended in victory for that faction; you chose to play one or both, but in the game&rsquo;s canon, they covered the same period of time. By contrast, the <em>StarCraft</em><em> </em>campaigns were not simultaneous and were sequenced to tell a single unbroken narrative. Terran, then Zerg, then Protoss. And then, in <em>Brood War</em>, the expansion that completed the arc: Protoss, then Terran, then Zerg. One story, told across six acts, from six perspectives, with enough space in between for the characters to become people you actually cared about.</p>
+<p>Raynor: the rebel with a heart of gold, doing the right thing by refusing to do the wrong thing, even when the wrong thing would have been easier. Mengsk: an elegant portrait of pure Machiavellianism &ndash; a power-hungry megalomaniac willing to sacrifice anyone else in his quest for power. Kerrigan: an initially sympathetic character abandoned to an unthinkable fate, reborn as the single most dangerous entity in the galaxy and burning with an understandable fury about what was done to her, and a desire to make everyone else suffer.</p>
+<p>And then there was Tassadar.</p>
+<p>What Blizzard did with Tassadar is the reason this essay exists. He was the Executor &ndash; a Protoss of standing and influence, charged with stopping the Zerg infestation at any cost. The cost, as it happens, is the Terran population of the worlds the Zerg have already touched. Tassadar looks at that cost and decides it&rsquo;s not one worth paying. He defies his orders and makes common cause with the Dark Templar &ndash; heretics, by Protoss orthodoxy &ndash; because the cause requires it and what is right is clear even when the dogma is not. He sacrifices his position as Executor, his standing in Protoss society, and is branded a heretic and a criminal. And in the end, when there is no other way, he sacrifices himself &ndash; flies his flagship into the Zerg Overmind in a kamikaze strike that ends the threat and his own life in the same moment.</p>
+<p>He is not the most powerful character in the game. He&#x27;s not the most strategically important character, taken in isolation. What he is &ndash; and what Blizzard managed to build in the compressed space of a real-time strategy campaign briefing, through talking portraits and dialogue and mission structure &ndash; is a person with an unshakeable moral compass who follows it all the way to the end, regardless of what it costs him.</p>
+<p>A game about resource gathering and unit production had produced a genuinely tragic hero.</p>
+<p>Want to know how to spot someone who came to the <em>StarCraft</em> series through <em>StarCraft</em><em> </em><em>II</em> rather than the original? Ask them what they think of Tassadar.</p>
+<br>
+<p class="no-indent"><em>StarCraft</em><em> </em><em>II</em> was announced in 2007, at a Blizzard event in South Korea &ndash; which is precisely the right country to announce a <em>StarCraft</em> sequel in, and which tells you something about what the franchise had become in the intervening decade. I wasn&#x27;t playing <em>Brood War</em> seriously anymore by then; I&#x27;d moved on, as you do, through <em>Warcraft</em><em> III</em> and then into the long gravity well of <em>World of </em><em>Warcraft</em>. But the announcement landed, because of course it was always going to land.</p>
+<p>The trailer that eventually became known as &quot;The Deal&quot; &ndash; at the time it was &ldquo;just the making of a marine &ndash; had no voiceover, no name attached to the prisoner that became encased in Terran armor. Nevertheless, it was my first real glimpse of what <em>Wings of Liberty</em> intended to be. I had no idea who that marine was, but I knew, watching that trailer, that this game was going to be something special. The promise was: take the <em>StarCraft</em> universe, with its accumulated weight of story and world, and bring it into the modern era with a production budget equal to the task.</p>
+<p>I was not disappointed.</p>
+<p>But I want to say something specific about these cinematics, because I think they represent the fullest expression of what <em>StarCraft</em> always was and always wanted to be. Blizzard&#x27;s cinematics team &ndash; and I mean this without reservation &ndash; is one of the great unheralded creative achievements in the games industry. They have been making argument-ending short films inside video games for thirty years, and <em>StarCraft</em><em> 2</em> gave them room to make some of their best work.</p>
+<p>The <em>Heart of the Swarm</em> opening cinematic: the Zerg sacking Tarsonis, siege tanks unloading on the advancing swarm, a scale of battle that should be impossible to convey in under three minutes conveyed completely. I can hear those siege tanks even now, like the great cannons in the 1812 Overture, the sound as a punctuation mark on the inevitable as the advancing Zerg overrun the Terran defense of their capital city. The cinematic makes clear, without ambiguity, that the stakes are real.</p>
+<p>And of course, we have the <em>Legacy of the Void</em> cinematic. A small Protoss force, surrounded and dying, making what they believe to be their final stand. The fight begins, and a probe begins warping in a pylon. Two high templar, wounded and choosing to sacrifice themselves to merge into an archon &ndash; an act of final generosity inside an act of final violence. The last zealot, seeing his brothers fallen around him, turns to face what&#x27;s coming, bloodied but unbowed. But then the pylon completes warping in, and everything follows from that: a whole army materializing out of nothing, warping in to share in the final charge to victory.</p>
+<p>We don&#x27;t know any of these Protoss individually &ndash; they&#x27;re not named characters, they&#x27;re just Protoss soldiers with no more context than the armor they&#x27;re wearing and the blades they&#x27;ve already drawn. But Blizzard understood something that a lot of blockbuster filmmakers have to relearn periodically: you don&#x27;t need to know someone&#x27;s name for their death to mean something. You need to understand what they&#x27;re willing to die for. I am not ashamed to admit, it gets me every time.</p>
+<p>That cinematic is more than a game trailer, it&#x27;s a statement of intent by the cinematics team, as if to say, &ldquo;this is what we are capable of, this is what we believe this universe deserves, this is what we have been building toward.&rdquo; It is, in miniature, the argument the entire franchise has been making since 1998. </p>
+<p>Because the truth is, with the exception of that initial E3 1996 demo, <em>StarCraft</em> was never <em>Warcraft</em> in space. It was its own thing from the moment it decided to be something more &ndash; its own races, its own rules, its own moral weight, its own heroes. The tragedy of Tassadar. The corruption of Kerrigan. The heroic dignity of that last zealot, who never gets a name, and doesn&#x27;t need one.</p>
+  </div>
+<aside class='footnotes'><ol><li id='fn-2'><sup>2</sup>&ensp;At the very least, magic and technology were shown to coexist. Nobody ever explains what powers the airships in <em>Final Fantasy IV</em>, but the game prominently features summoned creatures and magic.</li></ol></aside>
+<nav class="pg-nav"><div class="pg-prev"><span class="pg-label">← Previous</span><a href="/reflections/aint-no-party-like-a-lan-party.html">Ain’t No Party Like a LAN Party</a></div><div class="pg-next"><span class="pg-label">Next →</span><a href="/reflections/the-eternal-conflict.html">The Eternal Conflict</a></div></nav>
+</article>
+</main>
+</div>
+<script>
+function toggleNav() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var sb  = document.getElementById('sidebar');
+  var btn = document.querySelector('.menu-btn');
+  if (sb && sb.classList.contains('open') && !sb.contains(e.target) && e.target !== btn) {
+    sb.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>

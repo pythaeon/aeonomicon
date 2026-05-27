@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Infinite Game — The Aeonomicon</title>
+  <meta name="description" content="The Aeonomicon by Donald Coles — Reflections, Theorycraft, and Praxis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<button class="menu-btn" onclick="toggleNav()">&#9776; Contents</button>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<a class="sidebar-title" href="/">The Aeonomicon</a>
+<button class="nav-toggle" onclick="toggleNav()">✕</button>
+<div class="nav-section">
+<span class="nav-section-label">Front Matter</span>
+<a class="nav-link" href="/front-matter/note-to-the-reader.html">Note to the Reader</a>
+<a class="nav-link" href="/front-matter/preface-storytellers.html">Preface – Storytellers</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume I — Reflections</span>
+<a class="nav-link" href="/reflections/a-portrait-of-the-author-as-a-young-gamer.html">A Portrait of the Author as a Young Gamer</a>
+<a class="nav-link" href="/reflections/aint-no-party-like-a-lan-party.html">Ain’t No Party Like a LAN Party</a>
+<a class="nav-link" href="/reflections/this-is-not-warcraft-in-space.html">This Is Not Warcraft In Space!</a>
+<a class="nav-link" href="/reflections/the-eternal-conflict.html">The Eternal Conflict</a>
+<a class="nav-link" href="/reflections/the-world-is-the-main-character.html">The World is the Main Character</a>
+<a class="nav-link" href="/reflections/crusader.html">Crusader</a>
+<a class="nav-link" href="/reflections/the-cycle.html">The Cycle</a>
+<a class="nav-link" href="/reflections/elegy-of-the-storm.html">Elegy of the Storm</a>
+<a class="nav-link" href="/reflections/you-cant-go-home-again.html">You Can’t Go Home Again</a>
+<a class="nav-link" href="/reflections/the-burden.html">The Burden</a>
+<a class="nav-link" href="/reflections/flow-state.html">Flow State</a>
+<a class="nav-link" href="/reflections/remembrance-of-blizzcon-past.html">Remembrance of BlizzCon Past</a>
+<a class="nav-link" href="/reflections/the-silver-hand.html">The Silver Hand</a>
+<a class="nav-link" href="/reflections/gap-year.html">Gap Year</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume II — Theorycraft</span>
+<a class="nav-link" href="/theorycraft/systems.html">Systems</a>
+<a class="nav-link" href="/theorycraft/agility.html">Agility</a>
+<a class="nav-link" href="/theorycraft/alchemy.html">Alchemy</a>
+<a class="nav-link active" href="/theorycraft/the-infinite-game.html">The Infinite Game</a>
+<a class="nav-link" href="/theorycraft/pathfinding.html">Pathfinding</a>
+<a class="nav-link" href="/theorycraft/delivery.html">Delivery</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume III — Praxis</span>
+<a class="nav-link" href="/praxis/how-i-work.html">How I Work</a>
+<a class="nav-link" href="/praxis/case-study-aeoncore-personal-aiservices-platform.html">Case Study – Aeoncore Personal AI/Services Platform</a>
+<a class="nav-link" href="/praxis/case-study-bp-m365-and-digital-transformation.html">Case Study – BP M365 and Digital Transformation</a>
+<a class="nav-link" href="/praxis/case-study-cvs-enterprise-pc-refresh.html">Case Study – CVS Enterprise PC Refresh</a>
+<a class="nav-link" href="/praxis/curriculum-vitae.html">Curriculum Vitae</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">End Matter</span>
+<a class="nav-link" href="/end-matter/afterword-moonshots.html">Afterword – Moonshots</a>
+<a class="nav-link" href="/end-matter/putting-the-war-in-world-of-warcraft.html">Putting the War in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/parsing-truth-epistemic-decision-making-in-world-of-warcraft.html">Parsing Truth: Epistemic Decision-Making in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/when-games-grew-up-an-ode-to-final-fantasy-tactics.html">When Games Grew Up: An Ode to Final Fantasy Tactics</a>
+<a class="nav-link" href="/end-matter/whats-left-when-meaning-breaks-a-look-at-nier-automata.html">What’s Left When Meaning Breaks: A Look at Nier Automata</a>
+<a class="nav-link" href="/end-matter/dramatis-personae.html">Dramatis Personae</a>
+<a class="nav-link" href="/end-matter/acknowledgements.html">Acknowledgements</a>
+<a class="nav-link" href="/end-matter/about-the-author.html">About the Author</a>
+<a class="nav-link" href="/end-matter/about-the-book.html">About the Book</a>
+</div>
+</nav>
+<main class="content">
+<article class="essay">
+  <header class="essay-header">
+    <div class="volume-label">Volume II — Theorycraft</div>
+    <h1 class="essay-title">The Infinite Game</h1>
+  </header>
+  <!-- HERO IMAGE: remove comment markers and set src/alt to enable
+  <img src="/assets/images/the-infinite-game.jpg" alt="" class="essay-hero">
+  -->
+  <div class="essay-ornament">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+  <div class="essay-body">
+<p class="no-indent">For a period of about ten years, a particular phrase circulated through gaming press cycles with the reliability of a seasonal allergy. It appeared in preview coverage and forum threads and the comment sections of every major gaming outlet. It followed each new massively multiplayer online game to market with the confidence of a campaign slogan.</p>
+<p><em>WoW killer.</em></p>
+<p>The term carried a theory of competition embedded in it &ndash; the idea that the correct objective for any new entry into the MMORPG market was to defeat <em>World of </em><em>Warcraft</em>. To take its players, collapse its subscriber numbers, and claim the throne. <em>Lord of the Rings Online</em> launched with the Tolkien legendarium as its entire value proposition and a player base hungry to walk the Shire. <em>Age of Conan</em> arrived with a darker, more visceral aesthetic and the full weight of Robert E. Howard&#x27;s source material behind it. <em>Star Wars: The Old Republic</em> came backed by BioWare&#x27;s storytelling reputation and one of the most beloved franchises in the history of popular culture. <em>Wildstar</em> &ndash; developed by a team that included former Blizzard employees who knew exactly how the machine worked &ndash; arrived swinging hard at <em>WoW&#x27;s</em> casual-to-hardcore spectrum and missing both.</p>
+<p>None of them killed anything. Most of them aren&#x27;t even around anymore.</p>
+<p>And then, against the odds, and without declaring its intentions<sup class='fn-ref'>33</sup>, <em>Final Fantasy XIV</em> found a permanent home in the market.</p>
+<br><p class="no-indent">Simon Sinek didn&#x27;t invent the distinction between finite and infinite games<sup class='fn-ref'>34</sup> &ndash; that credit belongs to the philosopher James Carse, whose 1986 book put the framework on paper &ndash; but Sinek popularized it, sharpened it into a business lens, and made it useful in contexts Carse hadn&#x27;t fully explored. The core concepts are simple enough to state in a paragraph, and worth stating clearly before going further.</p>
+<p>A finite game has fixed rules, a known set of players, a defined timeframe, and a clear winning condition. You play to win, and when someone wins, the game is over. Chess. Football. A sales quarter.</p>
+<p>An infinite game has none of those constraints. The players are known and unknown &ndash; competitors you can see and ones you can&#x27;t anticipate. The rules shift. Players can enter or exit at any time. There is no winning condition, no terminal state, no final whistle. You play to keep playing. And the only way to <em>lose</em> an infinite game is to exhaust your will, your resources, or both, and drop out.</p>
+<p>The critical implication &ndash; the one that explains a lot of corporate failure &ndash; is what happens when a player built for an infinite game starts treating it as finite instead. When they stop asking &ldquo;how do we continue to improve and compete&rdquo; and start asking &ldquo;how do we <em>win</em>?&rdquo; The target changes. The strategy narrows. And the narrowed strategy, optimized for a finishing line that doesn&#x27;t exist, slowly undermines the capacity to sustain the actual game being played.</p>
+<p>Every game on that list of WoW killers made this mistake. Not because they were poorly made &ndash; some of them were genuinely good &ndash; but because the objective they organized around was the wrong one. <em>Beat World of </em><em>Warcraft</em> is a finite objective. It implies a scoreboard, a threshold, a moment at which victory could be declared and the game concluded. The MMORPG market is not a finite game. It never was. And playing it as one &ndash; optimizing for the kill shot rather than for long-term viability &ndash; produced exactly the outcome you&#x27;d expect.</p>
+<p>They ran out of resources, or will, or both. And they stopped playing.</p>
+<br><p class="no-indent"><em>World of </em><em>Warcraft</em> has been running for over twenty years. It has survived expansion cycles that ranged from generational highs to periods that even its most devoted players will acknowledge were not its finest hours. It has weathered corporate turbulence, public controversy, a global pandemic, and the sustained structural pressure of a gaming landscape that looks almost nothing like the one it launched into in 2004. It is still here.</p>
+<p>Part of that longevity is the game itself &ndash; the accumulated weight of twenty years of lore, the embedded social infrastructure of guilds and communities and friendships that exist nowhere else, the sheer inertia of a world that millions of people have called home across multiple chapters of their lives. But part of it is something more deliberate.</p>
+<p><em>World of </em><em>Warcraft</em> is a subscription product. It has always been a subscription product. The business model is structurally an infinite game: the objective is not to sell the most copies at launch, but to give players a reason to stay subscribed month after month, year after year, expansion after expansion. Every design decision that improves the long-term experience &ndash; and every decision that sacrifices it for short-term engagement metrics &ndash; shows up eventually in the subscriber numbers. The feedback loop is real, and it runs in both directions. Blizzard has occasionally felt that pressure in ways that weren&#x27;t comfortable.</p>
+<p>But the model itself is honest about what the game actually is. You are not playing to finish. You are playing to keep playing.</p>
+<p>The players understand this, even if they&#x27;ve never read Sinek. The ones who have been there since Vanilla don&#x27;t talk about <em>beating</em> <em>World of </em><em>Warcraft</em>. They talk about <em>living</em> in it. The goal was never the end boss. The goal was the world.</p>
+<br><p class="no-indent">Here is where <em>Final Fantasy XIV</em> becomes instructive, and where Sinek&#x27;s framework adds something specific.</p>
+<p>In <em>The Infinite Game</em>, Sinek argues that a worthy rival is not a threat to be neutralized &ndash; it is a necessary feature of a healthy competitive environment. The right competitor forces you to improve. It reveals your gaps. It keeps you from becoming complacent atop a position you&#x27;ve stopped having to defend. The worthy rival is not your enemy. It is, in a meaningful sense, part of what keeps you in the game.</p>
+<p><em>FF14</em> is that rival now, and it got there by refusing to be a <em>WoW</em> killer.</p>
+<p>The early history of <em>FF14</em> is not something I&#x27;ll dwell on &ndash; it launched in a state that its own developers later acknowledged was indefensible, and the story of how it was rebuilt into <em>A Realm Reborn</em> is well documented and not the point here. The point is what it became after the rebuild, and why.</p>
+<p><em>FF14</em> did not set out to take <em>WoW&#x27;s</em> players. It set out to be the best version of a Final Fantasy MMO that it could be. The design philosophy, the narrative sensibility, the community culture that formed around it &ndash; none of it is optimized to appeal to lapsed <em>WoW</em> players who are angry about their current subscription. It is optimized to be <em>FF14</em>. And the audience it found is, to a substantial degree, an audience that might never have been comfortable in Azeroth in the first place.</p>
+<p>The two games borrow from each other occasionally, as any healthy competitors do. <em>WoW</em> recently implemented player housing, a feature <em>FF14</em> has offered for years<sup class='fn-ref'>35</sup>. The cross-pollination is real, and it&#x27;s evidence of exactly the dynamic Sinek describes: two players in an infinite game, each improved by the presence of the other, neither trying to deliver a finishing blow. If <em>FF14 </em>shut down tomorrow, Blizzard would not issue a press release declaring victory. They would keep telling the <em>Worldsoul Saga</em>. If <em>WoW</em> went dark, <em>FF14</em> would not expand to absorb the displaced population as a strategic maneuver. It would keep being <em>FF14</em>.</p>
+<p>That is what a healthy infinite game looks like from the outside: two players, occasionally ahead and occasionally behind, focused on their own capacity to continue rather than on eliminating the other.</p>
+<p>The earlier competitors &ndash; <em>LOTRO, </em><em>AoC</em><em>, Wildstar</em>, the others &ndash; had the raw material to play the same game. They had intellectual property, talented teams, and genuine audiences who wanted what they were offering. What they didn&#x27;t have, or didn&#x27;t hold onto, was a clear answer to the question <em>why do we exist, independent of our position relative to World of </em><em>Warcraft</em><em>?</em> Without that answer, the competitive pressure collapsed their strategy inward, and they found themselves optimizing for a kill they couldn&#x27;t land rather than a game they could sustain.</p>
+<p>The worthy rival survived. The <em>WoW</em> killers didn&#x27;t.</p>
+<br><p class="no-indent">Blizzard is not immune to finite thinking. It would be dishonest to suggest otherwise, and this essay isn&#x27;t a brief for hagiography.</p>
+<p><em>Heroes of the Storm</em> was, at least in my own accounting, the best MOBA ever made. The design philosophy was genuinely distinctive: no items, no last-hitting, an emphasis on teamfight and macro strategy over individual mechanical expression that made it more accessible to casual players without sacrificing depth for the dedicated ones. The community that formed around it was passionate. The esports scene was ambitious.</p>
+<p>And in 2018, Blizzard significantly scaled back development and shut down the HGC &ndash; the Heroes Global Championship &ndash; with two weeks&#x27; notice, mid-season, devastating a professional scene that had organized their lives around it. It was a decision executed badly, and the people hurt by the abrupt shutdown deserved better handling.</p>
+<p>But, strip away the execution and look at the underlying logic: a product that was beloved but commercially underperforming, competing in an esports ecosystem dominated by <em>League of Legends</em> and <em>DOTA </em><em>2</em> &ndash; two games with years of established infrastructure, massive viewership, and network effects that Heroes was unlikely to overcome regardless of design merit. The resources allocated to the HGC were finite. The question was whether they were better deployed sustaining a losing competitive position, or redirected toward <em>Overwatch 2</em> and <em>Diablo IV</em>.</p>
+<p>From an infinite game perspective, that is actually a coherent decision. Sometimes stewardship of the whole means accepting a local loss. Sometimes the right move is to release one piece in order to strengthen the board, like sacrificing a bishop to capture a queen. The mistake was not in cutting; it was in how the cut was made. The obligation to the people who had built their professional lives around the HGC deserved more than two weeks&#x27; notice &ndash; and that&#x27;s a legitimate criticism that exists independently of whether the underlying resource decision was right.</p>
+<p><em>Diablo Immortal</em> was rightly criticized. <em>Warcraft</em><em> Rumble</em> came and has largely gone. These are not nothing. But they are also not structural failures &ndash; they are the variance you&#x27;d expect from an organization willing to experiment, run through a portfolio diversified enough to absorb the weight of individual misses. The overall health of the enterprise, and the goodwill of its community, remained intact because the aberrations were legible as aberrations. They stood out precisely because they weren&#x27;t the norm.</p>
+<p>The risk, and it&#x27;s worth naming clearly, is cumulative. Finite-game thinking doesn&#x27;t usually announce itself. It accretes. A decision to optimize this quarter&#x27;s engagement metric. A feature designed to drive retention numbers rather than player experience. A roadmap shaped more by competitive anxiety than by genuine creative vision. None of these look like much in isolation. Stacked together over years, they are how you wake up atop a lonely throne, having gradually displaced the thing that earned you the throne in the first place.</p>
+<p>Blizzard knows this. The return of Chris Metzen, the explicit recommitment to the <em>Worldsoul Saga</em>, the careful stewardship of the <em>WoW Classic</em> ecosystem &ndash; these are not the moves of an organization that has forgotten what game it&#x27;s playing. They read, to me, like someone consciously pulling the organization back toward the long view. And I think that read is correct.</p>
+<br><p class="no-indent">I am aware that I have just spent several pages applying the frameworks of a business author to a video game company, and I want to be direct about why.</p>
+<p>The work I would do at Blizzard &ndash; whatever its specific shape &ndash; would be played in the same register. Not the infinite game of the MMORPG market, but the infinite game of a game studio committed to worlds it intends to inhabit for decades. The <em>Worldsoul Saga</em> is not a three-year roadmap; it is a generational creative commitment. The <em>Classic</em> ecosystem is not a feature; it is a parallel timeline being maintained alongside the living game. These are infinite game decisions, and they create an infinite game context for every producer, every program manager, every person responsible for keeping the delivery machine running.</p>
+<p>In that context, optimizing for a sprint at the cost of a saga is not discipline. It is the wrong game.</p>
+<p>This connects to something the systems thinking essay tried to establish: that finite objectives are often embedded inside infinite games, and that the skill is in knowing which level you&#x27;re operating on at any given moment. An individual raid tier is a finite game &ndash; a beginning, a middle, a clearance, a conclusion. The expansion is a longer finite game, with its own arc. The franchise is something else. It doesn&#x27;t end. It evolves. And the question at that level is never <em>did we win this release</em> but <em>did we leave the game healthier than we found it.</em></p>
+<p>That is the question I would carry into every room.</p>
+<p>Not <em>did we ship on time</em> &ndash; though we would, because that matters too. Not <em>did we hit the quarterly engagement numbers</em> &ndash; though we&#x27;d track those as signal, because they are. The first question, always, underneath all of it: <em>did we do something today that makes the long game more possible?</em></p>
+<p>You play the infinite game well by refusing to lose sight of what it actually is. The point isn&rsquo;t to win, the point is to keep playing.</p>
+  </div>
+<aside class='footnotes'><ol><li id='fn-33'><sup>33</sup>&ensp;Not to mention a painful death and rebirth due to its initially failed reception among the community.</li><li id='fn-34'><sup>34</sup>&ensp;I love the concept in this context because the infinite game refers both to the business&rsquo; operating model, but also the way live service games are constructed. There are finite games within <em>World of Warcraft</em>, but ultimately the game can continue as long as Blizzard has the will to keep building to it and the community wants to keep playing it.</li><li id='fn-35'><sup>35</sup>&ensp;By extension, you could argue that <em>FF14&rsquo;s </em>&ldquo;glamour&rdquo; system, an appearance-modification mechanic, is clearly cribbed from <em>WoW</em>&rsquo;s transmogrification system.</li></ol></aside>
+<nav class="pg-nav"><div class="pg-prev"><span class="pg-label">← Previous</span><a href="/theorycraft/alchemy.html">Alchemy</a></div><div class="pg-next"><span class="pg-label">Next →</span><a href="/theorycraft/pathfinding.html">Pathfinding</a></div></nav>
+</article>
+</main>
+</div>
+<script>
+function toggleNav() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var sb  = document.getElementById('sidebar');
+  var btn = document.querySelector('.menu-btn');
+  if (sb && sb.classList.contains('open') && !sb.contains(e.target) && e.target !== btn) {
+    sb.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>

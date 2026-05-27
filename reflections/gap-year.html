@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gap Year — The Aeonomicon</title>
+  <meta name="description" content="The Aeonomicon by Donald Coles — Reflections, Theorycraft, and Praxis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<button class="menu-btn" onclick="toggleNav()">&#9776; Contents</button>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<a class="sidebar-title" href="/">The Aeonomicon</a>
+<button class="nav-toggle" onclick="toggleNav()">✕</button>
+<div class="nav-section">
+<span class="nav-section-label">Front Matter</span>
+<a class="nav-link" href="/front-matter/note-to-the-reader.html">Note to the Reader</a>
+<a class="nav-link" href="/front-matter/preface-storytellers.html">Preface – Storytellers</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume I — Reflections</span>
+<a class="nav-link" href="/reflections/a-portrait-of-the-author-as-a-young-gamer.html">A Portrait of the Author as a Young Gamer</a>
+<a class="nav-link" href="/reflections/aint-no-party-like-a-lan-party.html">Ain’t No Party Like a LAN Party</a>
+<a class="nav-link" href="/reflections/this-is-not-warcraft-in-space.html">This Is Not Warcraft In Space!</a>
+<a class="nav-link" href="/reflections/the-eternal-conflict.html">The Eternal Conflict</a>
+<a class="nav-link" href="/reflections/the-world-is-the-main-character.html">The World is the Main Character</a>
+<a class="nav-link" href="/reflections/crusader.html">Crusader</a>
+<a class="nav-link" href="/reflections/the-cycle.html">The Cycle</a>
+<a class="nav-link" href="/reflections/elegy-of-the-storm.html">Elegy of the Storm</a>
+<a class="nav-link" href="/reflections/you-cant-go-home-again.html">You Can’t Go Home Again</a>
+<a class="nav-link" href="/reflections/the-burden.html">The Burden</a>
+<a class="nav-link" href="/reflections/flow-state.html">Flow State</a>
+<a class="nav-link" href="/reflections/remembrance-of-blizzcon-past.html">Remembrance of BlizzCon Past</a>
+<a class="nav-link" href="/reflections/the-silver-hand.html">The Silver Hand</a>
+<a class="nav-link active" href="/reflections/gap-year.html">Gap Year</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume II — Theorycraft</span>
+<a class="nav-link" href="/theorycraft/systems.html">Systems</a>
+<a class="nav-link" href="/theorycraft/agility.html">Agility</a>
+<a class="nav-link" href="/theorycraft/alchemy.html">Alchemy</a>
+<a class="nav-link" href="/theorycraft/the-infinite-game.html">The Infinite Game</a>
+<a class="nav-link" href="/theorycraft/pathfinding.html">Pathfinding</a>
+<a class="nav-link" href="/theorycraft/delivery.html">Delivery</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume III — Praxis</span>
+<a class="nav-link" href="/praxis/how-i-work.html">How I Work</a>
+<a class="nav-link" href="/praxis/case-study-aeoncore-personal-aiservices-platform.html">Case Study – Aeoncore Personal AI/Services Platform</a>
+<a class="nav-link" href="/praxis/case-study-bp-m365-and-digital-transformation.html">Case Study – BP M365 and Digital Transformation</a>
+<a class="nav-link" href="/praxis/case-study-cvs-enterprise-pc-refresh.html">Case Study – CVS Enterprise PC Refresh</a>
+<a class="nav-link" href="/praxis/curriculum-vitae.html">Curriculum Vitae</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">End Matter</span>
+<a class="nav-link" href="/end-matter/afterword-moonshots.html">Afterword – Moonshots</a>
+<a class="nav-link" href="/end-matter/putting-the-war-in-world-of-warcraft.html">Putting the War in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/parsing-truth-epistemic-decision-making-in-world-of-warcraft.html">Parsing Truth: Epistemic Decision-Making in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/when-games-grew-up-an-ode-to-final-fantasy-tactics.html">When Games Grew Up: An Ode to Final Fantasy Tactics</a>
+<a class="nav-link" href="/end-matter/whats-left-when-meaning-breaks-a-look-at-nier-automata.html">What’s Left When Meaning Breaks: A Look at Nier Automata</a>
+<a class="nav-link" href="/end-matter/dramatis-personae.html">Dramatis Personae</a>
+<a class="nav-link" href="/end-matter/acknowledgements.html">Acknowledgements</a>
+<a class="nav-link" href="/end-matter/about-the-author.html">About the Author</a>
+<a class="nav-link" href="/end-matter/about-the-book.html">About the Book</a>
+</div>
+</nav>
+<main class="content">
+<article class="essay">
+  <header class="essay-header">
+    <div class="volume-label">Volume I — Reflections</div>
+    <h1 class="essay-title">Gap Year</h1>
+  </header>
+  <!-- HERO IMAGE: remove comment markers and set src/alt to enable
+  <img src="/assets/images/gap-year.jpg" alt="" class="essay-hero">
+  -->
+  <div class="essay-ornament">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+  <div class="essay-body">
+<p class="no-indent">The flight home from BlizzCon 2023 takes about three hours. I spent most of it staring out the expanse of sky, thinking about the difference between grief and relief, and how sometimes you can&#x27;t tell them apart. My contract was still gone, the job I hadn&#x27;t loved was gone. Yet something had changed, a latent desire in me, awoken by my time at BlizzCon.</p>
+<p>I took a few weeks when I got back. The period between losing a job and commencing the machinery of finding the next one, that&rsquo;s the hardest part. Between all the extra time on your hands and the lack of external feedback, you are finally alone with the questions you&#x27;ve been outrunning: &ldquo;What did I actually want to be doing? What had I been doing, and why had it felt so hollow? Where do I go from here?&rdquo;</p>
+<p>I talked to people. I read books. I engaged a career coach. All things one should do.</p>
+<p>The first diagnosis was technical. I had drifted so far into the management layers &ndash; PM, program leadership, communications, coordination &ndash; that I had lost the thread of actually <em>making</em> things. My skills had become almost entirely indirect. I could organize the people who built things. I could not build things myself, not anymore, not in any language anyone was currently speaking. So I went back to school, in the most informal sense: Python, Java, JavaScript, HTML/CSS, Git, the whole modern software development stack, approached with the intensity of someone who has something to prove and the advantage of having done all of this before (even if that was long enough ago that almost none of it was familiar).</p>
+<p>I spent months in bootcamps and intensive study. I got genuinely comfortable. I felt, for the first time in a while, like I was working rather than just managing.</p>
+<p>Nobody wanted to hire me as a developer.</p>
+<p>A short-term project management contract appeared, and I took it &ndash; not because it was what I was looking for, but because survival doesn&#x27;t negotiate. It was a temporary job in the oldest sense of the phrase: something to do while you figure out what you&#x27;re actually going to do. It kept the lights on and gave me something to point to on a calendar, and when it ended, I was almost relieved. I had not been pretending, exactly. But I had not been fully myself.</p>
+<p>By late 2024 I was a year into the gap, and I had upgraded my approach from <em>job search</em> to something harder to name &ndash; a search for meaning operating in parallel with a search for employment. I didn&rsquo;t just want <em>a </em>job. I wanted the <em>right</em> job. </p>
+<p>The reading list from that period tells the story better than I can narrate it. Michael Lopp on engineering culture. David Marquet on ownership and authority. Daniel Coyle on what makes teams work and what secretly kills them. And then, gradually, a drift toward product management &ndash; toward the work of understanding <em>why</em> you&#x27;re building something, not just whether you&#x27;re building it correctly. Adam Grant teaching me to hold my assumptions more loosely. Simon Sinek three times, from different angles, all arriving at the same place: <em>purpose is not a </em><em>luxury</em><em>; it is </em><em>structural</em>.</p>
+<p>What I was diagnosing, across all of it, was an absence. I had spent years implementing things without ever being invited to ask what they meant. Off-the-shelf systems, applied because the project charter said so, handed off to a team that would hand them off to another. The work got done, but the work didn&#x27;t matter &ndash; not to me, and I suspect not to most of the people in the chain. I had been a skilled functionary in systems that had no particular interest in whether I cared. And the truth, the inconvenient truth I&#x27;d been avoiding for years, is that I care enormously. About the why. About the customer. About whether the thing we built was worth building in the first place.</p>
+<p>That realization sharpened something.</p>
+<p>If nobody was going to give me a context in which to work that way &ndash; and for the better part of a year, nobody had &ndash; then I was going to build one myself. That&#x27;s where Aeoncore<sup class='fn-ref'>21</sup> came from, which gets its own chapter and deserves it. The short version: a solo-built, production-disciplined personal AI and services platform, designed to answer the question of what real operational rigor looks like when there&#x27;s no team to hide behind and no budget to buy your way out of hard problems. It wasn&#x27;t a portfolio project in the cynical sense. It was the only available arena.</p>
+<p>I wish I could tell you the gap year was restful. It wasn&#x27;t. It was, in many ways, harder than having a job &ndash; the functional equivalent of a volunteer position requiring full professional effort, with no compensation, no feedback loop, no external validation, and the persistent ambient anxiety of watching the clock run without knowing when it stops. There is a particular stress that comes from doing everything right and remaining unhired, that a bad job simply cannot replicate.</p>
+<p>I am sharper than I was. More read, more practiced, more honest about what I want and what I&#x27;m capable of. The gap did what gaps, at their best, are supposed to do: it cleared the noise and left the signal. I know what kind of work I&#x27;m looking for. I know what kind of organization I need to be part of. I know, more precisely than I ever have, what I would bring to it.</p>
+<p>I also know what I was watching, in that convention hall in Anaheim, when Metzen walked back out onto a stage he&#x27;d left seven years earlier.</p>
+<p>I was watching someone who had found the thing he was supposed to be doing, return to doing it.</p>
+<p>I&#x27;ve been working toward that moment ever since.</p>
+  </div>
+<aside class='footnotes'><ol><li id='fn-21'><sup>21</sup>&ensp;See later chapter, &ldquo;Case Study &ndash; Aeoncore Personal AI/Services Platform&rdquo;</li></ol></aside>
+<nav class="pg-nav"><div class="pg-prev"><span class="pg-label">← Previous</span><a href="/reflections/the-silver-hand.html">The Silver Hand</a></div><div class="pg-next"><span class="pg-label">Next →</span><a href="/theorycraft/systems.html">Systems</a></div></nav>
+</article>
+</main>
+</div>
+<script>
+function toggleNav() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var sb  = document.getElementById('sidebar');
+  var btn = document.querySelector('.menu-btn');
+  if (sb && sb.classList.contains('open') && !sb.contains(e.target) && e.target !== btn) {
+    sb.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pathfinding — The Aeonomicon</title>
+  <meta name="description" content="The Aeonomicon by Donald Coles — Reflections, Theorycraft, and Praxis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<button class="menu-btn" onclick="toggleNav()">&#9776; Contents</button>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<a class="sidebar-title" href="/">The Aeonomicon</a>
+<button class="nav-toggle" onclick="toggleNav()">✕</button>
+<div class="nav-section">
+<span class="nav-section-label">Front Matter</span>
+<a class="nav-link" href="/front-matter/note-to-the-reader.html">Note to the Reader</a>
+<a class="nav-link" href="/front-matter/preface-storytellers.html">Preface – Storytellers</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume I — Reflections</span>
+<a class="nav-link" href="/reflections/a-portrait-of-the-author-as-a-young-gamer.html">A Portrait of the Author as a Young Gamer</a>
+<a class="nav-link" href="/reflections/aint-no-party-like-a-lan-party.html">Ain’t No Party Like a LAN Party</a>
+<a class="nav-link" href="/reflections/this-is-not-warcraft-in-space.html">This Is Not Warcraft In Space!</a>
+<a class="nav-link" href="/reflections/the-eternal-conflict.html">The Eternal Conflict</a>
+<a class="nav-link" href="/reflections/the-world-is-the-main-character.html">The World is the Main Character</a>
+<a class="nav-link" href="/reflections/crusader.html">Crusader</a>
+<a class="nav-link" href="/reflections/the-cycle.html">The Cycle</a>
+<a class="nav-link" href="/reflections/elegy-of-the-storm.html">Elegy of the Storm</a>
+<a class="nav-link" href="/reflections/you-cant-go-home-again.html">You Can’t Go Home Again</a>
+<a class="nav-link" href="/reflections/the-burden.html">The Burden</a>
+<a class="nav-link" href="/reflections/flow-state.html">Flow State</a>
+<a class="nav-link" href="/reflections/remembrance-of-blizzcon-past.html">Remembrance of BlizzCon Past</a>
+<a class="nav-link" href="/reflections/the-silver-hand.html">The Silver Hand</a>
+<a class="nav-link" href="/reflections/gap-year.html">Gap Year</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume II — Theorycraft</span>
+<a class="nav-link" href="/theorycraft/systems.html">Systems</a>
+<a class="nav-link" href="/theorycraft/agility.html">Agility</a>
+<a class="nav-link" href="/theorycraft/alchemy.html">Alchemy</a>
+<a class="nav-link" href="/theorycraft/the-infinite-game.html">The Infinite Game</a>
+<a class="nav-link active" href="/theorycraft/pathfinding.html">Pathfinding</a>
+<a class="nav-link" href="/theorycraft/delivery.html">Delivery</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume III — Praxis</span>
+<a class="nav-link" href="/praxis/how-i-work.html">How I Work</a>
+<a class="nav-link" href="/praxis/case-study-aeoncore-personal-aiservices-platform.html">Case Study – Aeoncore Personal AI/Services Platform</a>
+<a class="nav-link" href="/praxis/case-study-bp-m365-and-digital-transformation.html">Case Study – BP M365 and Digital Transformation</a>
+<a class="nav-link" href="/praxis/case-study-cvs-enterprise-pc-refresh.html">Case Study – CVS Enterprise PC Refresh</a>
+<a class="nav-link" href="/praxis/curriculum-vitae.html">Curriculum Vitae</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">End Matter</span>
+<a class="nav-link" href="/end-matter/afterword-moonshots.html">Afterword – Moonshots</a>
+<a class="nav-link" href="/end-matter/putting-the-war-in-world-of-warcraft.html">Putting the War in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/parsing-truth-epistemic-decision-making-in-world-of-warcraft.html">Parsing Truth: Epistemic Decision-Making in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/when-games-grew-up-an-ode-to-final-fantasy-tactics.html">When Games Grew Up: An Ode to Final Fantasy Tactics</a>
+<a class="nav-link" href="/end-matter/whats-left-when-meaning-breaks-a-look-at-nier-automata.html">What’s Left When Meaning Breaks: A Look at Nier Automata</a>
+<a class="nav-link" href="/end-matter/dramatis-personae.html">Dramatis Personae</a>
+<a class="nav-link" href="/end-matter/acknowledgements.html">Acknowledgements</a>
+<a class="nav-link" href="/end-matter/about-the-author.html">About the Author</a>
+<a class="nav-link" href="/end-matter/about-the-book.html">About the Book</a>
+</div>
+</nav>
+<main class="content">
+<article class="essay">
+  <header class="essay-header">
+    <div class="volume-label">Volume II — Theorycraft</div>
+    <h1 class="essay-title">Pathfinding</h1>
+  </header>
+  <!-- HERO IMAGE: remove comment markers and set src/alt to enable
+  <img src="/assets/images/pathfinding.jpg" alt="" class="essay-hero">
+  -->
+  <div class="essay-ornament">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+  <div class="essay-body">
+<p class="no-indent">Don Norman, in <em>The Design of Everyday Things</em>, describes a forcing function as a physical or systemic constraint that prevents a certain action from occurring until a prerequisite condition is met. The car that won&#x27;t start until your seatbelt is fastened, or the door that only opens in one direction &ndash; those are forcing functions. Forcing functions aren&#x27;t punishments; they are design decisions, deliberately narrowing what is possible in the service of what is desirable. Norman&#x27;s insight is that constraint, applied intelligently, produces better outcomes than open possibility ever could.</p>
+<p>Which brings me to flying mounts.</p>
+<p>Flying mounts arrived in <em>The Burning Crusade</em>, and they were immediately, obviously, undeniably wonderful. Outland had been designed with the possibility in mind, its seven zones laid out with enough geometric intentionality that players could safely inhabit three dimensions for the first time. You could hop on your gryphon, point yourself at a distant objective, and simply go &ndash; no cliffs, no roads, no wandering mobs between you and where you wanted to be. The traversal problem, which had been a part of navigating Azeroth since the dawn of <em>WoW</em>, was solved. Players were ecstatic.</p>
+<p>Blizzard, in retrospect, was not.</p>
+<p>The Pandora&#x27;s box problem with flying mounts wasn&#x27;t that they made travel easier &ndash; that was the point. The problem was what players did with that ease. Why learn the terrain when you could fly over it? Why pick your way carefully down a cliffside when you could simply flying off the edge and glide to the bottom? Players are optimizers by default, and they&rsquo;ll gleefully min-max almost any situation. The moment a faster path exists, it becomes the only path worth taking. And so the world &ndash; Blizzard&#x27;s world, built by hundreds of artists and designers and writers &ndash; shrank to a collection of quest pins on a map. The in-between spaces, the ones that made Azeroth feel like a place rather than a backdrop, became the floor beneath your airspace.</p>
+<p>The developers knew it. But flying mounts had become an expectation. You couldn&#x27;t take them away. Players would riot in the streets.</p>
+<p>And then, with <em>Warlords of Draenor</em>, Blizzard did it anyway.</p>
+<p>The announcement was well-reasoned but still irritating: &ldquo;We intend to disallow flying while leveling from 90 to 100, and have flying become available again in the first major patch.&rdquo; Players grumbled, complained, argued, and then &ndash; because the game was still <em>World of </em><em>Warcraft</em> &ndash; played anyway.</p>
+<p> And something happened in that forced return to earth. Draenor, experienced at ground level, was a different game than Outland had been. You noticed where the roads curved. You learned which cliff faces had navigable switchbacks and which ones didn&#x27;t. You developed something that might be called player proprioception &ndash; a spatial awareness of your position in the world, an instinctive sense of how the terrain related to itself. It was the difference between reading a map and knowing a place so well you don&rsquo;t even need the map. Blizzard had, by removing the option to bypass the world, forced players back into it.</p>
+<p>Then came Pathfinder.</p>
+<br><p class="no-indent">Pathfinding was a meta-achievement: For each expansion zone, unlock the achievements for Explorer (discover the full map) and Loremaster (complete the major quest lines). The logic was simple: do the work, see the world, and you&rsquo;ll earn the right to fly above it. And once earned, it was account-wide &ndash; unlock it on one character, and every other character you owned could fly in Draenor from the moment they arrived. The grind, such as it was, was paid once, and the dividend compounded across your entire account. This was Norman&#x27;s forcing function, applied to a live game with millions of players: a prerequisite condition, deliberately designed, that you had to satisfy before the restricted action became available. The thing that felt like a removal felt, by the end, like an achievement. Players stopped complaining.</p>
+<p>Here is where the argument turns, because the forcing function wasn&#x27;t just applied to players. It was applied to the design team too.</p>
+<p>The implicit contract of flying mounts in <em>TBC</em> and beyond had always been uncomfortable for the designers building the world: <em>if players are going to fly over the terrain anyway, how much does the terrain actually matter?</em> It&#x27;s a corrosive question, and the honest answer is that it showed. Blade&#x27;s Edge Mountains in <em>The Burning Crusade</em> was a zone of stunning visual ambition and punishing navigability &ndash; jagged canyon country with no clear paths and poor signposting, the kind of place that felt arbitrary rather than discovered. I avoided that zone at all costs, only returning once I could use my gryphon to make up for the poor geometry.</p>
+<p>The guarantee that players would actually <em>see</em> the ground changed what ended up on it. <em>Warlords of Draenor</em>, designed with the expectation of ground-bound players, featured terrain built for discoverability &ndash; ramps where ramps made sense, paths that rewarded exploration rather than punishing it. Vignettes and small moments of worldbuilding filled the in-between spaces because the team knew players would pass through them, not over them. </p>
+<p>I give <em>Mists of Pandaria </em>a lot of credit for advancing the state of making Azeroth feel real and <em>lived-in</em>. The Valley of the Four Winds remains, to this day, one of the most convincing zones in the game&#x27;s history &ndash; actual farmland, actual villages, a landscape that feels inhabited and worked and aged. Blizzard went the extra mile there even knowing that most players would only experience it at ground level on their first character, with alts flying in from the start. They built it anyway. The constraint didn&#x27;t fully exist yet, but you can tell that the intention was there. </p>
+<p>By the time we reach <em>Legion</em> &ndash; the first expansion designed from the ground up within the Pathfinding framework &ndash; you can see what that intention produced at full maturity. Suramar is not just a zone. It is the argument that constraint makes. Ancient, layered, crumbling-elegant, lived-in in a way that zone design rarely achieves &ndash; every surface of it rewards attention. The team built it knowing players would be on the ground, and the ground is worth being on.</p>
+<p>The Pandora&#x27;s box problem with flying mounts was never fully solvable. You can&#x27;t un-introduce a feature that players love, because you can&rsquo;t turn back the expectation you&rsquo;ve created in your players. But you can reshape the conditions under which it&#x27;s available &ndash; and in doing so, reshape what players and designers alike bring to the game. That&#x27;s the forcing function at its most sophisticated: not punishment, not removal, but redesign. Blizzard didn&#x27;t take flying away, they made you <em>earn</em> it, and along the way improved the experience and the product at the same time.</p>
+  </div>
+
+<nav class="pg-nav"><div class="pg-prev"><span class="pg-label">← Previous</span><a href="/theorycraft/the-infinite-game.html">The Infinite Game</a></div><div class="pg-next"><span class="pg-label">Next →</span><a href="/theorycraft/delivery.html">Delivery</a></div></nav>
+</article>
+</main>
+</div>
+<script>
+function toggleNav() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var sb  = document.getElementById('sidebar');
+  var btn = document.querySelector('.menu-btn');
+  if (sb && sb.classList.contains('open') && !sb.contains(e.target) && e.target !== btn) {
+    sb.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>

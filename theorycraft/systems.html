@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Systems — The Aeonomicon</title>
+  <meta name="description" content="The Aeonomicon by Donald Coles — Reflections, Theorycraft, and Praxis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<button class="menu-btn" onclick="toggleNav()">&#9776; Contents</button>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<a class="sidebar-title" href="/">The Aeonomicon</a>
+<button class="nav-toggle" onclick="toggleNav()">✕</button>
+<div class="nav-section">
+<span class="nav-section-label">Front Matter</span>
+<a class="nav-link" href="/front-matter/note-to-the-reader.html">Note to the Reader</a>
+<a class="nav-link" href="/front-matter/preface-storytellers.html">Preface – Storytellers</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume I — Reflections</span>
+<a class="nav-link" href="/reflections/a-portrait-of-the-author-as-a-young-gamer.html">A Portrait of the Author as a Young Gamer</a>
+<a class="nav-link" href="/reflections/aint-no-party-like-a-lan-party.html">Ain’t No Party Like a LAN Party</a>
+<a class="nav-link" href="/reflections/this-is-not-warcraft-in-space.html">This Is Not Warcraft In Space!</a>
+<a class="nav-link" href="/reflections/the-eternal-conflict.html">The Eternal Conflict</a>
+<a class="nav-link" href="/reflections/the-world-is-the-main-character.html">The World is the Main Character</a>
+<a class="nav-link" href="/reflections/crusader.html">Crusader</a>
+<a class="nav-link" href="/reflections/the-cycle.html">The Cycle</a>
+<a class="nav-link" href="/reflections/elegy-of-the-storm.html">Elegy of the Storm</a>
+<a class="nav-link" href="/reflections/you-cant-go-home-again.html">You Can’t Go Home Again</a>
+<a class="nav-link" href="/reflections/the-burden.html">The Burden</a>
+<a class="nav-link" href="/reflections/flow-state.html">Flow State</a>
+<a class="nav-link" href="/reflections/remembrance-of-blizzcon-past.html">Remembrance of BlizzCon Past</a>
+<a class="nav-link" href="/reflections/the-silver-hand.html">The Silver Hand</a>
+<a class="nav-link" href="/reflections/gap-year.html">Gap Year</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume II — Theorycraft</span>
+<a class="nav-link active" href="/theorycraft/systems.html">Systems</a>
+<a class="nav-link" href="/theorycraft/agility.html">Agility</a>
+<a class="nav-link" href="/theorycraft/alchemy.html">Alchemy</a>
+<a class="nav-link" href="/theorycraft/the-infinite-game.html">The Infinite Game</a>
+<a class="nav-link" href="/theorycraft/pathfinding.html">Pathfinding</a>
+<a class="nav-link" href="/theorycraft/delivery.html">Delivery</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume III — Praxis</span>
+<a class="nav-link" href="/praxis/how-i-work.html">How I Work</a>
+<a class="nav-link" href="/praxis/case-study-aeoncore-personal-aiservices-platform.html">Case Study – Aeoncore Personal AI/Services Platform</a>
+<a class="nav-link" href="/praxis/case-study-bp-m365-and-digital-transformation.html">Case Study – BP M365 and Digital Transformation</a>
+<a class="nav-link" href="/praxis/case-study-cvs-enterprise-pc-refresh.html">Case Study – CVS Enterprise PC Refresh</a>
+<a class="nav-link" href="/praxis/curriculum-vitae.html">Curriculum Vitae</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">End Matter</span>
+<a class="nav-link" href="/end-matter/afterword-moonshots.html">Afterword – Moonshots</a>
+<a class="nav-link" href="/end-matter/putting-the-war-in-world-of-warcraft.html">Putting the War in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/parsing-truth-epistemic-decision-making-in-world-of-warcraft.html">Parsing Truth: Epistemic Decision-Making in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/when-games-grew-up-an-ode-to-final-fantasy-tactics.html">When Games Grew Up: An Ode to Final Fantasy Tactics</a>
+<a class="nav-link" href="/end-matter/whats-left-when-meaning-breaks-a-look-at-nier-automata.html">What’s Left When Meaning Breaks: A Look at Nier Automata</a>
+<a class="nav-link" href="/end-matter/dramatis-personae.html">Dramatis Personae</a>
+<a class="nav-link" href="/end-matter/acknowledgements.html">Acknowledgements</a>
+<a class="nav-link" href="/end-matter/about-the-author.html">About the Author</a>
+<a class="nav-link" href="/end-matter/about-the-book.html">About the Book</a>
+</div>
+</nav>
+<main class="content">
+<article class="essay">
+  <header class="essay-header">
+    <div class="volume-label">Volume II — Theorycraft</div>
+    <h1 class="essay-title">Systems</h1>
+  </header>
+  <!-- HERO IMAGE: remove comment markers and set src/alt to enable
+  <img src="/assets/images/systems.jpg" alt="" class="essay-hero">
+  -->
+  <div class="essay-ornament">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+  <div class="essay-body">
+<p class="no-indent">In the beginning was a Thing. And this Thing existed on its own, it had its own specific quality, and it was good, but it was ultimately just a Thing.</p>
+<p>Then came a second Thing. These Things were not connected, they each had their own specific qualities, and they were good, but they were ultimately just two Things.</p>
+<p>And then, these two Things became connected &ndash; a relationship was established, they became joined by a shared purpose &ndash; and a System was created. So while the Things remained Things, they also became components of an interrelated System. And the System was also a Thing, it had its own specific qualities, and it was good.</p>
+<p>And so it goes. </p>
+<p>Things are Things. Systems are a constellation of Things that are related or connected. And some Systems are in turn made up of other Systems that are also related or connected.</p>
+<p>A hammer and a nail, sitting on opposite ends of a workbench, are not a system. They are objects. They become something more only when a relationship exists between them &ndash; when one acts on the other, when the output of one becomes the input of another, when they are arranged in a way that produces something neither could produce alone.</p>
+<p>That relationship is the system. Not the parts. The parts are just parts.</p>
+<p>This seems obvious stated plainly, and it is. But its implications are not obvious at all, because they cascade in both directions. Downward: any Thing, examined closely enough, reveals itself to be a System. Upward: any System, viewed from far enough away, is just a Thing inside a larger System. </p>
+<p>Where you stand determines what looks like a Thing and what looks like a System. Both descriptions are always simultaneously true.</p>
+<br><p class="no-indent">This has a practical consequence, and it is this: the level you&#x27;re standing at limits what you can see.</p>
+<p>Stand close enough and all you see is the Thing in front of you. That&#x27;s not a failure of intelligence &ndash; it&#x27;s often the job. The world runs on people who can narrow their gaze to a single object and drive it forward without being distracted by everything around it. That capacity is real, and it is valuable, and it is not what this essay is about.</p>
+<p>Zoom out one level and the Thing becomes part of a pattern. You can see its relationships &ndash; what it depends on, what depends on it, where it fits in the sequence of things that surround it. You can start to ask not just <em>how do I move this Thing</em> but <em>why does this Thing exist, and what does the </em><em>S</em><em>ystem around it actually need?</em></p>
+<p>That second question is the beginning of systems thinking.</p>
+<p>It is not a framework invented in a business school and given a name so it could be put on a r&eacute;sum&eacute;. It is a description of something people do naturally when they&#x27;ve spent enough time watching local decisions produce systemic failures. When they&#x27;ve seen enough projects deliver perfectly against their own metrics while the program around them collapsed. When they&#x27;ve learned, by experience, that the question &ldquo;<em>is this Thing healthy</em><em>&rdquo;</em> is always incomplete without the follow-up: &ldquo;<em>healthy relative to what?</em><em>&rdquo;</em></p>
+<p>Nothing exists in isolation. Everything has context. Systems thinking is simply the discipline of refusing to let that context disappear.</p>
+<br><p class="no-indent">Consider the professional stack.</p>
+<p>An individual contributor focuses on a Thing. A task, a module, a deliverable. Their job is to execute it well. A project manager focuses on a collection of Things &ndash; the project is the System, and their job is to understand how those Things relate to each other, where the dependencies live, what the critical path looks like, and how to move the whole from here to done.</p>
+<p>A program manager focuses on a collection of projects. The program is the System, and the job is no longer to run any individual project &ndash; it is to understand how the projects relate to each other. Where they compete for resources. Where the sequencing creates risk. How the health of the whole differs from &ndash; and sometimes conflicts with &ndash; the health of any one part.</p>
+<p>A product manager holds something different again. Product isn&#x27;t simply the next rung on the same ladder. It adds a third dimension to what had been a two-dimensional view. The project and program stack operates on the axis of execution &ndash; <em>how</em> and <em>when</em>. Product adds the axis of <em>what</em> and <em>why</em>, and it runs perpendicular to execution, not above it. You can optimize execution flawlessly on the wrong thing. The execution axis will never show you that. You need the third dimension to see it.</p>
+<p>Beyond product: the company. Beyond the company: the market, the industry, the competitive landscape, the forces that have nothing to do with how well you built the Thing and everything to do with whether the world was ready for it. History is full of coherent products that arrived into incoherent conditions and disappeared.</p>
+<p>The practical limit of this outward zoom is not philosophical &ndash; it is relational. You keep zooming until the System you&#x27;re looking at is no longer meaningfully affected by the decision you&#x27;re making, and no longer meaningfully affects it in return. The relationship has to run in both directions. When it doesn&#x27;t, you&#x27;ve found the edge of the relevant System, and you stop there.</p>
+<p>Not because the larger System doesn&#x27;t exist. Because it isn&#x27;t in play.</p>
+<br><p class="no-indent">The same framework that describes how organizations work describes how games are built.</p>
+<p>A game is a collection of Systems. Combat, economy, progression, narrative, social structure &ndash; each of these is its own domain of craft, with its own logic, its own practitioners, its own standards of quality. But none of them exists in isolation. A beautifully designed class that is too powerful relative to its peers is not good design. A compelling quest that cannot be completed by the character the game encouraged you to build is not good design either. The pieces have to be individually good, but more importantly, they have to support each other.</p>
+<p>When the systems thinking in a game is strong, it disappears. The player doesn&#x27;t notice the encounter was tuned against the class&#x27;s damage curve, or that the quest rewards were calibrated to the economy, or that the narrative pacing was designed around the rhythm of the gear progression. They notice none of it &ndash; because it all works. What they experience is a game that <em>feels right</em>. That flows. That makes its decisions feel meaningful and its world feel coherent.</p>
+<p>When the systems thinking breaks down, it becomes the <em>only thing you notice</em>.</p>
+<p>A single mis-calibrated system poisons the experience of every system it touches. The player cannot enjoy the class fantasy because the encounter design makes it irrelevant. They cannot appreciate the quest writing because the combat makes it miserable. The craftsmanship in the individual pieces is real. It does not matter, because the systems are working against each other instead of with each other.</p>
+<p><em>World of </em><em>Warcraft</em>, across twenty years and more than a dozen major releases, has provided as thorough a laboratory for this dynamic as game design has ever produced. Its history is a record of systems thinking succeeding and failing at scale, in public, with millions of players providing immediate and unambiguous feedback. </p>
+<p>Two examples from that history are worth examining at some length.</p>
+<p><em>Cataclysm</em> introduced reforging.</p>
+<p>The mechanic was straightforward: visit an NPC, select a piece of gear, choose one of its secondary stats, and redistribute forty percent of it into a different stat not already present on the item. An item with one hundred points of hit rating and one hundred points of critical strike could become an item with sixty hit, one hundred crit, and forty haste. The worst-statted item in the loot table could be nudged toward something useful. The gap between a good drop and a bad drop narrowed.</p>
+<p>This was the intent. An upgrade should feel like an upgrade. Even if the new item wasn&#x27;t perfectly statted for your character, as long as it had more total stats and you could reforge toward your preferred configuration, the math would work out in your favor. Simplify the decision. Reduce the frustration of itemization. Give players agency over their own gear.</p>
+<p>As a Thing, reforging was an undisputed win. Zoom out one level, and the flaw appears.</p>
+<p>Secondary stats in <em>World of </em><em>Warcraft</em> are not all equivalent in structure. Haste, critical strike, and mastery operate on curves &ndash; more is generally better, the work as multipliers in concert with one another, and the returns are relatively smooth. Hit and expertise ratings are different. Characters have a base chance to miss their attacks. Hit and expertise reduce that chance. At a specific numerical threshold &ndash; the cap &ndash; that chance reaches zero, and beyond that point, the stats stop doing anything at all. One point below the cap and they&#x27;re valuable. One point above it and they are worth exactly zero.</p>
+<p>Into this environment, reforging arrived.</p>
+<p>The system designed to give players flexibility instead gave them an obligation. Every serious player needed to reach the hit and expertise caps before any other stat consideration was relevant. Every piece of gear had to be evaluated not for its total stats, but for how much dead-stat overhead it carried and how much reforging would be required to work around it. A new item with desirable secondaries but excess hit rating didn&#x27;t feel like an upgrade. It felt like a puzzle.</p>
+<p>Most players cannot calculate optimal reforges across sixteen gear slots in their heads, so the player base built tools to do it for them. Ask Mr. Robot arrived first. ReforgeLite followed. External simulation tools like WowSims entered the workflow for the most committed players, who would calculate their optimal reforge configuration before even logging in. The game had externalized a core function of its own itemization system into third-party software.</p>
+<p>The overhead was real. The fun was not.</p>
+<p>Here is the diagnosis that only becomes visible in hindsight: reforging was not the disease. It was the immune response. Hit and expertise were already poisoning the itemization system &ndash; an item that pushed you past the cap on either stat was dead on arrival regardless of what else it offered. If you were already capped on hit and a new item dropped with hit and mastery in a slot where you wore haste and crit, it didn&#x27;t matter how desirable mastery was. The hit made the item worthless. Reforging existed to minimize the damage that hit and expertise were already doing.</p>
+<p>Blizzard removed reforging after <em>Mists of Pandaria</em>. They also &ndash; in the same patch &ndash; removed hit and expertise entirely. The decision has generally been read as a simplification of the gear system. I think it was an overcorrection, that reforging had value independent of the hit/expertise optimization. They cured the disease and the immune response went with it.</p>
+<br><p class="no-indent">The <em>Mists of Pandaria</em> legendary questline is a more complex case, and a more instructive one, because the design intent was genuinely sound.</p>
+<p>Legendary items had existed in <em>World of </em><em>Warcraft</em> since the beginning. The model was consistent: extraordinary effort, significant exclusion. Sulfuras required crafting a powerful weapon and combining it with a rare drop. Thunderfury required two unique low-chance drops from the same boss, plus expensive materials to complete. The Warglaives of Azzinoth were purely dependent on random chance from a single end-boss. Fangs of the Father, the legendary daggers from <em>Cataclysm</em>, was the most elaborate yet &ndash; multiple solo instances requiring genuine mechanical skill, weeks of raid drops, and guild coordination to complete. It was also exclusively available to rogues. Eight of the nine available classes could not participate at all.</p>
+<p>The pattern held across the game&#x27;s history: legendary items were tremendous individual achievements, marks of trust from a guild, demonstrations of sustained commitment and skill. They were also, consistently, available only to some.</p>
+<p>The <em>Mists of Pandaria</em> design team looked at this history and made a reasonable diagnosis, that the exclusion was a problem. And the solution they built was ambitious: A questline spanning the entire expansion, available to every class, progressing through multiple phases aligned with the content release cadence. In phase one, you collected drops from raid bosses and received a powerful gem. In phase two, player-versus-player participation earned a weapon enhancement. In phases three and four, further collection rewarded progressively more powerful items. And by the end, the final reward &ndash; a cloak, significantly more powerful than anything else available in that slot &ndash; was waiting at the end for anyone willing to put in the time.</p>
+<p>Sustained engagement. Universal access. Expansion-length investment. The diagnosis was right, but the prescription failed to model what success would actually look like.</p>
+<p>The player-versus-player stage is the sharpest example. PVE and PVP are not simply different activities in<em> WoW</em>. They are different <em>player populations</em>, with different motivations, different skill sets, and a long history of mutual frustration. Requiring PVE players to complete PVP content to advance a questline didn&#x27;t create meaningful cross-pollination. It created mandatory participation in an activity many players actively disliked, with no path around it and no accommodation for the skill gap. And it created a second failure simultaneously: PVP players, who had built their own ecosystems of skill and competition, found their battlegrounds suddenly flooded with inexperienced players who didn&#x27;t want to be there. The stage created resentment in both directions at once.</p>
+<p>The catch-up problem compounded the pressure. A player who missed a phase didn&#x27;t simply fall behind &ndash; they had to complete the previous phase&#x27;s requirements before they could begin the current one. The questline penalized absence in a commitment designed to span an entire expansion. What was intended as an inclusive alternative to guild-gated legendaries became its own form of compulsion: you had to be there, consistently, or the cost of returning grew with every week away.</p>
+<p>The per-character design added another layer. In a game where many players maintain multiple characters, the questline created a standing obligation for each of them. Even casual attachment to an alternate character meant feeling compelled to keep its questline current &ndash; not because you were certain you&#x27;d play it, but because the cost of falling behind made the decision feel irreversible.</p>
+<p>And then, the detail that is almost funny in retrospect: the final raid tier of <em>Mists of Pandaria</em> contains boss drops in the cloak slot. The questline rewards a legendary cloak. The raid drops non-legendary cloaks. For any raid group keeping pace with the questline &ndash; which the design explicitly encouraged &ndash; those boss drops were obsolete on arrival. Players would see a cloak appear in the loot window and immediately become disgusted at the &ldquo;wasted loot.&rdquo; The system had not accounted for what the loot table would feel like once its own questline succeeded.</p>
+<p>The failure here is not in the ambition. It is in the modeling. The designers asked &ldquo;<em>how do we make everyone feel included</em><em>&rdquo;</em> and built a System to answer that question. They did not ask &ldquo;<em>what does this system look like when it works, and what does the game feel like then?</em><em>&rdquo;</em> The questline succeeded on its own terms. The experience it produced was not the experience that had been intended.</p>
+<br><p class="no-indent">Building a System and reading a System are the same cognitive act, run in opposite directions.</p>
+<p>The designer asks: how do these Things need to relate to produce this experience? The player &ndash; the player paying the right kind of attention &ndash; asks: what relationships must have been designed here to produce what I&#x27;m experiencing? Same map. Different starting point. Same destination: an understanding of the whole that cannot be reached by examining any single part.</p>
+<p>Thirty years of playing games at high levels of engagement and competitive investment is a long time to practice asking that second question. Long enough that it stops feeling like analysis and starts feeling like perception. The systems become visible the way grammar becomes visible to a writer &ndash; not as rules being consciously applied, but as structure that is simply, naturally, there.</p>
+<p>What you learn to see in a game, you learn to see everywhere.</p>
+<p>The project that is late for reasons the project manager cannot explain because they cannot see the program around it. The product that is technically excellent and commercially irrelevant because no one modeled the market it was entering. The organization optimizing every individual metric while the system itself fails. These are not different problems. They are the same problem, wearing different clothes, at different levels of the same stack.</p>
+<p>The only sane response &ndash; in a raid, in a program, in a product organization &ndash; is to keep asking what system this Thing belongs to, and what that system actually needs.</p>
+<p>The answer is almost never what the local view suggests.</p>
+  </div>
+
+<nav class="pg-nav"><div class="pg-prev"><span class="pg-label">← Previous</span><a href="/reflections/gap-year.html">Gap Year</a></div><div class="pg-next"><span class="pg-label">Next →</span><a href="/theorycraft/agility.html">Agility</a></div></nav>
+</article>
+</main>
+</div>
+<script>
+function toggleNav() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var sb  = document.getElementById('sidebar');
+  var btn = document.querySelector('.menu-btn');
+  if (sb && sb.classList.contains('open') && !sb.contains(e.target) && e.target !== btn) {
+    sb.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>

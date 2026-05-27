@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cycle — The Aeonomicon</title>
+  <meta name="description" content="The Aeonomicon by Donald Coles — Reflections, Theorycraft, and Praxis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<button class="menu-btn" onclick="toggleNav()">&#9776; Contents</button>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<a class="sidebar-title" href="/">The Aeonomicon</a>
+<button class="nav-toggle" onclick="toggleNav()">✕</button>
+<div class="nav-section">
+<span class="nav-section-label">Front Matter</span>
+<a class="nav-link" href="/front-matter/note-to-the-reader.html">Note to the Reader</a>
+<a class="nav-link" href="/front-matter/preface-storytellers.html">Preface – Storytellers</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume I — Reflections</span>
+<a class="nav-link" href="/reflections/a-portrait-of-the-author-as-a-young-gamer.html">A Portrait of the Author as a Young Gamer</a>
+<a class="nav-link" href="/reflections/aint-no-party-like-a-lan-party.html">Ain’t No Party Like a LAN Party</a>
+<a class="nav-link" href="/reflections/this-is-not-warcraft-in-space.html">This Is Not Warcraft In Space!</a>
+<a class="nav-link" href="/reflections/the-eternal-conflict.html">The Eternal Conflict</a>
+<a class="nav-link" href="/reflections/the-world-is-the-main-character.html">The World is the Main Character</a>
+<a class="nav-link" href="/reflections/crusader.html">Crusader</a>
+<a class="nav-link active" href="/reflections/the-cycle.html">The Cycle</a>
+<a class="nav-link" href="/reflections/elegy-of-the-storm.html">Elegy of the Storm</a>
+<a class="nav-link" href="/reflections/you-cant-go-home-again.html">You Can’t Go Home Again</a>
+<a class="nav-link" href="/reflections/the-burden.html">The Burden</a>
+<a class="nav-link" href="/reflections/flow-state.html">Flow State</a>
+<a class="nav-link" href="/reflections/remembrance-of-blizzcon-past.html">Remembrance of BlizzCon Past</a>
+<a class="nav-link" href="/reflections/the-silver-hand.html">The Silver Hand</a>
+<a class="nav-link" href="/reflections/gap-year.html">Gap Year</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume II — Theorycraft</span>
+<a class="nav-link" href="/theorycraft/systems.html">Systems</a>
+<a class="nav-link" href="/theorycraft/agility.html">Agility</a>
+<a class="nav-link" href="/theorycraft/alchemy.html">Alchemy</a>
+<a class="nav-link" href="/theorycraft/the-infinite-game.html">The Infinite Game</a>
+<a class="nav-link" href="/theorycraft/pathfinding.html">Pathfinding</a>
+<a class="nav-link" href="/theorycraft/delivery.html">Delivery</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume III — Praxis</span>
+<a class="nav-link" href="/praxis/how-i-work.html">How I Work</a>
+<a class="nav-link" href="/praxis/case-study-aeoncore-personal-aiservices-platform.html">Case Study – Aeoncore Personal AI/Services Platform</a>
+<a class="nav-link" href="/praxis/case-study-bp-m365-and-digital-transformation.html">Case Study – BP M365 and Digital Transformation</a>
+<a class="nav-link" href="/praxis/case-study-cvs-enterprise-pc-refresh.html">Case Study – CVS Enterprise PC Refresh</a>
+<a class="nav-link" href="/praxis/curriculum-vitae.html">Curriculum Vitae</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">End Matter</span>
+<a class="nav-link" href="/end-matter/afterword-moonshots.html">Afterword – Moonshots</a>
+<a class="nav-link" href="/end-matter/putting-the-war-in-world-of-warcraft.html">Putting the War in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/parsing-truth-epistemic-decision-making-in-world-of-warcraft.html">Parsing Truth: Epistemic Decision-Making in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/when-games-grew-up-an-ode-to-final-fantasy-tactics.html">When Games Grew Up: An Ode to Final Fantasy Tactics</a>
+<a class="nav-link" href="/end-matter/whats-left-when-meaning-breaks-a-look-at-nier-automata.html">What’s Left When Meaning Breaks: A Look at Nier Automata</a>
+<a class="nav-link" href="/end-matter/dramatis-personae.html">Dramatis Personae</a>
+<a class="nav-link" href="/end-matter/acknowledgements.html">Acknowledgements</a>
+<a class="nav-link" href="/end-matter/about-the-author.html">About the Author</a>
+<a class="nav-link" href="/end-matter/about-the-book.html">About the Book</a>
+</div>
+</nav>
+<main class="content">
+<article class="essay">
+  <header class="essay-header">
+    <div class="volume-label">Volume I — Reflections</div>
+    <h1 class="essay-title">The Cycle</h1>
+  </header>
+  <!-- HERO IMAGE: remove comment markers and set src/alt to enable
+  <img src="/assets/images/the-cycle.jpg" alt="" class="essay-hero">
+  -->
+  <div class="essay-ornament">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+  <div class="essay-body">
+<p class="no-indent"><em>Wrath of the Lich King</em> launched in November 2008, and like <em>TBC</em> before it, I was at the midnight launch with Anton. We took our copies home, logged in, and began.</p>
+<p>I don&#x27;t remember stepping off the zeppelin in Northrend the way I remember traversing the Dark Portal. The journey to Outland was the first major addition to the base game, and what struck me was just how different it was compared<em> </em>to anything we had experienced before: the insane cosmic skybox, the way the land fell away into an infinite void beyond, it was completely unreal. By contrast, the journey to Northrend looks rather banal: &ldquo;Oh, there&rsquo;s ice and snow, it looks colder here, but it&rsquo;s still Azeroth.&rdquo;</p>
+<p>What I do remember the best is that the server infrastructure capabilities of that era hadn&#x27;t scaled to match the ambition. At prime time, there were login queues that could stretch upwards of an hour, and you dreaded seeing the message: &ldquo;World server is down.&rdquo; To compensate, you learned to work around it the way you learn to work around any bureaucracy: game the system wherever possible, preserve your position wherever you have it. Heading out for dinner? Get into the queue before you leave. Need to step away for a few minutes? Find a target dummy and auto attack. The game didn&#x27;t log you out if you were in combat, so you made yourself permanently, trivially in combat. These were necessary adaptations for a world that more people wanted to inhabit than it could comfortably hold.</p>
+<p>I made it through Naxxramas &ndash; the rebuilt version, resurrected as the first raid tier of <em>Wrath</em> at a difficulty appropriate for 2008 players rather than the 2005 players who&#x27;d been locked out of the original. The original had landed in a different era of the game&#x27;s economy. Forty-player rosters, hard prerequisite gear requirements, and as a result, a statistical majority of the player base who never raided it at all. Blizzard brought it back because most of us never got to see it the first time. This was the right call, even if it was scaled down in difficulty to be an approachable introduction to raiding, it was thematically on-brand for the expansion. </p>
+<p>Ulduar arrived a few months into the expansion. I got into it &ndash; not very far, a month or two, not even enough for a full clear. And then, before my raid team had even gotten to Yogg-Saron, I stopped. I burned out.</p>
+<p>The strange thing was that I had no legitimate complaint. By any external measure, everything was aligned. <em>Wrath</em> is held up to this day as one of the best &ndash; some would say <em>the</em> best &ndash; expansion <em>WoW</em> ever produced. The Lich King was the villain the game had been building toward since the original <em>Warcraft III</em>, meaning it would be a confrontation a decade in the making. And Ulduar is held up as one of the finest raid tiers in the game&#x27;s history. The class I was playing was enjoyable. My schedule had room. Nothing was wrong.</p>
+<p>And yet, frustratingly, the vibes just weren&#x27;t right. There wasn&rsquo;t anything fundamentally wrong with the game, I was out of sync with it, the way you can be out of sync with a piece of music you normally love &ndash; the song hasn&#x27;t changed, but something has shifted in you, some internal frequency is off, and the harmony that usually comes naturally just isn&#x27;t there. I could diagnose the symptoms, I just couldn&#x27;t name the cause. And I was young enough that naming the cause felt unnecessary. I had a backlog of games waiting to be played. This was an opportunity to play a little catch-up.</p>
+<br>
+<p class="no-indent">Then someone made me an offer I genuinely couldn&#x27;t refuse. A coworker&#x27;s son wanted to get into <em>WoW</em>, and his father wanted to buy my account. The number he offered was roughly equivalent to everything I had ever spent on the game &ndash; boxes, expansions, two years of subscriptions. In effect: he would reimburse me for my costs, and all the hours I&#x27;d spent inside Azeroth would be retroactively free. The math was clean. I thought about it for a while. I slept on it. Then I agreed, thinking that if I wanted to come back, I could always start over.</p>
+<p>I took the break. I played through the games that had been accumulating in my backlog. I did other things. And eventually, inevitably, the call to adventure in Azeroth returned. I bought the game again. Created a new account. And stood at the character creation screen with the freedom of someone who has been handed a blank page.</p>
+<p>I&rsquo;d play a rogue again &ndash; that much I knew. But beyond that: I was done with PVP servers, done with the Horde, done with the server I&#x27;d been on. I picked Khadgar because I liked him as a lore character, and while selecting on the basis of a name alone is not the most rigorous selection methodology for a server, it turned out just fine. </p>
+<p>The lore reasons for the faction change were real. The Horde, by that point in the story, had begun to drift into territory I found personally unacceptable. To start, there was Garrosh Hellscream &ndash; not yet Warchief, but clearly being positioned for something &ndash; and he embodied an approach to power that I couldn&#x27;t square with the faction I&#x27;d been previously willing to represent. But as distasteful as I found Garrosh, it was the events of the Wrathgate that settled it. The Forsaken&#x27;s gambit there &ndash; Grand Apothecary Putress&rsquo; plague and the question of how much Sylvanas had sanctioned it &ndash; crossed a line<sup class='fn-ref'>8</sup>. Yes, Sylvanas called it a betrayal. Yes, Putress took the formal blame<sup class='fn-ref'>9</sup>. But only an idiot read that scenario at face value, and I am not an idiot. The undead had always lived at the edge of that line, riding the line between misunderstood, tragic underdogs and cartoonishly evil, ethically bankrupt villains. This was the first time I watched them step clearly, deliberately across it.</p>
+<p>I rerolled Alliance, and I adopted the Aeon naming convention, beginning a long history of naming all my characters beginning with the Aeon prefix. I reached max level on my rogue, then a hunter, then a paladin. At the time, I didn&rsquo;t think there was anything significant about those class choices. In retrospect &ndash; looking back across sixteen more years and both timelines &ndash; it deserves the emphasis: my main characters, from that point forward, have always been one or more of those three. Every version of me that returned to <em>WoW</em>, in Retail and in Classic both, returned as a rogue or a hunter or a paladin. The pool set itself there, on a new account in the late months of <em>Wrath,</em> and never expanded again.</p>
+<p>I settled on the paladin. Tanking was an efficient means of gearing a character and finding groups. Dual-specialization allowed me to swap between tanking and damage as needed. I found a casual 10-man guild that had room for me. We raided some Icecrown Citadel, defeated the Lich King, and before long the world cracked open again.</p>
+<br>
+<p class="no-indent"><em>Cataclysm</em> launched and I was motivated and eager to prove something. I pushed hard, and within a few days I was at the level cap, ready for heroics, ahead of everyone I knew. That&#x27;s where the problem began.</p>
+<p>None of my friends or guildmates were anywhere close to where I was. I was sitting at max level, running in groups organized by the random dungeon finder &ndash; the only avenue available to me &ndash; and running directly into the wall Blizzard had built there. <em>Cata</em> heroic dungeons had been redesigned in explicit response to feedback. Some players had complained that <em>Wrath</em> heroics were too easy. Blizzard listened, in the thorough way that companies sometimes listen without fully thinking through the consequences. They turned the difficulty up dramatically, to the point where these dungeons required genuine coordination, clear communication, and a group of people who were on the same page.</p>
+<p>In a guild group, with voice communication, that might have been fine. In the random dungeon finder, it was a wall. Player after player, dropped into content they weren&#x27;t prepared for, with strangers they had no shared language with, and no path through except repeated painful failure. I wasn&#x27;t willing to spend my leisure time smashing my head against that wall. I didn&#x27;t even make it to the first raid tier. I left.</p>
+<p>One data point is not enough to register as significant, and so my sabbatical in <em>Wrath</em> was just that, a blip. Now, though, the same thing was happening, and I could see the beginnings of a trend.</p>
+<p>I&#x27;d play the new expansion, hit max level, do some dungeons, check out some raids. Eventually, the drift would set in &ndash; sometimes it would hit early, sometimes it wouldn&rsquo;t come on until midway through the expansion, and I&rsquo;d burn out. I&rsquo;d quit, tell myself that I am <em>done</em>, that this time it&rsquo;s permanent. But, inevitably, the passage of time would bring back the siren song of Azeroth. I&rsquo;d hear it, calling to me, and over time my initial suspicion would give way to openness, then genuine enthusiasm. I&rsquo;d return, find my footing, find myself enjoying the end of the expansion, and get ready for the next expansion. Repeat.</p>
+<p>The cycle.</p>
+<br>
+<p class="no-indent">In <em>Mists of Pandaria</em> I made it to the Throne of Thunder &ndash; the second raid tier &ndash; before the familiar drift arrived. I defeated the Thunder King, took a break, came back for the end of the expansion, but as a result I missed the first half of Siege of Orgrimmar. In <em>Warlords of Draenor</em> I played the opening weeks of Highmaul with real investment and then disappeared entirely. Blackrock Foundry went on without me. Hellfire Citadel mostly happened to other people, I only returned in the final weeks of that expansion.</p>
+<p><em>Legion</em> deserves a special mention, because <em>Legion</em> is the expansion where the cycle had an additional wrinkle &ndash; I was expecting a child, my first, a daughter. I did the math, the way first-time parents consider what changes bringing a new human into their lives entails: there will be no time, there will be no margin, there will be absolutely no version of raid schedules and progression content that can survive the arrival of an infant. I had made peace with missing <em>Legion</em> entirely.</p>
+<p>And then Blizzard selected me for the beta. This is either cruel irony or the kindness of the universe, depending on your point of view. In the months before my daughter was born, I had the opportunity to level a character and experience the world of <em>Legion</em> on the beta servers &ndash; the story, the zones, the shape of what the expansion was trying to be. It was not the same as playing it at launch with the community around it, but it was something. I could be present for it, in my way.</p>
+<p>By the time <em>Battle for Azeroth</em> arrived, I had figured out how to be a gamer dad. Not a serious raider &ndash; I figured that ship had sailed, and I made my peace with that. But with Mythic+ dungeons and world quests and flexible normal raiding, there were avenues for a player who couldn&#x27;t commit to hard schedules and couldn&#x27;t afford to be called away in the middle of a progression attempt. I found casual raid groups that played at reasonable hours. I found content that tolerated my life rather than demanding I reshape my life around it.</p>
+<p>On initial viewing, <em>BFA&#x27;s</em> lore left me genuinely cold. The Horde-versus-Alliance conflict had always felt to me like the wrong conflict to focus on &ndash; not because I don&#x27;t understand faction identity, but because the game had spent fifteen years manufacturing universally existential threats that ought to have rendered the territorial dispute obviously moot. The Burning Legion threatens to consume the universe, and we&#x27;re supposed to be worried about who controls Hillsbrad? Deathwing cracks the world open, and Garrosh is mana bombing Theramore? The priorities of it never made sense to me. You can&#x27;t take two guys arguing over a foothold seriously when you&#x27;ve just prevented the literal end of all things.</p>
+<p>But I was enjoying myself despite the lore. I found some friendly raid groups. The content was accessible without being insulting or making me feel as though I was being pandered to. I didn&#x27;t feel the early signs of burnout. I thought, for once, I might actually see an expansion through to its conclusion. I didn&#x27;t, but not for the same reason as the previous entries in the cycle. </p>
+  </div>
+<aside class='footnotes'><ol><li id='fn-8'><sup>8</sup>&ensp;Did you think we had forgotten? Did you think we had forgiven?</li><li id='fn-9'><sup>9</sup>&ensp;And Varimathras, too.</li></ol></aside>
+<nav class="pg-nav"><div class="pg-prev"><span class="pg-label">← Previous</span><a href="/reflections/crusader.html">Crusader</a></div><div class="pg-next"><span class="pg-label">Next →</span><a href="/reflections/elegy-of-the-storm.html">Elegy of the Storm</a></div></nav>
+</article>
+</main>
+</div>
+<script>
+function toggleNav() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var sb  = document.getElementById('sidebar');
+  var btn = document.querySelector('.menu-btn');
+  if (sb && sb.classList.contains('open') && !sb.contains(e.target) && e.target !== btn) {
+    sb.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study – CVS Enterprise PC Refresh — The Aeonomicon</title>
+  <meta name="description" content="The Aeonomicon by Donald Coles — Reflections, Theorycraft, and Praxis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<button class="menu-btn" onclick="toggleNav()">&#9776; Contents</button>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<a class="sidebar-title" href="/">The Aeonomicon</a>
+<button class="nav-toggle" onclick="toggleNav()">✕</button>
+<div class="nav-section">
+<span class="nav-section-label">Front Matter</span>
+<a class="nav-link" href="/front-matter/note-to-the-reader.html">Note to the Reader</a>
+<a class="nav-link" href="/front-matter/preface-storytellers.html">Preface – Storytellers</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume I — Reflections</span>
+<a class="nav-link" href="/reflections/a-portrait-of-the-author-as-a-young-gamer.html">A Portrait of the Author as a Young Gamer</a>
+<a class="nav-link" href="/reflections/aint-no-party-like-a-lan-party.html">Ain’t No Party Like a LAN Party</a>
+<a class="nav-link" href="/reflections/this-is-not-warcraft-in-space.html">This Is Not Warcraft In Space!</a>
+<a class="nav-link" href="/reflections/the-eternal-conflict.html">The Eternal Conflict</a>
+<a class="nav-link" href="/reflections/the-world-is-the-main-character.html">The World is the Main Character</a>
+<a class="nav-link" href="/reflections/crusader.html">Crusader</a>
+<a class="nav-link" href="/reflections/the-cycle.html">The Cycle</a>
+<a class="nav-link" href="/reflections/elegy-of-the-storm.html">Elegy of the Storm</a>
+<a class="nav-link" href="/reflections/you-cant-go-home-again.html">You Can’t Go Home Again</a>
+<a class="nav-link" href="/reflections/the-burden.html">The Burden</a>
+<a class="nav-link" href="/reflections/flow-state.html">Flow State</a>
+<a class="nav-link" href="/reflections/remembrance-of-blizzcon-past.html">Remembrance of BlizzCon Past</a>
+<a class="nav-link" href="/reflections/the-silver-hand.html">The Silver Hand</a>
+<a class="nav-link" href="/reflections/gap-year.html">Gap Year</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume II — Theorycraft</span>
+<a class="nav-link" href="/theorycraft/systems.html">Systems</a>
+<a class="nav-link" href="/theorycraft/agility.html">Agility</a>
+<a class="nav-link" href="/theorycraft/alchemy.html">Alchemy</a>
+<a class="nav-link" href="/theorycraft/the-infinite-game.html">The Infinite Game</a>
+<a class="nav-link" href="/theorycraft/pathfinding.html">Pathfinding</a>
+<a class="nav-link" href="/theorycraft/delivery.html">Delivery</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume III — Praxis</span>
+<a class="nav-link" href="/praxis/how-i-work.html">How I Work</a>
+<a class="nav-link" href="/praxis/case-study-aeoncore-personal-aiservices-platform.html">Case Study – Aeoncore Personal AI/Services Platform</a>
+<a class="nav-link" href="/praxis/case-study-bp-m365-and-digital-transformation.html">Case Study – BP M365 and Digital Transformation</a>
+<a class="nav-link active" href="/praxis/case-study-cvs-enterprise-pc-refresh.html">Case Study – CVS Enterprise PC Refresh</a>
+<a class="nav-link" href="/praxis/curriculum-vitae.html">Curriculum Vitae</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">End Matter</span>
+<a class="nav-link" href="/end-matter/afterword-moonshots.html">Afterword – Moonshots</a>
+<a class="nav-link" href="/end-matter/putting-the-war-in-world-of-warcraft.html">Putting the War in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/parsing-truth-epistemic-decision-making-in-world-of-warcraft.html">Parsing Truth: Epistemic Decision-Making in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/when-games-grew-up-an-ode-to-final-fantasy-tactics.html">When Games Grew Up: An Ode to Final Fantasy Tactics</a>
+<a class="nav-link" href="/end-matter/whats-left-when-meaning-breaks-a-look-at-nier-automata.html">What’s Left When Meaning Breaks: A Look at Nier Automata</a>
+<a class="nav-link" href="/end-matter/dramatis-personae.html">Dramatis Personae</a>
+<a class="nav-link" href="/end-matter/acknowledgements.html">Acknowledgements</a>
+<a class="nav-link" href="/end-matter/about-the-author.html">About the Author</a>
+<a class="nav-link" href="/end-matter/about-the-book.html">About the Book</a>
+</div>
+</nav>
+<main class="content">
+<article class="essay" data-volume="praxis">
+  <header class="essay-header">
+    <div class="volume-label">Volume III — Praxis</div>
+    <h1 class="essay-title">Case Study – CVS Enterprise PC Refresh</h1>
+  </header>
+  <!-- HERO IMAGE: remove comment markers and set src/alt to enable
+  <img src="/assets/images/case-study-cvs-enterprise-pc-refresh.jpg" alt="" class="essay-hero">
+  -->
+  <div class="essay-ornament">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+  <div class="essay-body">
+<br><h3>Overview</h3>
+<p>In February 2022, CVS Health engaged an outside program manager to lead their annual PC refresh cycle &ndash; a recurring enterprise initiative to replace end-of-life hardware across all three business units: CVS Retail, Aetna Healthcare, and Caremark Prescription Benefit Management. The program ran through August 2022.</p>
+<p>The delivery target was 18,000 devices. The deadline was end of year.</p>
+<p>The program closed at 106% of target in July &ndash; five months ahead of schedule.</p>
+<br><h3>Context</h3>
+<h4>The Program</h4>
+<p>CVS runs a PC refresh cycle every year. The eligible device population is determined annually against a set of criteria &ndash; hardware age, installed RAM, CPU generation, operating system status &ndash; that typically surfaces roughly 20% of the enterprise device footprint for replacement. Those devices are catalogued, a target is set at a practical 100% threshold, and a program is stood up to execute against it.</p>
+<p>The 2022 cycle targeted 18,000 devices across the full enterprise, with approximately 20,000 available as a stretch goal. Six projects ran in parallel: a Refresh project and a Growth project (covering organic headcount expansion) for each of the three business units, each with its own IT organization, its own desktop support structure, and its own operational context.</p>
+<br><h4>The Structural Challenge</h4>
+<p>CVS runs this program every year. It almost never retains the same program manager twice.</p>
+<p>The downstream consequence is a standing knowledge debt. Each incoming program manager begins from approximately zero &ndash; rediscovering undocumented institutional knowledge, re-establishing relationships with the same teams, and rebuilding a program framework that should have been preserved and improved year over year. It is an organizational inefficiency that compounds the startup cost of every cycle.</p>
+<p>That context is worth naming because it shaped the initial weeks of the engagement: a significant portion of early effort went into knowledge acquisition that a mature program management practice would have made unnecessary. The program succeeded despite this pattern, not because of it.</p>
+<br><h3>Program Structure</h3>
+<h4>The Team</h4>
+<p>The program operated across three business unit IT organizations, each structured with a desktop manager, area leads across major office locations, and distributed desktop technician teams. In total, approximately 100 people touched the program across its lifecycle &ndash; though not simultaneously.</p>
+<p>Execution was deliberately staged. Rather than activating the full team at once, cities and office locations were sequenced: a cohort would be activated, the refresh work completed, and that cohort would stand down before the next was brought online. At any given time, the active working group consisted of the three business unit desktop managers, approximately five area leads, and twenty technicians. This approach kept coordination overhead manageable and allowed focus and accountability to concentrate on the active geography.</p>
+<p>The desktop managers were the primary day-to-day interface. Daily standups with that group kept deployment on track and surfaced issues before they became schedule risks. Weekly team-wide meetings ensured leads and active technicians maintained situational awareness across the program.</p>
+<br><h4>Procurement and Logistics</h4>
+<p>The procurement pipeline &ndash; working with Dell&#x27;s account team and CVS&#x27;s internal procurement lead &ndash; was already established when the program began. The program management role was to oversee it: ensuring devices were ordered to match the deployment schedule, shipped to the correct locations at the correct times, and available for technicians when each geographic cohort activated. Timing mismatches between procurement and deployment would have created idle time or schedule compression; neither occurred.</p>
+<p>Imaging and local deployment were handled by the business unit technicians and their leads, who carried the operational knowledge of their end users and locations. The program manager role was coordination and sequencing, not hands-on technical execution.</p>
+<br><h3>Execution</h3>
+<h4>Cost Accounting and Executive Reporting</h4>
+<p>The most demanding ongoing responsibility was financial &ndash; specifically, resource utilization forecasting and program cost accounting across six parallel projects. Weekly status reports went to VP-level leadership, one level below the CTO. A monthly roundtable required a formal presentation summarizing program health, deployment progress, financial actuals versus forecast, and forward projections.</p>
+<p>Keeping six parallel workstreams financially visible and accurately forecast &ndash; while deployment geography shifted week to week &ndash; required a discipline around the numbers that did not allow for estimation lag. Executives making resource decisions needed accurate data, not approximations. That standard was maintained throughout.</p>
+<br><h4>Program Documentation and Visibility</h4>
+<p>The full documentation suite &ndash; RAID log, stakeholder register, deployment dashboards &ndash; was maintained as living documents rather than static snapshots. The intent was to keep information actionable: leadership could pull current status at any point without waiting for a scheduled update, and the team leads had a shared source of truth for deployment priorities and sequencing decisions.</p>
+<br><h4>Parallel Workstream Coordination</h4>
+<p>Six projects running in parallel across three organizational structures introduced coordination surface that a single-project program does not have. Dependencies between the Refresh and Growth projects within each business unit required ongoing alignment &ndash; a device procured for a Growth deployment could not be reallocated to a Refresh without cascading effects on both project plans. Maintaining that discipline across the full program, at the pace the delivery schedule required, was the primary coordination challenge.</p>
+<br><h4>Adjacent Work</h4>
+<p>Beyond the core refresh, the program contributed to a parallel initiative: updating CVS&#x27;s device decommission process, including automating the removal of retired machines from Active Directory. This was not the primary program objective, but proximity to the refresh cycle made the collaboration natural, and the process improvement had downstream value for future cycles.</p>
+<br><h4>Outcomes</h4>
+<p>The 18,000-device target &ndash; the defined 100% threshold &ndash; was reached in July 2022, five months ahead of the December deadline. By contract end in August, the program had deployed 106% of the primary target and contributed to stretch goal progress across the business unit Growth projects.</p>
+<p>The program closed on budget. No devices were delayed past their scheduled activation window. Executive reporting was current and accurate throughout.</p>
+<p>The contract was not renewed &ndash; because the work was done.</p>
+<br><h4>What This Engagement Demonstrated</h4>
+<p>This was not a complex program. It is worth saying that directly, because inflating a clean execution into something it was not would undermine the credibility of the case studies that deserve more analytical weight.</p>
+<p>What CVS demonstrated is different, and in its own way equally important: when the job is delivery, the delivery happens. On time, on budget, at quality, at scale &ndash; without drama, without heroics, and without the kind of fire-fighting that indicates a program being managed reactively rather than proactively.</p>
+<p>Large programs run smoothly when they are structured correctly from the start. The staging model kept coordination overhead manageable. The financial discipline kept leadership confident and informed. The documentation kept the team aligned without requiring constant escalation. None of these are complicated ideas. Executing all of them simultaneously, across six parallel projects and a distributed team of approximately 100 people, for eight months, is the demonstration.</p>
+<p>The program also surfaced a genuine institutional recommendation that CVS did not act on: retaining program continuity year over year. The startup cost of a rotating program manager is real, it is measurable in early-cycle inefficiency, and it is entirely avoidable. That observation was made. What CVS chose to do with it was their decision.</p>
+<p><em>Engagement period: February&ndash;August 2022. Client: CVS Health (via contracting agency).</em></p>
+  </div>
+
+<nav class="pg-nav"><div class="pg-prev"><span class="pg-label">← Previous</span><a href="/praxis/case-study-bp-m365-and-digital-transformation.html">Case Study – BP M365 and Digital Transformation</a></div><div class="pg-next"><span class="pg-label">Next →</span><a href="/praxis/curriculum-vitae.html">Curriculum Vitae</a></div></nav>
+</article>
+</main>
+</div>
+<script>
+function toggleNav() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var sb  = document.getElementById('sidebar');
+  var btn = document.querySelector('.menu-btn');
+  if (sb && sb.classList.contains('open') && !sb.contains(e.target) && e.target !== btn) {
+    sb.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>

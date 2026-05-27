@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Eternal Conflict — The Aeonomicon</title>
+  <meta name="description" content="The Aeonomicon by Donald Coles — Reflections, Theorycraft, and Praxis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<button class="menu-btn" onclick="toggleNav()">&#9776; Contents</button>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<a class="sidebar-title" href="/">The Aeonomicon</a>
+<button class="nav-toggle" onclick="toggleNav()">✕</button>
+<div class="nav-section">
+<span class="nav-section-label">Front Matter</span>
+<a class="nav-link" href="/front-matter/note-to-the-reader.html">Note to the Reader</a>
+<a class="nav-link" href="/front-matter/preface-storytellers.html">Preface – Storytellers</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume I — Reflections</span>
+<a class="nav-link" href="/reflections/a-portrait-of-the-author-as-a-young-gamer.html">A Portrait of the Author as a Young Gamer</a>
+<a class="nav-link" href="/reflections/aint-no-party-like-a-lan-party.html">Ain’t No Party Like a LAN Party</a>
+<a class="nav-link" href="/reflections/this-is-not-warcraft-in-space.html">This Is Not Warcraft In Space!</a>
+<a class="nav-link active" href="/reflections/the-eternal-conflict.html">The Eternal Conflict</a>
+<a class="nav-link" href="/reflections/the-world-is-the-main-character.html">The World is the Main Character</a>
+<a class="nav-link" href="/reflections/crusader.html">Crusader</a>
+<a class="nav-link" href="/reflections/the-cycle.html">The Cycle</a>
+<a class="nav-link" href="/reflections/elegy-of-the-storm.html">Elegy of the Storm</a>
+<a class="nav-link" href="/reflections/you-cant-go-home-again.html">You Can’t Go Home Again</a>
+<a class="nav-link" href="/reflections/the-burden.html">The Burden</a>
+<a class="nav-link" href="/reflections/flow-state.html">Flow State</a>
+<a class="nav-link" href="/reflections/remembrance-of-blizzcon-past.html">Remembrance of BlizzCon Past</a>
+<a class="nav-link" href="/reflections/the-silver-hand.html">The Silver Hand</a>
+<a class="nav-link" href="/reflections/gap-year.html">Gap Year</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume II — Theorycraft</span>
+<a class="nav-link" href="/theorycraft/systems.html">Systems</a>
+<a class="nav-link" href="/theorycraft/agility.html">Agility</a>
+<a class="nav-link" href="/theorycraft/alchemy.html">Alchemy</a>
+<a class="nav-link" href="/theorycraft/the-infinite-game.html">The Infinite Game</a>
+<a class="nav-link" href="/theorycraft/pathfinding.html">Pathfinding</a>
+<a class="nav-link" href="/theorycraft/delivery.html">Delivery</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume III — Praxis</span>
+<a class="nav-link" href="/praxis/how-i-work.html">How I Work</a>
+<a class="nav-link" href="/praxis/case-study-aeoncore-personal-aiservices-platform.html">Case Study – Aeoncore Personal AI/Services Platform</a>
+<a class="nav-link" href="/praxis/case-study-bp-m365-and-digital-transformation.html">Case Study – BP M365 and Digital Transformation</a>
+<a class="nav-link" href="/praxis/case-study-cvs-enterprise-pc-refresh.html">Case Study – CVS Enterprise PC Refresh</a>
+<a class="nav-link" href="/praxis/curriculum-vitae.html">Curriculum Vitae</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">End Matter</span>
+<a class="nav-link" href="/end-matter/afterword-moonshots.html">Afterword – Moonshots</a>
+<a class="nav-link" href="/end-matter/putting-the-war-in-world-of-warcraft.html">Putting the War in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/parsing-truth-epistemic-decision-making-in-world-of-warcraft.html">Parsing Truth: Epistemic Decision-Making in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/when-games-grew-up-an-ode-to-final-fantasy-tactics.html">When Games Grew Up: An Ode to Final Fantasy Tactics</a>
+<a class="nav-link" href="/end-matter/whats-left-when-meaning-breaks-a-look-at-nier-automata.html">What’s Left When Meaning Breaks: A Look at Nier Automata</a>
+<a class="nav-link" href="/end-matter/dramatis-personae.html">Dramatis Personae</a>
+<a class="nav-link" href="/end-matter/acknowledgements.html">Acknowledgements</a>
+<a class="nav-link" href="/end-matter/about-the-author.html">About the Author</a>
+<a class="nav-link" href="/end-matter/about-the-book.html">About the Book</a>
+</div>
+</nav>
+<main class="content">
+<article class="essay">
+  <header class="essay-header">
+    <div class="volume-label">Volume I — Reflections</div>
+    <h1 class="essay-title">The Eternal Conflict</h1>
+  </header>
+  <!-- HERO IMAGE: remove comment markers and set src/alt to enable
+  <img src="/assets/images/the-eternal-conflict.jpg" alt="" class="essay-hero">
+  -->
+  <div class="essay-ornament">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+  <div class="essay-body">
+<p class="no-indent">The first thing <em>Diablo</em> taught me was that darkness has a texture. This was not the comic-book darkness of <em>Warcraft</em> &ndash; that world&#x27;s horrors were real enough if you stopped to count the bodies, but the game never really asked you to, much less forced you to<sup class='fn-ref'>3</sup>. The orcs were green and cartoonish. The violence was real, and yet somehow abstract. <em>Warcraft</em> was a game that permitted you to understand violence without forcing you to inhabit it. Perhaps it was because of the distance, you were literally zoomed out because of the perspective of the real-time strategy game format.</p>
+<p><em>Diablo</em> did not permit that distance. You were right there, down at ground level. I was thirteen years old, and I was not prepared. The dungeons beneath Tristram weren&#x27;t just dark, they were oppressive &ndash; level after level of stone corridors and torchlight, of grotesqueries shambling toward you out of the shadows, of lore that made it clear the royal family of this kingdom had been possessed by the Lord of Terror himself and that the madness bleeding through Tristram&#x27;s streets was not an incursion but a surrender. This entire place had already lost. You were wading through the aftermath. </p>
+<p>The horror was not that something bad might happen, it had already happened, was still happening now, and you were going to have to walk through every square inch of it before you reached the end. And, unspoken, winning just meant losing less, that even defeating Diablo and his brethren would only stop further destruction, it wouldn&rsquo;t rebuild the kingdom and erase the devastation.</p>
+<p>I didn&#x27;t reach the end. I&#x27;m still not entirely sure why. Maybe I wasn&#x27;t skilled enough. Maybe the slog of the dungeon crawl wore me down, level by level, long before the final descent. Or maybe &ndash; and I think this is closest to the truth &ndash; my thirteen-year-old mind simply wasn&#x27;t ready for what Blizzard had built. Nothing I had played, watched, or read up to that point could have inoculated me against <em>Diablo</em>, or even given me the context to understand it. It was a category I didn&#x27;t have yet.</p>
+<p>Eventually <em>StarCraft</em> came out, and I moved on. </p>
+<br>
+<p class="no-indent"><em>Diablo II</em> arrived when I was older, and by that time, I was ready for it in every sense except the one that actually mattered: my computer wasn&#x27;t.</p>
+<p>Up to a certain point, age generally improves the human mind. It does the opposite to computer hardware. The machine that had served me well enough through <em>Warcraft</em> and <em>StarCraft</em> had aged past the point of dignity, and system requirements of <em>Diablo II </em>landed just beyond what it could offer. So while the rest of the gaming world descended into Sanctuary for the first time, I could only watch.</p>
+<p>LAN parties are where I got my education. Between games of <em>Brood War </em>or <em>Unreal Tournament</em>, they would sometimes load <em>Diablo II</em>, and vanish into Act IV while I made my peace with spectating. I didn&#x27;t want to be the person who derailed the session, who made everyone recalibrate their plans around my hardware problem. So I watched over the shoulders of my friends instead, learning the classes, the skill trees, the lore and geography of a world I could not inhabit on my own.</p>
+<p>Even as a spectator, the cinematics stopped me cold. For their era, they were unlike anything else &ndash; fully rendered cutscenes for each act of the game, that felt like they were trying to tell you that this was serious, that the story you were watching mattered, that Blizzard had decided to use every tool available to make you feel the weight of what was happening in Sanctuary. The art direction throughout was something else entirely: a darkness that was almost architectural, a world that looked like it had been built by people who genuinely believed in the reality of what they were depicting.</p>
+<p>(Watching the remastered version years later, I had to revise my assessment upward. What they were going for was nothing short of transcendent. The vision was always there. The technology just needed time to catch up.<sup class='fn-ref'>4</sup>)</p>
+<p>When I finally arrived at college with a machine that could run it, I went back to Sanctuary and found everything my friends had promised. Unlike the first <em>Diablo</em>, I completed the second &ndash; many times, through multiple characters, returning to it the way you return to a good book. Eventually I set it down, not because I was done with it exactly, but because the demands of life had shifted, and the siren song of Azeroth had grown louder than everything else.</p>
+<br>
+<p class="no-indent">This is the thing about Blizzard&#x27;s games that nobody fully accounts for: they are not independent of each other. They exist in the same ecosystem, and they compete within it. Player time is a finite resource. Every hour you spend in Sanctuary is an hour you&#x27;re not spending in Azeroth, or in the Koprulu Sector, or eventually in the Nexus. The games don&#x27;t cross over, but the players do, and a player can only be in one place at a time.</p>
+<p>I was deep in <em>Wrath of the Lich King</em> when <em>Diablo III</em> was first announced, and the announcement landed like a hand on my shoulder, not urgent but patient. <em>We&#x27;ll be here when you&#x27;re ready.</em> I had played a demo of it at BlizzCon 2009, stood in line for a station with the particular conviction of a man who needed to confirm something he already believed. The game was real. The vision had held. And I could wait.</p>
+<p>What I couldn&#x27;t have fully anticipated was the gap. <em>Diablo </em><em>II</em> came out in 2000. <em>Diablo III</em> wouldn&#x27;t arrive until 2012. Twelve years is an eternity in the games industry, long enough for other developers to try and fill the void left behind in a popular genre. <em>Torchlight</em> arrived in 2009, a game that wore its inspirations openly &ndash; the dungeon crawl, the loot loop, the isometric perspective, even the music<sup class='fn-ref'>5</sup>. It was technically proficient. The gameplay worked. But something essential was missing, and from an aesthetic perspective the game was a bit of a miss. The gothic horror setting of <em>Diablo </em>had been substituted for something much more cartoonish, and it just didn&rsquo;t work. It took me a while to put words to why.</p>
+<p>The gameplay is not what makes <em>Diablo</em> great. It never was. What makes <em>Diablo</em> great is the <em>world</em> &ndash; the accumulated weight of a mythology that someone actually cared about, the sense that every dungeon and every enemy and every piece of item description was placed there as individual artifacts within a great tapestry of a narrative. By contrast, <em>Torchlight</em> was competent. Competent is not the same as <em>committed</em>.</p>
+<p><em>Diablo III</em> came out in 2012, and the wait dissolved immediately. Everything held. Narratively, thematically, visually &ndash; it was every inch what the series had always been, updated without being diluted, expanded without losing the texture that made the original games matter. Deckard Cain was there, ancient and knowing and still handing out wisdom to anyone who stopped long enough to listen.</p>
+<p>He didn&#x27;t make it out of that one.</p>
+<br>
+<p class="no-indent"><em>Diablo IV</em> has been out for almost three years. I own it. I have never played it. This sounds insane. It probably is. The game sits in my Battle.net launcher, installed, patient, waiting. I have no principled objection to it. Every account of it I&#x27;ve encountered suggests it&#x27;s exactly what you&#x27;d want: dark, rich, mechanically deep, aesthetically uncompromising in the way the series has always been.</p>
+<p>The joke answer is that <em>Diablo IV</em> didn&#x27;t have paladins until the expansion that released about two weeks ago, and I refuse to enter Sanctuary as anything other than a holy warrior who hits things with a very large mace and believes, against all available evidence, that the light will prevail.</p>
+<p>The real answer is simpler. Azeroth is still calling. And until it stops &ndash; until the day comes when the compulsion quiets and something else rises to fill it &ndash; Sanctuary will wait for me, the way it always has.</p>
+<p>Patient. Dark. Full of things that need killing.</p>
+<p>It&#x27;ll keep.</p>
+  </div>
+<aside class='footnotes'><ol><li id='fn-3'><sup>3</sup>&ensp;By sheer body count alone, <em>Warcraft</em> has to be orders of magnitude worse than <em>Diablo</em>.</li><li id='fn-4'><sup>4</sup>&ensp;This may be an unpopular opinion, but I sometimes wonder if the commercial failure of the <em>Warcraft </em>movie is due to the relative weakness or age of that portion of the franchise&rsquo;s narrative compared to some of Blizzard&rsquo;s more compelling storylines.</li><li id='fn-5'><sup>5</sup>&ensp;This is wholly unsurprising, as the composer Matt Uelmen contributed heavily to both soundtracks.</li></ol></aside>
+<nav class="pg-nav"><div class="pg-prev"><span class="pg-label">← Previous</span><a href="/reflections/this-is-not-warcraft-in-space.html">This Is Not Warcraft In Space!</a></div><div class="pg-next"><span class="pg-label">Next →</span><a href="/reflections/the-world-is-the-main-character.html">The World is the Main Character</a></div></nav>
+</article>
+</main>
+</div>
+<script>
+function toggleNav() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var sb  = document.getElementById('sidebar');
+  var btn = document.querySelector('.menu-btn');
+  if (sb && sb.classList.contains('open') && !sb.contains(e.target) && e.target !== btn) {
+    sb.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>

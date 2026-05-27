@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alchemy — The Aeonomicon</title>
+  <meta name="description" content="The Aeonomicon by Donald Coles — Reflections, Theorycraft, and Praxis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<button class="menu-btn" onclick="toggleNav()">&#9776; Contents</button>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<a class="sidebar-title" href="/">The Aeonomicon</a>
+<button class="nav-toggle" onclick="toggleNav()">✕</button>
+<div class="nav-section">
+<span class="nav-section-label">Front Matter</span>
+<a class="nav-link" href="/front-matter/note-to-the-reader.html">Note to the Reader</a>
+<a class="nav-link" href="/front-matter/preface-storytellers.html">Preface – Storytellers</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume I — Reflections</span>
+<a class="nav-link" href="/reflections/a-portrait-of-the-author-as-a-young-gamer.html">A Portrait of the Author as a Young Gamer</a>
+<a class="nav-link" href="/reflections/aint-no-party-like-a-lan-party.html">Ain’t No Party Like a LAN Party</a>
+<a class="nav-link" href="/reflections/this-is-not-warcraft-in-space.html">This Is Not Warcraft In Space!</a>
+<a class="nav-link" href="/reflections/the-eternal-conflict.html">The Eternal Conflict</a>
+<a class="nav-link" href="/reflections/the-world-is-the-main-character.html">The World is the Main Character</a>
+<a class="nav-link" href="/reflections/crusader.html">Crusader</a>
+<a class="nav-link" href="/reflections/the-cycle.html">The Cycle</a>
+<a class="nav-link" href="/reflections/elegy-of-the-storm.html">Elegy of the Storm</a>
+<a class="nav-link" href="/reflections/you-cant-go-home-again.html">You Can’t Go Home Again</a>
+<a class="nav-link" href="/reflections/the-burden.html">The Burden</a>
+<a class="nav-link" href="/reflections/flow-state.html">Flow State</a>
+<a class="nav-link" href="/reflections/remembrance-of-blizzcon-past.html">Remembrance of BlizzCon Past</a>
+<a class="nav-link" href="/reflections/the-silver-hand.html">The Silver Hand</a>
+<a class="nav-link" href="/reflections/gap-year.html">Gap Year</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume II — Theorycraft</span>
+<a class="nav-link" href="/theorycraft/systems.html">Systems</a>
+<a class="nav-link" href="/theorycraft/agility.html">Agility</a>
+<a class="nav-link active" href="/theorycraft/alchemy.html">Alchemy</a>
+<a class="nav-link" href="/theorycraft/the-infinite-game.html">The Infinite Game</a>
+<a class="nav-link" href="/theorycraft/pathfinding.html">Pathfinding</a>
+<a class="nav-link" href="/theorycraft/delivery.html">Delivery</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume III — Praxis</span>
+<a class="nav-link" href="/praxis/how-i-work.html">How I Work</a>
+<a class="nav-link" href="/praxis/case-study-aeoncore-personal-aiservices-platform.html">Case Study – Aeoncore Personal AI/Services Platform</a>
+<a class="nav-link" href="/praxis/case-study-bp-m365-and-digital-transformation.html">Case Study – BP M365 and Digital Transformation</a>
+<a class="nav-link" href="/praxis/case-study-cvs-enterprise-pc-refresh.html">Case Study – CVS Enterprise PC Refresh</a>
+<a class="nav-link" href="/praxis/curriculum-vitae.html">Curriculum Vitae</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">End Matter</span>
+<a class="nav-link" href="/end-matter/afterword-moonshots.html">Afterword – Moonshots</a>
+<a class="nav-link" href="/end-matter/putting-the-war-in-world-of-warcraft.html">Putting the War in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/parsing-truth-epistemic-decision-making-in-world-of-warcraft.html">Parsing Truth: Epistemic Decision-Making in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/when-games-grew-up-an-ode-to-final-fantasy-tactics.html">When Games Grew Up: An Ode to Final Fantasy Tactics</a>
+<a class="nav-link" href="/end-matter/whats-left-when-meaning-breaks-a-look-at-nier-automata.html">What’s Left When Meaning Breaks: A Look at Nier Automata</a>
+<a class="nav-link" href="/end-matter/dramatis-personae.html">Dramatis Personae</a>
+<a class="nav-link" href="/end-matter/acknowledgements.html">Acknowledgements</a>
+<a class="nav-link" href="/end-matter/about-the-author.html">About the Author</a>
+<a class="nav-link" href="/end-matter/about-the-book.html">About the Book</a>
+</div>
+</nav>
+<main class="content">
+<article class="essay">
+  <header class="essay-header">
+    <div class="volume-label">Volume II — Theorycraft</div>
+    <h1 class="essay-title">Alchemy</h1>
+  </header>
+  <!-- HERO IMAGE: remove comment markers and set src/alt to enable
+  <img src="/assets/images/alchemy.jpg" alt="" class="essay-hero">
+  -->
+  <div class="essay-ornament">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+  <div class="essay-body">
+<p class="no-indent">&quot;The trouble with market research is that people don&#x27;t think what they feel, they don&#x27;t say what they think, and they don&#x27;t do what they say.&quot;</p>
+<p>I read that sentence and thought: &ldquo;damn, that&#x27;s describing gamers.&rdquo;</p>
+<p>I was reading a book written by Rory Sutherland, titled <em>Alchemy</em>, and the provocation is in the subtitle: <em>The Surprising Power of Ideas That Don&#x27;t Make Sense.</em> Sutherland is a fascinating figure: he&#x27;s an advertising wizard, a master of behavioral psychology in both theory and practice, and he has that incisive wit we typically attribute to the British.<sup class='fn-ref'>25</sup></p>
+<p>When I say that I interpreted that quote as being about gamers, I mean that, not as an insult, but as a surprisingly honest assessment. Gamers are, as a population, among the most vocal, opinionated, and self-aware consumer groups in the world. They produce prodigious quantities of feedback. Forums, subreddits, Discord servers, YouTube essays, Twitch streams running live commentary on design decisions. They know what they want. They will tell you at great length. They are often wrong about themselves in ways that would be funny if the consequences weren&#x27;t so real.</p>
+<p>Players who demand faster content delivery and will then burn out when they get it. Players who said they hated grinding will then turn around and play for eight hours straight when the grind has a good feedback loop. Players who complain about the amount of trash mobs in a raid dungeon will then complain at how empty a trash-less raid feels<sup class='fn-ref'>26</sup>.</p>
+<p>Sutherland&#x27;s point, and Ogilvy&#x27;s before him, is that the map is not the territory &ndash; and the territory, in this case, is human psychology, which does not run on logic.</p>
+<p>Sutherland calls this <em>psycho-logic</em>. His argument is not that logic is wrong, it&#x27;s that logic is incomplete. That logic describes how things should work given a rational actor making decisions in their own best interest, but human beings are not rational actors at all; we are creatures of perception, context, and feeling, and the decisions we make are downstream of those things, not borne from the objective conditions around us.</p>
+<p>The practical implication is uncomfortable: if you optimize purely for the rational solution to the problem your users have described, you will frequently produce the wrong answer<sup class='fn-ref'>27</sup> &ndash; because the rational solution solves the rational problem, which is usually not the real one.</p>
+<p>Blizzard has known this for a long time. In 2010, Rob Pardo &ndash; then EVP of game design &ndash; gave a talk at GDC in which he described a principle the studio called &quot;Make It A Bonus.&quot; The example he used was the rest experience system in <em>World of </em><em>Warcraft</em>.<sup class='fn-ref'>28</sup></p>
+<p>When <em>WoW</em> launched, players who spent extended time logged in would incur a penalty: their experience gain dropped from 100% to 50% after a few hours. The intent was clear enough: encourage breaks, prevent marathon sessions, manage the rate at which players progressed through content that had taken years to build. Beta players hated it. The penalty felt like a punishment, like the game was scolding them for playing it.</p>
+<p>The fix was simple. Instead of dropping players from 100% to 50%, the system was reframed: players who had been logged out for a period would accumulate rested experience, starting their next session at 200%. They would play at that elevated rate until the bonus was exhausted, then settle back to 100%.</p>
+<p>In practice, nothing actually changed: you had the same relationship between time played and rate of gain. Yet it felt completely different.</p>
+<p>The penalty became a reward. The feeling of being punished for engagement became the feeling of being rewarded for returning. Players didn&#x27;t complain about the drop-off from 200% to 100% the way they&#x27;d complained about the drop-off from 100% to 50% &ndash; because 100% felt like a baseline, not a punishment. What Pardo&#x27;s team had understood, and what Sutherland would later give a name, is that the nature of our attention affects the nature of our experience.</p>
+<p>This is psycho-logic. And Blizzard was practicing it years before <em>Alchemy</em> existed as a book.</p>
+<br><p class="no-indent">The most interesting things Blizzard has done with alchemical thinking aren&#x27;t the elegant reframes. They&#x27;re the things that should not have existed at all.</p>
+<p>Sutherland has a rule he calls &quot;Dare to be trivial.&quot; His observation is that the most useful things &ndash; the things that actually change how people feel about a product &ndash; are frequently the ones that make no rational sense to build. They don&#x27;t contribute to the core experience. They aren&#x27;t defensible in a product planning meeting. They&#x27;re the features that a sufficiently rigorous rational process would never have permitted, because a sufficiently rigorous rational process would have correctly identified them as frivolous.</p>
+<p>Consider the Murloc.</p>
+<p>The Murloc is a small, amphibious, vaguely fishy humanoid that makes a hilarious (or terrifying, depending on your situation) gurgling noise<sup class='fn-ref'>29</sup> and attacks in swarms near bodies of water in <em>World of </em><em>Warcraft</em>. They are, by any functional measure, unremarkable: a minor enemy with a distinctive sound file. They&rsquo;re unimportant in the lore, contribute little to the story, and by every rational metric for evaluating the value of a game asset, they should be a footnote &ndash; one of hundreds of creature types, long forgotten.</p>
+<p>Instead, they&rsquo;ve become an iconic part of the game universe.</p>
+<p>Plushies. Costumes. A running joke embedded in BlizzCon mythology. An in-game pet, then multiple pets, then a Murloc version of nearly every significant character Blizzard has ever made. The Murloc is ridiculous, and the ridiculousness is precisely the point &ndash; it is the thing that, in Sutherland&#x27;s phrase, logic would never have built, and therefore only alchemy could have produced. Blizzard kept making Murloc things because players kept responding to Murloc things, and the players responded because the Murloc represented something that careful, rational, defensible game design cannot manufacture: genuine absurdist delight.</p>
+<p>Pet Battles. The Diablo cow level. The Brawler&#x27;s Guild. The various holidays and seasonal events that annually populate Azeroth with pumpkin-headed horsemen and winter festival decorations. A product planning document would have cut all of them. Players would have listed none of them when asked what they wanted. And yet these are the things people bring up when they try to explain why <em>World of </em><em>Warcraft</em> felt alive in a way that other games didn&#x27;t.</p>
+<p>Dare to be trivial. Because the trivial things are often doing the most important work.</p>
+<br><p class="no-indent">The boldest application of alchemical thinking in Blizzard&#x27;s history is also the one that the market never fully rewarded &ndash; which does not mean it was wrong.</p>
+<p>Sutherland has a number of rules for alchemical thinking, and one of the primary ones is this: &ldquo;the opposite of a good idea can be another good idea.&rdquo;<sup class='fn-ref'>30</sup> By the time Blizzard was thinking about entering the MOBA genre in the mid-2010s, there were already two competitors on the scene &ndash; <em>League of Legends </em>and <em>DOTA 2</em> &ndash; and there was a fairly rigid formula to how those games worked.</p>
+<p><em>Heroes of the Storm</em> looked at every one of them and asked: what if we did the <em>opposite</em>?<sup class='fn-ref'>31</sup></p>
+<p>Multiple maps, each with different objectives &ndash; not simple variations on a theme but genuinely different strategic problems requiring different team compositions and approaches. No gold, no item shop. A talent system instead, where players chose from branching upgrades at fixed intervals, shaping their hero&#x27;s identity across the course of a match without ever visiting a vendor. And shared team experience &ndash; not individual levels, but a single team level, so every player on the team was always the same strength, so there was no feeding, no feeding penalty, no single player&#x27;s poor performance dragging the team&#x27;s power down.</p>
+<p>Each of these decisions looks wrong from inside the MOBA genre&#x27;s rational framework. Gold and items give players agency. Individual levels create meaningful skill expression. The single map creates a known, fair, legible competitive environment. <em>Heroes</em> gave up all of it.</p>
+<p>What it got in return was a fundamentally different emotional experience. Without feeding, every player on the team remained relevant regardless of individual performance in any given fight. Without an item shop, the cognitive overhead of build optimization &ndash; which in <em>League</em> and <em>D</em><em>OTA</em> is itself a deep skill layer that some players love and others find alienating &ndash; disappeared, and what replaced it was moment-to-moment objective decision-making. Without a single map, the game never settled into the pattern-matching that characterizes high-level play in map-static games. Every game was a slightly different game.</p>
+<p>The corollary to the &lsquo;opposite rule,&rsquo; which he doesn&#x27;t always say out loud but which the examples make clear, is that you will never find the opposite of a good idea by optimizing within the existing framework.<sup class='fn-ref'>32</sup> You can only find it by being willing to interrogate the framework itself &ndash; to ask not &quot;how do we do this better?&quot; but &quot;what are we actually trying to achieve, and does the conventional approach actually achieve it?&quot;</p>
+<p><em>Heroes</em> asked those questions. Its market performance may not have been what Blizzard hoped for. As a player and spectator, though, I found it to be a superior experience to the competition.</p>
+<br><p class="no-indent">The honest thing to say about alchemical thinking is that it doesn&#x27;t come with a guarantee.</p>
+<p>Sutherland acknowledges this with what is possibly his most useful rule, stated with characteristic cheerfulness: &quot;A good guess which stands up to empirical observation is still science. So is a lucky accident.&quot; He is making a point about epistemology &ndash; that we demand more certainty from unconventional ideas than from conventional ones, and that this asymmetry is not rational. The rest experience system didn&#x27;t emerge from a theory of psycho-logic. It emerged from listening to frustrated beta players, finding a reframe, and discovering that it worked. The discovery came first; the explanation came later.</p>
+<p>This is how a lot of good design actually operates, and the refusal to acknowledge it is one of the ways rational frameworks produce worse outcomes than they should. We require that unconventional ideas justify themselves in advance, with mechanisms we can explain and benefits we can project. We require nothing of the sort from conventional ideas &ndash; the conventional approach is innocent until proven guilty, and the alchemical approach is guilty until proven innocent.</p>
+<p>The practical correction is not to abandon rigor, but to apply it evenhandedly. To test the counterintuitive thing because nobody else will. To consider the opposite of the good idea because the framework, by construction, will not consider it for you. To recognize that the gap between what players say they want and what they actually respond to is not a flaw in the research. It is the most important data point in the room.</p>
+<br><p class="no-indent">Systems thinking tells you that a Thing is only legible relative to the System it belongs to. Agile tells you that the best way to advance that system is through iteration and adaptation &ndash; that you cannot plan your way to a good answer, you can only build your way there. </p>
+<p>Alchemy tells you that the humans inside the system are not running the decision-making process you think they are. They don&#x27;t think what they feel. They don&#x27;t say what they think. They don&#x27;t do what they say.</p>
+<p>All three of these are true simultaneously. None of them is sufficient on its own. Systems thinking without iteration becomes architecture without function. Agile without systems thinking becomes velocity without direction. And both of them, without an alchemical sensibility, become the most elegant possible answer to the wrong question.</p>
+<p>The professional I want to be &ndash; and the professional I believe Blizzard needs more of at the intersection of delivery and design &ndash; is one who holds all three. Who zooms out far enough to see the system, who builds iteratively enough to let the system reveal what it actually needs, and who remains suspicious enough of rational models to ask, at every significant decision point: are we solving the problem people have, or the problem they&#x27;ve described?</p>
+<p>They are not always the same problem.</p>
+<p>Usually, they aren&#x27;t.</p>
+  </div>
+<aside class='footnotes'><ol><li id='fn-25'><sup>25</sup>&ensp;I&rsquo;ve had videos and talks from him pop up on my YouTube feed before, but it&rsquo;s only fairly recently that I sat down to read his book. It&rsquo;s caused me to re-think almost every facet of my career and experience, and I think everyone should read it.</li><li id='fn-26'><sup>26</sup>&ensp;As they did in Trial of the Crusader from <em>Wrath of the Lich King</em>.</li><li id='fn-27'><sup>27</sup>&ensp;Or, if not strictly <em>wrong</em>, it will be potentially inefficient or incomplete.</li><li id='fn-28'><sup>28</sup>&ensp;A summary of Pardo&rsquo;s talk can be found here: (https://www.gamedeveloper.com/game-platforms/gdc-blizzard-s-core-game-design-concepts).</li><li id='fn-29'><sup>29</sup>&ensp;&ldquo;MRGRLGRLGLRGRLGRL!&rdquo; &ndash; every Murloc ever</li><li id='fn-30'><sup>30</sup>&ensp;Note: the distinction is not that it will generate a <em>better </em>idea, but that both can be equally good and worth seeking.</li><li id='fn-31'><sup>31</sup>&ensp;For further examination of what I&rsquo;m talking about, see earlier essay &ldquo;Elegy of the Storm.&rdquo;</li><li id='fn-32'><sup>32</sup>&ensp;Sutherland attributes this to personal risk, that few people are willing to stick their necks out on an idea that is the opposite of what logic suggests for fear of losing their job or position. My assertion is that bravery is an undervalued characteristic in today&rsquo; business leaders.</li></ol></aside>
+<nav class="pg-nav"><div class="pg-prev"><span class="pg-label">← Previous</span><a href="/theorycraft/agility.html">Agility</a></div><div class="pg-next"><span class="pg-label">Next →</span><a href="/theorycraft/the-infinite-game.html">The Infinite Game</a></div></nav>
+</article>
+</main>
+</div>
+<script>
+function toggleNav() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var sb  = document.getElementById('sidebar');
+  var btn = document.querySelector('.menu-btn');
+  if (sb && sb.classList.contains('open') && !sb.contains(e.target) && e.target !== btn) {
+    sb.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>

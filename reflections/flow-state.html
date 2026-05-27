@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flow State — The Aeonomicon</title>
+  <meta name="description" content="The Aeonomicon by Donald Coles — Reflections, Theorycraft, and Praxis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<button class="menu-btn" onclick="toggleNav()">&#9776; Contents</button>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<a class="sidebar-title" href="/">The Aeonomicon</a>
+<button class="nav-toggle" onclick="toggleNav()">✕</button>
+<div class="nav-section">
+<span class="nav-section-label">Front Matter</span>
+<a class="nav-link" href="/front-matter/note-to-the-reader.html">Note to the Reader</a>
+<a class="nav-link" href="/front-matter/preface-storytellers.html">Preface – Storytellers</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume I — Reflections</span>
+<a class="nav-link" href="/reflections/a-portrait-of-the-author-as-a-young-gamer.html">A Portrait of the Author as a Young Gamer</a>
+<a class="nav-link" href="/reflections/aint-no-party-like-a-lan-party.html">Ain’t No Party Like a LAN Party</a>
+<a class="nav-link" href="/reflections/this-is-not-warcraft-in-space.html">This Is Not Warcraft In Space!</a>
+<a class="nav-link" href="/reflections/the-eternal-conflict.html">The Eternal Conflict</a>
+<a class="nav-link" href="/reflections/the-world-is-the-main-character.html">The World is the Main Character</a>
+<a class="nav-link" href="/reflections/crusader.html">Crusader</a>
+<a class="nav-link" href="/reflections/the-cycle.html">The Cycle</a>
+<a class="nav-link" href="/reflections/elegy-of-the-storm.html">Elegy of the Storm</a>
+<a class="nav-link" href="/reflections/you-cant-go-home-again.html">You Can’t Go Home Again</a>
+<a class="nav-link" href="/reflections/the-burden.html">The Burden</a>
+<a class="nav-link active" href="/reflections/flow-state.html">Flow State</a>
+<a class="nav-link" href="/reflections/remembrance-of-blizzcon-past.html">Remembrance of BlizzCon Past</a>
+<a class="nav-link" href="/reflections/the-silver-hand.html">The Silver Hand</a>
+<a class="nav-link" href="/reflections/gap-year.html">Gap Year</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume II — Theorycraft</span>
+<a class="nav-link" href="/theorycraft/systems.html">Systems</a>
+<a class="nav-link" href="/theorycraft/agility.html">Agility</a>
+<a class="nav-link" href="/theorycraft/alchemy.html">Alchemy</a>
+<a class="nav-link" href="/theorycraft/the-infinite-game.html">The Infinite Game</a>
+<a class="nav-link" href="/theorycraft/pathfinding.html">Pathfinding</a>
+<a class="nav-link" href="/theorycraft/delivery.html">Delivery</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume III — Praxis</span>
+<a class="nav-link" href="/praxis/how-i-work.html">How I Work</a>
+<a class="nav-link" href="/praxis/case-study-aeoncore-personal-aiservices-platform.html">Case Study – Aeoncore Personal AI/Services Platform</a>
+<a class="nav-link" href="/praxis/case-study-bp-m365-and-digital-transformation.html">Case Study – BP M365 and Digital Transformation</a>
+<a class="nav-link" href="/praxis/case-study-cvs-enterprise-pc-refresh.html">Case Study – CVS Enterprise PC Refresh</a>
+<a class="nav-link" href="/praxis/curriculum-vitae.html">Curriculum Vitae</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">End Matter</span>
+<a class="nav-link" href="/end-matter/afterword-moonshots.html">Afterword – Moonshots</a>
+<a class="nav-link" href="/end-matter/putting-the-war-in-world-of-warcraft.html">Putting the War in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/parsing-truth-epistemic-decision-making-in-world-of-warcraft.html">Parsing Truth: Epistemic Decision-Making in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/when-games-grew-up-an-ode-to-final-fantasy-tactics.html">When Games Grew Up: An Ode to Final Fantasy Tactics</a>
+<a class="nav-link" href="/end-matter/whats-left-when-meaning-breaks-a-look-at-nier-automata.html">What’s Left When Meaning Breaks: A Look at Nier Automata</a>
+<a class="nav-link" href="/end-matter/dramatis-personae.html">Dramatis Personae</a>
+<a class="nav-link" href="/end-matter/acknowledgements.html">Acknowledgements</a>
+<a class="nav-link" href="/end-matter/about-the-author.html">About the Author</a>
+<a class="nav-link" href="/end-matter/about-the-book.html">About the Book</a>
+</div>
+</nav>
+<main class="content">
+<article class="essay">
+  <header class="essay-header">
+    <div class="volume-label">Volume I — Reflections</div>
+    <h1 class="essay-title">Flow State</h1>
+  </header>
+  <!-- HERO IMAGE: remove comment markers and set src/alt to enable
+  <img src="/assets/images/flow-state.jpg" alt="" class="essay-hero">
+  -->
+  <div class="essay-ornament">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+  <div class="essay-body">
+<p class="no-indent">I opened WarcraftLogs this morning and checked my ranking.</p>
+<p>Ninth place.</p>
+<p>Yesterday it was eighth. Last week, fifteenth. The week before that, twenty-fourth. I&#x27;ve been watching the number climb the way you watch a stock price &ndash; obsessively, superstitiously, knowing that attention alone doesn&#x27;t move it but checking anyway, because the alternative is not knowing.</p>
+<p>Some context is useful here. We&#x27;re talking about retribution paladins in Heroic Throne of Thunder &ndash; <em>Mists of Pandaria Classic</em>, the current tier. Twenty thousand, five hundred and thirty-six ret paladins have killed at least one boss in this raid. At 9th, that means I am in the top percentile (technically, the 99.9th percentile). Filter it down to North American players: fourth. Alliance players: third. But the global number is what pulls at me, and the global number is ninth.</p>
+<p>For now.</p>
+<p>I&#x27;ve been circling this altitude for a while without ever fully landing on the summit. I peaked at second place briefly during Black Temple on the rogue &ndash; before getting pushed back to nineteenth by the time the logs partition closed. I played a tank in <em>Wrath</em> &ndash; and while I started the expansion playing more defensively-minded, as my comfort with my raid team grew and I could see where I could push the envelope, I ended up in the mid-hundreds among tanks in Icecrown Citadel. In <em>Cataclysm</em> I swapped to hunter for Firelands and finished world forty-sixth, then took the rogue again for Dragon Soul and landed at forty-fourth. And in <em>Mists</em>, back on the ret paladin, Heart of Fear and Terrace of Endless Spring: fortieth.</p>
+<p>It&#x27;s been a rollercoaster, frankly. It feels like each expansion, and each phase, I&rsquo;m constantly shifting, always adapting. Even so, the current state of being balanced on the cutting edge, feels like something different altogether.</p>
+<br>
+<p class="no-indent">Part of it is structural. In <em>Wrath</em>, I was leading the raid team &ndash; tracking cooldowns, calling positioning, managing thirty people&#x27;s energy levels and interpersonal conflicts alongside my own performance. There&#x27;s a tax that comes with that responsibility<sup class='fn-ref'>15</sup>. It isn&#x27;t just the mental bandwidth consumed by logistics; it&#x27;s the perceptual overhead of holding the entire team in your head at once. You can&#x27;t be inside your own play when you&#x27;re also responsible for everyone else&#x27;s. The two modes of attention don&#x27;t coexist easily<sup class='fn-ref'>16</sup>.</p>
+<p>What I didn&#x27;t expect was what happened when I stepped back from leadership.</p>
+<p>When I returned to individual contributor in <em>Cata</em>, I didn&#x27;t just shrug off the burden of leadership &ndash; I kept the awareness and perspective. A raid leader has to see the fight at a level your average player never develops. They track the whole board: where the boss is moving, which cooldowns are available across the team, what&#x27;s about to happen and what needs to happen in response. That spatial, temporal comprehension doesn&#x27;t disappear when you take the headset off. It compounds.</p>
+<p>Think of it like training for a sprint with weights on your ankles. The weights don&#x27;t make you a better sprinter by making you faster. They make you better by making you <em>stronger</em> &ndash; so that when you remove them and run unencumbered, you move in a way you simply couldn&#x27;t before.</p>
+<p>I had spent an entire expansion building that muscle. In <em>Cata</em><em> </em>and beyond, I&rsquo;ve been able to finally use it entirely for myself.</p>
+<br>
+<p class="no-indent">There is a hierarchy to this game that most players never articulate.</p>
+<p>At the bottom, there are players who don&#x27;t fully understand how to play their own class &ndash; the basic rotation, the core mechanics that make them effective. Above them: players who&#x27;ve mastered their class but get confused when the fight itself demands their attention. Above them: players that hold both in mind simultaneously (these are good players). And highest, the great players know which rules are absolute, which can be bent, and which can be safely broken, and know which is appropriate at any given moment.</p>
+<p>But the truth is, truly world-class players don&#x27;t think about any of this in the heat of the moment, at least not consciously.</p>
+<p>Not because they&#x27;ve stopped caring, but because they&#x27;ve internalized everything to the point where it runs beneath conscious attention. The rotation is automatic. The fight mechanics have become reflexive. The whole complex apparatus of decision-making that less experienced players are consciously managing &ndash; they&#x27;ve pushed it down below the surface, and what emerges on top is something like a kind of clarity.</p>
+<p>Let me give you a sense of perspective. I play ret paladin, which means I have six primary combat abilities, three primary damage cooldowns, and a host of utility spells. My global cooldown is approximately one second, which means I need to be prepared to press a button every second to play optimally. Add in internet latency and the physical neural latency from stimulus to response, and we&rsquo;re talking literal split-second thinking. What&rsquo;s more, I find that in the span of a single GCD, I can feel my eyes rapidly shifting from tracking ability CDs, boss abilities to dodge, timers tracking upcoming events, often cycling three or four times in that time.</p>
+<p>When I&#x27;m deep in a raid and performing at the edge of my ability, there&#x27;s a state that comes over the play. I know what&#x27;s happening right now. I know what&#x27;s <em>about</em> to happen. I&#x27;m already sequencing abilities in my head several GCDs into the future. The gap between intention and execution collapses. Time feels different. This is what people mean when they say someone is &ldquo;in the zone&rdquo;&ndash; it&rsquo;s not the absence of effort but the disappearance of friction. You&#x27;re doing the thing without being aware of doing the thing, and yet you&#x27;re somehow more present in it than you&#x27;ve ever been.</p>
+<p>Flow state.</p>
+<br><p class="no-indent">Maybe it&#x27;s the class. The ret paladin has been my primary identity in this game for over a decade &ndash; the Holy Power system, the judgment calls on when to spend and when to hold, the burst windows that reward patience and prior planning, and punish waste. It fits the way a well-worn tool fits a hand. Maybe it&#x27;s repetition: prior to <em>Wrath</em><em> Classic</em>, I played multiple main classes in different raid groups; in <em>Cata </em>and <em>Mists</em><em>,</em> I&rsquo;ve changed classes between phases but played mirror alts in my raid groups. </p>
+<p>Or maybe it&rsquo;s that I finally understand what it actually takes to be great.</p>
+<p>Here is something counterintuitive about world-class performance in a game people still call a hobby: you have to study it. I spend real time between raids in the logs &ndash; my own and other people&#x27;s &ndash; the same way a basketball team watches game footage. I&#x27;m not looking for big mistakes. I&#x27;m looking for the ten decisions per minute that collectively produced a result, trying to understand which of them were necessary, which were optimal, and which were just what I do habitually because I&#x27;ve never interrogated them.</p>
+<p>And just like a sports team: I can&#x27;t do that work alone. <em>WoW</em> is not a solo endeavor. It looks like one on a chart &ndash; one name, one number, one ranking &ndash; but that number is produced by twenty-five people doing everything right at the same time. I have an almost identically equipped paladin playing in a separate raid group, same pilot, and that character sits at 182nd on the global list. The gap between ninth and 182nd is not my skill. It&#x27;s context. It&#x27;s team. It&#x27;s what the raid around me enables me to do.</p>
+<p>Three of the top five North American paladins play in my guild.</p>
+<p>I find that simultaneously hard to believe and yet impossible to explain any other way. We compete intensely with each other &ndash; the kind of internal competition that sharpens rather than fractures, because we also talk. Every week between raids, we compare notes, share ideas, test adjustments and report back. The unique advantage we have is that we can run true apples-to-apples comparisons: same strategies, same fights, same duration, different executions. We can locate the variance and understand it. That feedback loop is something most players don&#x27;t have access to.</p>
+<p>The lesson I keep arriving at, from every angle: if you want to perform at the highest individual level, you have to invest in the collective intelligence of your team. Not because you&#x27;re responsible for everyone else, but because understanding what the whole system is doing is the only way to fully understand what <em>you</em> are doing inside it. You probably see things the leadership doesn&#x27;t. Share what you see.</p>
+<p>This is, I realize, not only a philosophy about raiding.</p>
+<br><p class="no-indent">Ninth place today. I checked again this morning, and it&#x27;s still ninth. Maybe tomorrow it will be tenth. The number moves like a living thing &ndash; other people continue to compete and improve, doing their own analysis, getting better in ways I can&#x27;t observe until after they&#x27;ve already happened. The ranking is a snapshot of a competition that never stops running. Frankly, I don&#x27;t want it to stop.</p>
+<p>Something happened to me across these years &ndash; across the raid leader&#x27;s burden, the class switches, the long study of other people&#x27;s play &ndash; that I didn&#x27;t plan and couldn&#x27;t have engineered directly. I became good at something difficult. Even if you account for the fact that I&rsquo;m looking at one specialization, of one class, in a single raid tier, of a specific incarnation of a game that is now 15 years old: <em>it&rsquo;s</em><em> rare to be able to say, &ldquo;I&rsquo;m the ninth best X in the world at what I do,&rdquo;  and be completely accurate about it.</em></p>
+<p>Not as a side effect of enjoying it. Good because I treated it like it deserved to be taken seriously. Because I believed that within whatever small domain this is, excellence was worth the effort it required.</p>
+<p>The number on the screen is just evidence.</p>
+  </div>
+<aside class='footnotes'><ol><li id='fn-15'><sup>15</sup>&ensp;I&rsquo;ve been talking about this for years as the &ldquo;raid leader tax,&rdquo; a phenomenon where most raid leaders I know can&rsquo;t put out their best individual performance in groups they then have to lead.</li><li id='fn-16'><sup>16</sup>&ensp;This is actually a good analogue for program management, illustrating the difficulty of keeping a high-level 50k foot view as well as a low-level task-oriented perspective in mind at the same time. It&rsquo;s hard.</li></ol></aside>
+<nav class="pg-nav"><div class="pg-prev"><span class="pg-label">← Previous</span><a href="/reflections/the-burden.html">The Burden</a></div><div class="pg-next"><span class="pg-label">Next →</span><a href="/reflections/remembrance-of-blizzcon-past.html">Remembrance of BlizzCon Past</a></div></nav>
+</article>
+</main>
+</div>
+<script>
+function toggleNav() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var sb  = document.getElementById('sidebar');
+  var btn = document.querySelector('.menu-btn');
+  if (sb && sb.classList.contains('open') && !sb.contains(e.target) && e.target !== btn) {
+    sb.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>

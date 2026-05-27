@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You Can’t Go Home Again — The Aeonomicon</title>
+  <meta name="description" content="The Aeonomicon by Donald Coles — Reflections, Theorycraft, and Praxis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<button class="menu-btn" onclick="toggleNav()">&#9776; Contents</button>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<a class="sidebar-title" href="/">The Aeonomicon</a>
+<button class="nav-toggle" onclick="toggleNav()">✕</button>
+<div class="nav-section">
+<span class="nav-section-label">Front Matter</span>
+<a class="nav-link" href="/front-matter/note-to-the-reader.html">Note to the Reader</a>
+<a class="nav-link" href="/front-matter/preface-storytellers.html">Preface – Storytellers</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume I — Reflections</span>
+<a class="nav-link" href="/reflections/a-portrait-of-the-author-as-a-young-gamer.html">A Portrait of the Author as a Young Gamer</a>
+<a class="nav-link" href="/reflections/aint-no-party-like-a-lan-party.html">Ain’t No Party Like a LAN Party</a>
+<a class="nav-link" href="/reflections/this-is-not-warcraft-in-space.html">This Is Not Warcraft In Space!</a>
+<a class="nav-link" href="/reflections/the-eternal-conflict.html">The Eternal Conflict</a>
+<a class="nav-link" href="/reflections/the-world-is-the-main-character.html">The World is the Main Character</a>
+<a class="nav-link" href="/reflections/crusader.html">Crusader</a>
+<a class="nav-link" href="/reflections/the-cycle.html">The Cycle</a>
+<a class="nav-link" href="/reflections/elegy-of-the-storm.html">Elegy of the Storm</a>
+<a class="nav-link active" href="/reflections/you-cant-go-home-again.html">You Can’t Go Home Again</a>
+<a class="nav-link" href="/reflections/the-burden.html">The Burden</a>
+<a class="nav-link" href="/reflections/flow-state.html">Flow State</a>
+<a class="nav-link" href="/reflections/remembrance-of-blizzcon-past.html">Remembrance of BlizzCon Past</a>
+<a class="nav-link" href="/reflections/the-silver-hand.html">The Silver Hand</a>
+<a class="nav-link" href="/reflections/gap-year.html">Gap Year</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume II — Theorycraft</span>
+<a class="nav-link" href="/theorycraft/systems.html">Systems</a>
+<a class="nav-link" href="/theorycraft/agility.html">Agility</a>
+<a class="nav-link" href="/theorycraft/alchemy.html">Alchemy</a>
+<a class="nav-link" href="/theorycraft/the-infinite-game.html">The Infinite Game</a>
+<a class="nav-link" href="/theorycraft/pathfinding.html">Pathfinding</a>
+<a class="nav-link" href="/theorycraft/delivery.html">Delivery</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume III — Praxis</span>
+<a class="nav-link" href="/praxis/how-i-work.html">How I Work</a>
+<a class="nav-link" href="/praxis/case-study-aeoncore-personal-aiservices-platform.html">Case Study – Aeoncore Personal AI/Services Platform</a>
+<a class="nav-link" href="/praxis/case-study-bp-m365-and-digital-transformation.html">Case Study – BP M365 and Digital Transformation</a>
+<a class="nav-link" href="/praxis/case-study-cvs-enterprise-pc-refresh.html">Case Study – CVS Enterprise PC Refresh</a>
+<a class="nav-link" href="/praxis/curriculum-vitae.html">Curriculum Vitae</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">End Matter</span>
+<a class="nav-link" href="/end-matter/afterword-moonshots.html">Afterword – Moonshots</a>
+<a class="nav-link" href="/end-matter/putting-the-war-in-world-of-warcraft.html">Putting the War in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/parsing-truth-epistemic-decision-making-in-world-of-warcraft.html">Parsing Truth: Epistemic Decision-Making in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/when-games-grew-up-an-ode-to-final-fantasy-tactics.html">When Games Grew Up: An Ode to Final Fantasy Tactics</a>
+<a class="nav-link" href="/end-matter/whats-left-when-meaning-breaks-a-look-at-nier-automata.html">What’s Left When Meaning Breaks: A Look at Nier Automata</a>
+<a class="nav-link" href="/end-matter/dramatis-personae.html">Dramatis Personae</a>
+<a class="nav-link" href="/end-matter/acknowledgements.html">Acknowledgements</a>
+<a class="nav-link" href="/end-matter/about-the-author.html">About the Author</a>
+<a class="nav-link" href="/end-matter/about-the-book.html">About the Book</a>
+</div>
+</nav>
+<main class="content">
+<article class="essay">
+  <header class="essay-header">
+    <div class="volume-label">Volume I — Reflections</div>
+    <h1 class="essay-title">You Can’t Go Home Again</h1>
+  </header>
+  <!-- HERO IMAGE: remove comment markers and set src/alt to enable
+  <img src="/assets/images/you-cant-go-home-again.jpg" alt="" class="essay-hero">
+  -->
+  <div class="essay-ornament">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+  <div class="essay-body">
+<p class="no-indent">In hindsight, the jukebox app was what made it all work. Not voice comms, not strategy, not loot distribution &ndash; the jukebox. A shared app where anyone could queue a song, and the raid would roll into whatever came next: something from the 80s, something from a meme, something so bad it became a special class of funny.</p>
+<p>The group had a Discord and a loose core of regulars, but it filled out weekly via the Group Finder, flexing in size to account for however many people showed up. There were no expectations, no pretension, no bench players feeling like second-class citizens. You came when you could. You were missed when you couldn&#x27;t. The group would find a way. That was the version of me playing <em>Battle for Azeroth</em> in the early summer of 2019. Relaxed. Unambitious, by design.</p>
+<p>Then <em>World of Warcraft </em><em>Classic</em> was announced.</p>
+<p>My first reaction was honest and wrong: &ldquo;<em>E</em><em>w</em>. Why would anyone do that?&rdquo; <em>BFA</em> was the eighth iteration of <em>WoW</em> &ndash; the original game plus seven expansions, each one refining the one before it. Streamlined talent trees. Removed friction. Better graphics, better quality of life, better everything. The idea of going back to a fifteen-year-old version of the game sounded like choosing a flip phone just to make a point. The fact that my friends wanted to play on the Pagle server<sup class='fn-ref'>12</sup> &ndash; named after Nat Pagle<sup class='fn-ref'>13</sup>, the fishing quest guy &ndash; felt like the punchline confirming this was all a bit. I gave in, eventually. Not out of conviction, but as a result of peer pressure and not wanting to get left behind.</p>
+<p>My plan was modest: level a little, see some of the old world that <em>Cataclysm</em> had bulldozed and rebuilt, and return to modern <em>WoW</em> with my priors confirmed. I chose rogue because I&#x27;d done my homework &ndash; rogue was one of the few classes whose toolkit was fully realized in Vanilla, without depending on talent rows or stat itemization that wouldn&#x27;t appear until later expansions. The tier sets were actually good. Agility, one of the five baseline stats, served them well. It was the rational choice.</p>
+<p>It was also the first class I&#x27;d ever played. Back in my friend&#x27;s dorm room, years before I had my own account &ndash; an hour or two on his machine while he was in class, poking around a world I didn&#x27;t fully understand yet. For this, it was the only choice that made sense.</p>
+<br>
+<p class="no-indent">Walking the old roads on a character without a mount &ndash; because that&#x27;s what <em>Classic</em> was, forty levels of hoofing it before you even train riding, much less afford the gold cost &ndash; something shifted. I can&#x27;t point to a specific moment. There&#x27;s no screenshot of the realization. But somewhere in those early levels, the scales fell from my eyes, and I saw what I&#x27;d been playing for years in a different light.</p>
+<p>This was the version of WoW I loved.</p>
+<p>Or &ndash; to be precise &ndash; this was closer to that version than anything I&#x27;d been playing recently. And if that was true, the uncomfortable implication was that WoW had changed at some point, gradually and without my noticing, and had become something I liked less without ever giving me a clear moment to object. Similar to how you don&rsquo;t notice the tide coming in until it&rsquo;s lapping at your feet, I&rsquo;d been so caught up in it that I only noticed when my feet were wet.</p>
+<p>Where most of my friends slowed down as the XP curve steepened, I accelerated. I was the last of my group to start, and among the first to hit 60.</p>
+<p>What kept me moving was something that hadn&#x27;t happened in a long time: the game required me to talk to people. There was no dungeon finder. If you wanted to run Scarlet Monastery or Blackrock Depths or Stratholme, you opened the Looking For Group channel and built a group the old-fashioned way &ndash; which meant talking, negotiating, reading names you&#x27;d start to recognize. It meant your reputation was a resource. You behaved like a decent person because you were one, hopefully, but also because becoming known as a jerk on a server as small as a community had real consequences.</p>
+<br>
+<p class="no-indent">I found a guild called Relentless Insomnia, a group that was originally from <em>Ever</em><em>Q</em><em>uest</em> progression servers, who wanted to establish an outpost here in Azeroth. It had two raid teams (each run by a different raid leader), and therefore possessed a large player base, a critical mass that mattered enormously in a game where you needed forty people to see the most important content. Aside from the convenience of having so many available people to play with, I also loved the atmosphere. With so many people, and the prospect of getting to experience the game anew, there was a palpable electricity and excitement.  </p>
+<p>Near the midpoint of phase one, well before Blackwing Lair launched, the officers approached me with an offer: the previous rogue class officer had chosen to step down, was I interested in taking over in his stead? This offer was not a complete surprise, it had been well-known for a while that I was already doing the job informally &ndash; combing through logs, tracking performance, and coaching players one-on-one. I said yes without hesitation.</p>
+<p>It didn&#x27;t last &ndash; not because I failed, but because the guild did. The guild master had made enemies around the server, which didn&rsquo;t help our reputation. That was a survivable problem, but then we lost our Molten Core speed ranking in the final week; we had set the server-best time the week prior, and a rival guild outperformed us in the final week, while we skipped a speedrun due to an <em>Ever</em><em>Q</em><em>uest</em> release. One week later, we came in second on BWL progression by minutes. Two back-to-back failures were at least one too many, and the internal pressure became unsustainable.</p>
+<p>That Friday night I logged in to level an alt, and was greeted by a wall of &quot;player has left the guild&quot; notifications streaming down the screen. The second group&rsquo;s raid leader was breaking off to form a new guild, and the pitch was simple: no divided game loyalties, we&rsquo;d go all-in on competing for progression and speed rankings, server-first or die trying. I called a meeting with my rogues &ndash; technically no longer my rogues, since I had no guild rank to stand on &ndash; and we talked it out. In the end, the decision was unanimous, and we all agreed to join the new team. We were the only class to move as a unit.</p>
+<p>That new guild was eventually christened as Fully Rested, and it was, in retrospect, one of the best gaming environments I&#x27;ve ever been part of. We had three raid teams, each running on a separate night &ndash; not simultaneously, which was the elegant solution to a problem I&#x27;d never seen solved cleanly before: how do you give individuals the flexibility to miss a night without creating a permanent bench? FR&#x27;s answer was to have no bench. You could play once a week minimum or three times if you wanted to, and every night was led by the same raid leadership, to the same standard. If you wanted more practice, you played more nights. The only cost was your time.</p>
+<p>We took performance seriously. I&rsquo;d never been a part of a team where everyone was as motivated to perform as I was, and it was a liberating experience. What I found particularly pleasant about it was that there was never a question about what we were about, the expectations were made clear when people joined, and for the most part, people lived up to them, or self-selected to retire or leave the team, but there was never any drama about it. And with a team as aligned as we were, it came as no surprise that we reclaimed our speed ranking crown before the end of BWL. And for the final two phases &ndash; Temple of Ahn&rsquo;Qiraj and Naxxramas &ndash; we claimed the top speed ranking and progression ranking for Pagle, and in the case of the latter, we came in fourteenth in the world.</p>
+<p>Around the same time, I was convinced to level and play a mirror alt: a second character, same class, same spec, designed not for variety but for volume. In a game where your raid lockout resets weekly, your opportunity to practice on any given encounter is capped. A second rogue meant a second lockout, a second set of raid groups, twice the repetitions. We were vendoring rogue loot by then, so gearing a second character happened quickly. That extra practice paid dividends, and the growth I experienced over those months &ndash; with twice as many opportunities to test and gather data leading to refined positioning and optimized cooldown timing &ndash; was some of the steepest improvement I&#x27;d managed in any game, at any level.</p>
+<br>
+<p class="no-indent">They say you can&#x27;t go home again. Thomas Wolfe meant it the hard way: home isn&#x27;t a place, it&#x27;s a constellation of conditions &ndash; people, time, your own younger mind &ndash; that can never be perfectly reconstructed. The river has moved on. The water you stepped in is already gone.</p>
+<p>That&rsquo;s true, but the funny thing about <em>Classic </em>is that I didn&#x27;t go there to go home.</p>
+<p>Remember, I&rsquo;d gone there initially as a joke, a meme. It was something I&rsquo;d done to say I&rsquo;d done so. And what I found, walking those old roads at walking speed, was not nostalgia &ndash; not a longing for who I was at twenty-one playing a rogue on my friend&#x27;s computer while he was off at class. What I found was a mirror that showed me the gap between the player I&rsquo;d been and the player I&rsquo;d always wanted to be, to see that gap and get an opportunity to walk old roads with the wisdom and perspective gained through age and experience. It was if the game was daring me to quit talking about things I&rsquo;d wished I&rsquo;d done, and to actually go out and show everyone (but primarily myself) what I can actually do.</p>
+<p>In Vanilla <em>WoW</em>, I was a nobody. I never killed Ragnaros. Never set foot in Blackwing Lair. Never saw Naxxramas until a much later expansion repurposed it for lower-level players. I was somewhere in the broad, undifferentiated middle of a massive game, playing casually, never quite finding the edge of what I could do.</p>
+<p>So while I didn&rsquo;t go back to <em>Classic</em> to relive the glorious days of my youth (because they weren&rsquo;t glorious), I could go back with the addition of age, wisdom, and perspective. <em>Classic</em> became an experiment, where I could seek an answer to the question: &ldquo;What could I have done back then, if I was the player I am now?&rdquo; And every week, I ask that question anew.</p>
+<p>You can&#x27;t go home again &hellip; but you can absolutely go back to Azeroth.</p>
+  </div>
+<aside class='footnotes'><ol><li id='fn-12'><sup>12</sup>&ensp;In hindsight, I&rsquo;m incredibly proud to be Aeon of Pagle. I&rsquo;m incredibly lucky to call it home.</li><li id='fn-13'><sup>13</sup>&ensp;It wasn&rsquo;t until Classic that I became aware of who Pat Nagle is, and I have to confess I&rsquo;d never thought about where the Naglering item had come from until then either. One thing I&rsquo;ve enjoyed most about <em>Classic</em> is (re)discovering things.</li></ol></aside>
+<nav class="pg-nav"><div class="pg-prev"><span class="pg-label">← Previous</span><a href="/reflections/elegy-of-the-storm.html">Elegy of the Storm</a></div><div class="pg-next"><span class="pg-label">Next →</span><a href="/reflections/the-burden.html">The Burden</a></div></nav>
+</article>
+</main>
+</div>
+<script>
+function toggleNav() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var sb  = document.getElementById('sidebar');
+  var btn = document.querySelector('.menu-btn');
+  if (sb && sb.classList.contains('open') && !sb.contains(e.target) && e.target !== btn) {
+    sb.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>

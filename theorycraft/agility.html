@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agility — The Aeonomicon</title>
+  <meta name="description" content="The Aeonomicon by Donald Coles — Reflections, Theorycraft, and Praxis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<button class="menu-btn" onclick="toggleNav()">&#9776; Contents</button>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<a class="sidebar-title" href="/">The Aeonomicon</a>
+<button class="nav-toggle" onclick="toggleNav()">✕</button>
+<div class="nav-section">
+<span class="nav-section-label">Front Matter</span>
+<a class="nav-link" href="/front-matter/note-to-the-reader.html">Note to the Reader</a>
+<a class="nav-link" href="/front-matter/preface-storytellers.html">Preface – Storytellers</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume I — Reflections</span>
+<a class="nav-link" href="/reflections/a-portrait-of-the-author-as-a-young-gamer.html">A Portrait of the Author as a Young Gamer</a>
+<a class="nav-link" href="/reflections/aint-no-party-like-a-lan-party.html">Ain’t No Party Like a LAN Party</a>
+<a class="nav-link" href="/reflections/this-is-not-warcraft-in-space.html">This Is Not Warcraft In Space!</a>
+<a class="nav-link" href="/reflections/the-eternal-conflict.html">The Eternal Conflict</a>
+<a class="nav-link" href="/reflections/the-world-is-the-main-character.html">The World is the Main Character</a>
+<a class="nav-link" href="/reflections/crusader.html">Crusader</a>
+<a class="nav-link" href="/reflections/the-cycle.html">The Cycle</a>
+<a class="nav-link" href="/reflections/elegy-of-the-storm.html">Elegy of the Storm</a>
+<a class="nav-link" href="/reflections/you-cant-go-home-again.html">You Can’t Go Home Again</a>
+<a class="nav-link" href="/reflections/the-burden.html">The Burden</a>
+<a class="nav-link" href="/reflections/flow-state.html">Flow State</a>
+<a class="nav-link" href="/reflections/remembrance-of-blizzcon-past.html">Remembrance of BlizzCon Past</a>
+<a class="nav-link" href="/reflections/the-silver-hand.html">The Silver Hand</a>
+<a class="nav-link" href="/reflections/gap-year.html">Gap Year</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume II — Theorycraft</span>
+<a class="nav-link" href="/theorycraft/systems.html">Systems</a>
+<a class="nav-link active" href="/theorycraft/agility.html">Agility</a>
+<a class="nav-link" href="/theorycraft/alchemy.html">Alchemy</a>
+<a class="nav-link" href="/theorycraft/the-infinite-game.html">The Infinite Game</a>
+<a class="nav-link" href="/theorycraft/pathfinding.html">Pathfinding</a>
+<a class="nav-link" href="/theorycraft/delivery.html">Delivery</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume III — Praxis</span>
+<a class="nav-link" href="/praxis/how-i-work.html">How I Work</a>
+<a class="nav-link" href="/praxis/case-study-aeoncore-personal-aiservices-platform.html">Case Study – Aeoncore Personal AI/Services Platform</a>
+<a class="nav-link" href="/praxis/case-study-bp-m365-and-digital-transformation.html">Case Study – BP M365 and Digital Transformation</a>
+<a class="nav-link" href="/praxis/case-study-cvs-enterprise-pc-refresh.html">Case Study – CVS Enterprise PC Refresh</a>
+<a class="nav-link" href="/praxis/curriculum-vitae.html">Curriculum Vitae</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">End Matter</span>
+<a class="nav-link" href="/end-matter/afterword-moonshots.html">Afterword – Moonshots</a>
+<a class="nav-link" href="/end-matter/putting-the-war-in-world-of-warcraft.html">Putting the War in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/parsing-truth-epistemic-decision-making-in-world-of-warcraft.html">Parsing Truth: Epistemic Decision-Making in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/when-games-grew-up-an-ode-to-final-fantasy-tactics.html">When Games Grew Up: An Ode to Final Fantasy Tactics</a>
+<a class="nav-link" href="/end-matter/whats-left-when-meaning-breaks-a-look-at-nier-automata.html">What’s Left When Meaning Breaks: A Look at Nier Automata</a>
+<a class="nav-link" href="/end-matter/dramatis-personae.html">Dramatis Personae</a>
+<a class="nav-link" href="/end-matter/acknowledgements.html">Acknowledgements</a>
+<a class="nav-link" href="/end-matter/about-the-author.html">About the Author</a>
+<a class="nav-link" href="/end-matter/about-the-book.html">About the Book</a>
+</div>
+</nav>
+<main class="content">
+<article class="essay">
+  <header class="essay-header">
+    <div class="volume-label">Volume II — Theorycraft</div>
+    <h1 class="essay-title">Agility</h1>
+  </header>
+  <!-- HERO IMAGE: remove comment markers and set src/alt to enable
+  <img src="/assets/images/agility.jpg" alt="" class="essay-hero">
+  -->
+  <div class="essay-ornament">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+  <div class="essay-body">
+<p class="no-indent">In 2001, while my friends and I were trying to work out the finer points of the Zergling rush against one another, another group of people were thinking about a better way of building software. They met at a ski lodge in Utah, and over a long weekend, wrote the Agile Manifesto<sup class='fn-ref'>22</sup>.</p>
+<p>Specifically, it was about the growing chasm between how software was being built and what the people paying for it actually needed. The prevailing model &ndash; now called Waterfall, though nobody called it that at the time &ndash; worked like this: define the requirements, write them all down, create a detailed plan for how to deliver the project, then follow that plan exactly. By the time the thing was finished, months or years had elapsed, the world had moved, and what had been built was often an answer to a question nobody was asking anymore.</p>
+<p>The seventeen people in the ski lodge were practitioners. They had all, in various ways, been trying to build software differently &ndash; iteratively, collaboratively, with feedback loops short enough to actually learn from. They each had different names for what they were doing, different emphases, different flavors. But the underlying conviction was the same: that a plan is a hypothesis, not a contract, and that clinging to it past the point of relevance is not discipline. It&#x27;s denial.</p>
+<p>They wrote sixty-eight words (it&rsquo;s shockingly short). Called it the Agile Manifesto. Released their work on a world that seemed to need to hear it. </p>
+<p>The revolution began, but within a decade, Agile had become what it was invented to replace. It wasn&rsquo;t that the words themselves changed, but what they signified in practice. Certification programs appeared. Then certification bodies. Then consultants who certified other consultants. Books arrived by the thousands, each one explaining, expanding, and elaborating on a manifesto that had been written precisely because too many people were explaining and expanding and elaborating instead of building. Ceremonies emerged: the daily standup, the sprint retrospective, the sprint planning session, the sprint review, the backlog grooming session, the story point estimation, the definition of done. All of it sounded so reasonable, and in the right proportion, maybe it was.</p>
+<p>And yet, all of it changed what Agile meant in practice, to the point that it became exactly the thing the Agile mindset was supposed to prevent.</p>
+<p>The irony is tidy enough to hurt: a philosophy built to minimize busywork became a cult with its own dogma and prescriptions. The question &ldquo;<em>are we building the right thing?</em><em>&rdquo;</em> got replaced by the question &ldquo;<em>are we doing this correctly?</em><em>&rdquo;</em> </p>
+<p>And that replacement &ndash; the drift from outcome to ritual &ndash; is where most Agile implementations go wrong. Not in a way that is catastrophically obvious, but in a way that people eventually look up from their desks and think &ldquo;how the heck did we get here?&rdquo;</p>
+<p>Strip the barnacles from the hull, and the manifesto says four things. People matter more than the processes that coordinate them. The product matters more than the documentation that describes it. Customer outcomes matter more than contracts that specify deliverables. Responding to change matters more than adhering to a plan. The original document adds: &ldquo;<em>while there is value in the items on the right, we value </em><em>the items on the left more.</em><em>&rdquo;</em> That qualifier is doing significant work. This is not an argument for chaos. It is an argument for priority.</p>
+<p>Build. When the world shifts, shift with it. </p>
+<br><p class="no-indent">In 2017, a musician named Damian Kulash (of the band OK Go) gave a TED talk about how the group comes up with their music videos, entitled &ldquo;How to find a wonderful idea.&rdquo;<sup class='fn-ref'>23</sup> </p>
+<p>OK Go is not famous for its music &ndash; or rather, it&rsquo;s more appropriate to say that they are considerably more famous for their wildly creative music videos. The treadmill video. The zero-gravity video. The Rube Goldberg video, which required 89 takes and a warehouse full of machines built from ordinary objects that had to work in precise mechanical sequence. The work is elaborate, technically ambitious, and resists easy categorization. The question everyone asks is: where do these ideas come from?</p>
+<p>Kulash&#x27;s answer is not what you would expect. He notes that when we think of looking for a creative idea, what we&rsquo;re really looking for is a sense of wonder, and that an inherent quality of that wonder is a sense of surprise. To get there, he does not describe a creative process. He describes the absence of one &ndash; or rather, he describes why the conventional creative process is structurally incapable of producing the kind of ideas he is looking for.</p>
+<p>The conventional process, as he tells it, goes like this. You think of an idea. You make a plan to execute it. You check each step off as you complete it. (This should sound very familiar to waterfall practitioners.) </p>
+<p>The logic is sound, but the math is punishing: in a sufficiently complex project, even with 99% reliability at each individual task, the accumulated probability of something going wrong approaches certainty<sup class='fn-ref'>24</sup>. Which means, as Kulash observes, that <em>&quot;if your project is pretty complex... you&#x27;re basically constrained to just reshuffling ideas that have already demonstrably proven that they&#x27;re 100 percent reliable.&quot;</em> You cannot plan your way to a surprising idea, because planning selects against surprise. The only ideas safe enough to commit to in advance are the ones that have already been done.</p>
+<p>His solution is a sandbox.</p>
+<p><em>&quot;What we do is we try to identify some place where there might just be a ton of those untried ideas. We try to find a sandbox and then we gamble a whole bunch of our resources on getting in that sandbox and playing.&quot;</em></p>
+<p>Play, here, is not frivolity. It is a specific discipline &ndash; one that deliberately suspends judgment long enough to let unexpected combinations surface. The sandbox is full of seeds: partial ideas, interesting materials, unexpected juxtapositions, techniques that haven&#x27;t found their purpose yet. You don&#x27;t plan which seed will become something. You can&#x27;t know. You put the right people in a space full of the right raw material and you let the process reveal what&#x27;s possible.</p>
+<p>And when it works &ndash; when the right combination of ideas finds its shape &ndash; the experience is distinctive. <em>&quot;When it does click, it doesn&#x27;t feel like you thought up that puzzle piece, it feels like you found it &ndash; like it was a set of relationships that you unlocked.&quot;</em></p>
+<p>Kulash never uses the word Agile (after all, he&rsquo;s a musician, not a PM). He is describing a band&#x27;s creative process, not a software methodology. Even so, the resemblance is not incidental.</p>
+<br><p class="no-indent">The delivery half of game development is easy to recognize as Agile territory. Sprints. Milestones. Iterative builds. Ship a slice of the thing, see what breaks, adjust, ship again. The vocabulary maps directly. Anyone who has run a release cycle in an enterprise software environment would recognize the cadence.</p>
+<p>The creative half is where it gets interesting &ndash; and where most organizations either don&#x27;t look, or don&#x27;t think to apply the same logic.</p>
+<p>Worldbuilding is a sandbox. Narrative design is a sandbox. Class design, encounter design, economic tuning &ndash; all of these are fundamentally iterative disciplines. You do not design a compelling villain by specifying requirements and executing against them. You put ideas in conversation with each other until something surprising emerges that is also, somehow, exactly right. I wasn&rsquo;t in the room, but I cannot believe that Arthas was the product of a planning session. He was a set of relationships that unlocked. The long arc &ndash; from prince to paladin to death knight to Lich King &ndash; has the feeling of inevitability in retrospect, the way found things always do. But it does not feel engineered. It feels discovered.</p>
+<p>The organizations that do this well have internalized one thing: the process that reveals good ideas and the process that ships reliable software are not two different processes running on separate tracks. They are the same cognitive posture, expressed at different scales, in different domains. Build small. Observe what emerges. Let reality reshape the next iteration. Trust that the sandbox will show you which ideas are not only surprising, but &ndash; in Kulash&#x27;s phrase &ndash; <em>surprisingly reliable.</em> The goal is not to predict the right answer. It is to create the conditions in which the right answer can appear.</p>
+<p>When the delivery discipline and the creative discipline are aligned &ndash; when both halves of a game studio are genuinely iterating, genuinely responsive to feedback, genuinely willing to let the plan change when the work reveals something better &ndash; the result is a kind of organizational fluency that is difficult to describe and immediately recognizable when you encounter it. The game feels coherent in a way that designed things usually don&#x27;t. The systems support each other. The world has internal logic that wasn&#x27;t fully documented because it wasn&#x27;t fully known until it was built.</p>
+<p>When they fall out of alignment, it&#x27;s the only thing you notice.</p>
+<p>A creative team doing genuine sandbox work alongside a delivery pipeline locked into fixed-scope commitments is not Agile. It is two organizations with incompatible epistemologies sharing a building. The creatives will change their minds, because that is what the process requires. The delivery team, if it has drifted back toward ceremony, will experience those changes as failures of discipline rather than signals to be incorporated. The argument that follows is not a personality conflict, it is a philosophical one. </p>
+<p>The Agile manifesto wasn&rsquo;t simply about how to make better software. It was a revolutionary idea with surprisingly universal application: that good work actually happens when people quit worrying about being procedurally correct and focus on what really matters. Build. Embrace change. </p>
+<p>That is as true in a warehouse full of Rube Goldberg machines as it is in a sprint review. As true in a writers&#x27; room as in a backlog refinement session. The domain changes. The posture doesn&#x27;t.</p>
+<p>The ceremony was never the point.</p>
+  </div>
+<aside class='footnotes'><ol><li id='fn-22'><sup>22</sup>&ensp;See &ldquo;Manifesto for Agile Software Development&rdquo; (https://agilemanifesto.org/)</li><li id='fn-23'><sup>23</sup>&ensp;It&rsquo;s on YouTube, &ldquo;How to find a wonderful idea | OK Go&rdquo; (https://www.youtube.com/watch?v=WyOSqjIABe0). Absolutely worth watching.</li><li id='fn-24'><sup>24</sup>&ensp;The math works out that if an individual task has a 99% reliability factor, with 100 total tasks you only have a 34% chance that all of them will have been successful. In other words, you reach the point where you&rsquo;re twice as likely to fail than succeed.</li></ol></aside>
+<nav class="pg-nav"><div class="pg-prev"><span class="pg-label">← Previous</span><a href="/theorycraft/systems.html">Systems</a></div><div class="pg-next"><span class="pg-label">Next →</span><a href="/theorycraft/alchemy.html">Alchemy</a></div></nav>
+</article>
+</main>
+</div>
+<script>
+function toggleNav() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var sb  = document.getElementById('sidebar');
+  var btn = document.querySelector('.menu-btn');
+  if (sb && sb.classList.contains('open') && !sb.contains(e.target) && e.target !== btn) {
+    sb.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>

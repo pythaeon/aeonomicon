@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crusader — The Aeonomicon</title>
+  <meta name="description" content="The Aeonomicon by Donald Coles — Reflections, Theorycraft, and Praxis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<button class="menu-btn" onclick="toggleNav()">&#9776; Contents</button>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<a class="sidebar-title" href="/">The Aeonomicon</a>
+<button class="nav-toggle" onclick="toggleNav()">✕</button>
+<div class="nav-section">
+<span class="nav-section-label">Front Matter</span>
+<a class="nav-link" href="/front-matter/note-to-the-reader.html">Note to the Reader</a>
+<a class="nav-link" href="/front-matter/preface-storytellers.html">Preface – Storytellers</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume I — Reflections</span>
+<a class="nav-link" href="/reflections/a-portrait-of-the-author-as-a-young-gamer.html">A Portrait of the Author as a Young Gamer</a>
+<a class="nav-link" href="/reflections/aint-no-party-like-a-lan-party.html">Ain’t No Party Like a LAN Party</a>
+<a class="nav-link" href="/reflections/this-is-not-warcraft-in-space.html">This Is Not Warcraft In Space!</a>
+<a class="nav-link" href="/reflections/the-eternal-conflict.html">The Eternal Conflict</a>
+<a class="nav-link" href="/reflections/the-world-is-the-main-character.html">The World is the Main Character</a>
+<a class="nav-link active" href="/reflections/crusader.html">Crusader</a>
+<a class="nav-link" href="/reflections/the-cycle.html">The Cycle</a>
+<a class="nav-link" href="/reflections/elegy-of-the-storm.html">Elegy of the Storm</a>
+<a class="nav-link" href="/reflections/you-cant-go-home-again.html">You Can’t Go Home Again</a>
+<a class="nav-link" href="/reflections/the-burden.html">The Burden</a>
+<a class="nav-link" href="/reflections/flow-state.html">Flow State</a>
+<a class="nav-link" href="/reflections/remembrance-of-blizzcon-past.html">Remembrance of BlizzCon Past</a>
+<a class="nav-link" href="/reflections/the-silver-hand.html">The Silver Hand</a>
+<a class="nav-link" href="/reflections/gap-year.html">Gap Year</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume II — Theorycraft</span>
+<a class="nav-link" href="/theorycraft/systems.html">Systems</a>
+<a class="nav-link" href="/theorycraft/agility.html">Agility</a>
+<a class="nav-link" href="/theorycraft/alchemy.html">Alchemy</a>
+<a class="nav-link" href="/theorycraft/the-infinite-game.html">The Infinite Game</a>
+<a class="nav-link" href="/theorycraft/pathfinding.html">Pathfinding</a>
+<a class="nav-link" href="/theorycraft/delivery.html">Delivery</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume III — Praxis</span>
+<a class="nav-link" href="/praxis/how-i-work.html">How I Work</a>
+<a class="nav-link" href="/praxis/case-study-aeoncore-personal-aiservices-platform.html">Case Study – Aeoncore Personal AI/Services Platform</a>
+<a class="nav-link" href="/praxis/case-study-bp-m365-and-digital-transformation.html">Case Study – BP M365 and Digital Transformation</a>
+<a class="nav-link" href="/praxis/case-study-cvs-enterprise-pc-refresh.html">Case Study – CVS Enterprise PC Refresh</a>
+<a class="nav-link" href="/praxis/curriculum-vitae.html">Curriculum Vitae</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">End Matter</span>
+<a class="nav-link" href="/end-matter/afterword-moonshots.html">Afterword – Moonshots</a>
+<a class="nav-link" href="/end-matter/putting-the-war-in-world-of-warcraft.html">Putting the War in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/parsing-truth-epistemic-decision-making-in-world-of-warcraft.html">Parsing Truth: Epistemic Decision-Making in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/when-games-grew-up-an-ode-to-final-fantasy-tactics.html">When Games Grew Up: An Ode to Final Fantasy Tactics</a>
+<a class="nav-link" href="/end-matter/whats-left-when-meaning-breaks-a-look-at-nier-automata.html">What’s Left When Meaning Breaks: A Look at Nier Automata</a>
+<a class="nav-link" href="/end-matter/dramatis-personae.html">Dramatis Personae</a>
+<a class="nav-link" href="/end-matter/acknowledgements.html">Acknowledgements</a>
+<a class="nav-link" href="/end-matter/about-the-author.html">About the Author</a>
+<a class="nav-link" href="/end-matter/about-the-book.html">About the Book</a>
+</div>
+</nav>
+<main class="content">
+<article class="essay">
+  <header class="essay-header">
+    <div class="volume-label">Volume I — Reflections</div>
+    <h1 class="essay-title">Crusader</h1>
+  </header>
+  <!-- HERO IMAGE: remove comment markers and set src/alt to enable
+  <img src="/assets/images/crusader.jpg" alt="" class="essay-hero">
+  -->
+  <div class="essay-ornament">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+  <div class="essay-body">
+<p class="no-indent">It is nearly midnight on a cold January night in 2007, and there&rsquo;s a tense electricity running through a line of people waiting for something important. We were at Walmart &ndash; me and Anton &ndash; and while the rest of the world was fast asleep, we were waiting to buy the Collector&#x27;s Edition of <em>The Burning Crusade</em>. We took them home. We started playing.</p>
+<p>That night is where this piece starts, but it&#x27;s not really what this piece is about.</p>
+<p>I came into <em>TBC</em> already knowing something about myself as a player: I liked healing, I didn&#x27;t like my character. The Shaman had served me well enough through Vanilla &ndash; a decision made on the authority of a Penny Arcade joke about patch notes &ndash; but there was an undercurrent of jealousy: Shamans could heal but Paladins were better. But Paladins were Alliance-only<sup class='fn-ref'>7</sup>, and I had been playing on the Horde, so I couldn&rsquo;t play one. With <em>TBC </em>came a new race &ndash; Blood Elves &ndash; and so my options for the new expansion became obvious.</p>
+<p>I also knew I was leaving my server. When I started in Vanilla, I didn&rsquo;t consider the question of where to create a character, I just rolled where my friend was playing, Sen&#x27;jin. It was a backwater with a thin endgame population, and I had spent too much of Vanilla staring at a too-short list of raiding guilds. <em>TBC</em> was a chance to wipe the slate clean, and start fresh. I did the research, picked Korgath &ndash; high population, active PVP, a thriving guild scene &ndash; and started over. Fresh character, fresh server, fresh ambitions.</p>
+<p>Paladins were not fast levelers at the time, a relic of being a defensively-minded hybrid class in Vanilla. They had very few active abilities to dish out damage, and so leveling is a question of endurance: deliberate, slow to kill things, nearly impossible to die. I made up for the pace with volume. I pushed hard enough in those first two weeks to hit the level cap just in time to get swept up by a raiding guild before the first phase of raids opened.</p>
+<p>And then Karazhan happened.</p>
+<br>
+<p class="no-indent">There&#x27;s a version of this essay that spends a lot of time on raid design theory &ndash; on the way 40-player raids were logistically brutal, on the weird arithmetic of dividing 40 into 25, on the identity crisis of 20-player raids that could drop both epic and rare quality gear from the same boss. All of that is true and worth noting. But if I&#x27;m being honest about what made <em>TBC </em>what it was, it comes down to a single sentence:</p>
+<p>Karazhan (often shortened to Kara) was a masterpiece.</p>
+<p>It sounds like hyperbole. It isn&#x27;t. What Blizzard built there was the rarest thing in game design &ndash; a piece of content that worked across multiple kinds of players simultaneously. Mechanically, the encounters were not especially complex by later standards; Molten Core bosses had trained players to expect one or two key mechanics per fight, and as an entry point for both established and new players alike, Karazhan didn&rsquo;t change that fundamental calculus much. But mechanical simplicity isn&#x27;t the same thing as boredom, and the instance made up for it with some of the most flavorful boss encounters. You were climbing the tower of Medivh, the last Guardian of Azeroth, who had apparently gone quite mad, and every room told you something new about what he had been up to. His ghost haunted the whole place &ndash; literally, in some encounters, as when you play chess against him in the penultimate raid encounter &ndash; and the architecture gave you a continuous sense of upward motion, of progress, of climbing toward something.</p>
+<p>What I don&rsquo;t think anyone expected was that Karazhan became the evergreen entry point for the entire expansion. Every new alt character who needed to gear up before moving to more demanding content started here. By the time Blizzard added badge drops to raid bosses, a full Karazhan clear was also one of the most efficient ways to accumulate Badges of Justice. What had started as a mere stepping stone became permanent infrastructure. I cannot tell you how many Friday nights I spent clearing Kara with friends and guildmates &ndash; dozens of runs, spread across multiple characters &ndash; and it never lost its magic, never felt like a chore. You could get a good group together, blast through it in a couple of hours, and it was just fun. Uncomplicatedly, reliably fun.</p>
+<p>I didn&rsquo;t process this at the time, but in the twenty years I&rsquo;ve spent playing this game, Karazhan continues to be an utterly singular experience. </p>
+<br>
+<p class="no-indent">My personal history with <em>TBC</em> is also a history of raid teams that kept collapsing, which tells you something about the era.</p>
+<p>I leveled the Paladin. Hit max. Geared in dungeons. Joined a team and raided T4 content. The team collapsed. I leveled a Druid. Hit max. Geared in dungeons and Kara. Reactivated the Paladin. Raided T5. Killed Lady Vashj. Killed Kael&#x27;thas. The team collapsed. I leveled a Warlock. Hit max. Geared in dungeons and Kara. Reactivated the Paladin. Raided T5 again. Killed Vashj and Kael&#x27;thas again.</p>
+<p>There was a rhythm to it, even if the rhythm was also somewhat ridiculous.</p>
+<p>Then something unexpected happened. The upcoming Hyjal raid was designed around wave encounters &ndash; large numbers of enemies arriving in succession &ndash; and the two conventional tanking classes, Warrior and Druid, both struggled with that kind of widespread threat. Someone in my guild had an idea. Paladins, they suggested, might actually be very good at this. Would I be willing to try?</p>
+<p>The tanking Paladin was not unheard of, but it was not mainstream. It was also mechanically strange in a way I found genuinely interesting: most of a Paladin&#x27;s threat came from spells, not melee attacks, which meant they scaled on spell power rather than strength. You were building a tank who also wanted a weapon from the caster loot table. Odd on paper. Devastatingly effective in practice. When you dropped Consecrate on a group of enemies, they magnetized to you. Like mooring an aircraft carrier to a single anchor in a full gale &ndash; and holding.</p>
+<p>I raided T6 as a protection Paladin. We fought all the way to Illidan&rsquo;s terrace, all the way at the top. Then the team collapsed. (I was beginning to notice a trend.)</p>
+<p>So I leveled a Rogue. </p>
+<p>You might remember &ndash; if you&#x27;ve read anything else I&#x27;ve written about these years &ndash; that a Rogue had been my first instinct when I walked into Elwynn Forest for the first time. I never made it very far with that character. But the Druid I&#x27;d leveled in <em>TBC</em> had reawakened something: I&#x27;d played it feral, and the energy/stealth toolkit was addictive in a way I hadn&#x27;t expected. The Rogue was the natural next step.</p>
+<p>What was different this time was that I took it seriously. Really seriously.</p>
+<p>Healing and tanking are binary in a way that makes &quot;good enough&quot; easy to hide. Did the raid die? No? Then you were probably fine. But DPS is exposed. Even in the absence of sophisticated analytics tools like WarcraftLogs &ndash; which didn&#x27;t exist yet &ndash; all you needed was a damage meter, and the truth was right there in the numbers. I could see exactly where I stood relative to everyone else. And I found that I cared enormously about that number. I wanted to understand why it was what it was. I wanted to change it.</p>
+<p>So I studied. I theorycrafted. I have vivid memories of lurking on the Elitist Jerks forums, reading everything I could, downloading ShadowPanther&rsquo;s simulation spreadsheet and beginning my education of how math and numbers were an integral part of getting good at a video game. I experimented. I talked to other Rogues &ndash; traded notes, shared rotations, argued about BiS lists with the intensity of people who definitely had other things they could have been doing. I did whatever it took.</p>
+<p>I was the first player in my guild to break 2,000 DPS, back when that number still meant something.</p>
+<p>On our first kill of Illidan &ndash; hard-fought, hard-won, the kind of progression kill where the whole raid erupts because you&#x27;ve been wiping to him for weeks &ndash; I was the top damage. I earned that. It&#x27;s one of the few things I&#x27;ll say without qualification, because it&#x27;s true: I earned it.</p>
+<p>That Rogue was the beginning of something. A posture toward the game &ndash; and, I&#x27;d come to realize later, toward work in general &ndash; that was less about showing up and more about going deep. The willingness to study. To test. To be honest about the gap between where you are and where you could be, and to close it.</p>
+<p><em>TBC</em> ended for me with content still uncleared. My guild had made progress through Sunwell Plateau, but we hit a brick wall with M&rsquo;uru, and we knew we wouldn&rsquo;t overcome it before <em>Wrath of the Lich King</em> arrived on our shores. Most guilds didn&#x27;t, back then. That was fine.</p>
+<p>What wasn&#x27;t fine &ndash; or rather, what I didn&#x27;t fully understand until years later &ndash; was that <em>TBC</em> was the only expansion in the main game timeline I played start to finish, without a single break. (And I had so many opportunities to take one.)</p>
+<p>Not <em>Wrath</em>. Not <em>Cataclysm</em>. Not <em>Mists of Pandaria</em>, which by many conventional measures is a better game. Not <em>Legion</em>, which I&#x27;ve heard makes a reasonable case for itself. Each of them followed the same pattern: launch week intensity, a long middle where my attention drifted elsewhere, a return in the final stretch to prepare for whatever came next. Over and over, the same shape.</p>
+<p>Only <em>TBC</em> didn&#x27;t do that. Only <em>TBC</em> held me the whole way through.</p>
+<p>I&#x27;ve thought about why. Part of it is probably just where I was in my life &ndash; younger, fewer competing demands, more raw hours available to pour into a game. Part of it might be that I was hungry in a way that has its own momentum; when you&#x27;re still figuring out who you are professionally, videogames can absorb a kind of ambition that hasn&#x27;t found its proper channel yet. And part of it was the constant throughline of those weekend fun times in Karazhan, hanging out with friends and climbing the mad Guardian&rsquo;s tower.</p>
+<p>But I keep coming back to another possibility. <em>TBC</em> was the first time when <em>World of </em><em>Warcraft</em> had evolved into something genuinely great &ndash; mechanically interesting, structurally sophisticated, inhabited enough to feel like a world rather than a lobby. And I was young enough to meet it on those terms. Young enough that what wasn&#x27;t perfect didn&#x27;t register. What registered was the feeling of discovery, of improvement, of Friday nights in a tower with friends, of a number on a damage meter going up.</p>
+<p>Maybe that&#x27;s what the best games do. They find you at the moment when you&#x27;re most capable of receiving them, and they give you exactly enough to keep pulling you forward. Not too easy, not too complex. Just right.</p>
+  </div>
+<aside class='footnotes'><ol><li id='fn-7'><sup>7</sup>&ensp;There&rsquo;s a reason my Horde paladin was named Retcon. I thought I was <em>so </em>funny.</li></ol></aside>
+<nav class="pg-nav"><div class="pg-prev"><span class="pg-label">← Previous</span><a href="/reflections/the-world-is-the-main-character.html">The World is the Main Character</a></div><div class="pg-next"><span class="pg-label">Next →</span><a href="/reflections/the-cycle.html">The Cycle</a></div></nav>
+</article>
+</main>
+</div>
+<script>
+function toggleNav() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var sb  = document.getElementById('sidebar');
+  var btn = document.querySelector('.menu-btn');
+  if (sb && sb.classList.contains('open') && !sb.contains(e.target) && e.target !== btn) {
+    sb.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>

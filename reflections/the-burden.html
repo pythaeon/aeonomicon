@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Burden — The Aeonomicon</title>
+  <meta name="description" content="The Aeonomicon by Donald Coles — Reflections, Theorycraft, and Praxis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<button class="menu-btn" onclick="toggleNav()">&#9776; Contents</button>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<a class="sidebar-title" href="/">The Aeonomicon</a>
+<button class="nav-toggle" onclick="toggleNav()">✕</button>
+<div class="nav-section">
+<span class="nav-section-label">Front Matter</span>
+<a class="nav-link" href="/front-matter/note-to-the-reader.html">Note to the Reader</a>
+<a class="nav-link" href="/front-matter/preface-storytellers.html">Preface – Storytellers</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume I — Reflections</span>
+<a class="nav-link" href="/reflections/a-portrait-of-the-author-as-a-young-gamer.html">A Portrait of the Author as a Young Gamer</a>
+<a class="nav-link" href="/reflections/aint-no-party-like-a-lan-party.html">Ain’t No Party Like a LAN Party</a>
+<a class="nav-link" href="/reflections/this-is-not-warcraft-in-space.html">This Is Not Warcraft In Space!</a>
+<a class="nav-link" href="/reflections/the-eternal-conflict.html">The Eternal Conflict</a>
+<a class="nav-link" href="/reflections/the-world-is-the-main-character.html">The World is the Main Character</a>
+<a class="nav-link" href="/reflections/crusader.html">Crusader</a>
+<a class="nav-link" href="/reflections/the-cycle.html">The Cycle</a>
+<a class="nav-link" href="/reflections/elegy-of-the-storm.html">Elegy of the Storm</a>
+<a class="nav-link" href="/reflections/you-cant-go-home-again.html">You Can’t Go Home Again</a>
+<a class="nav-link active" href="/reflections/the-burden.html">The Burden</a>
+<a class="nav-link" href="/reflections/flow-state.html">Flow State</a>
+<a class="nav-link" href="/reflections/remembrance-of-blizzcon-past.html">Remembrance of BlizzCon Past</a>
+<a class="nav-link" href="/reflections/the-silver-hand.html">The Silver Hand</a>
+<a class="nav-link" href="/reflections/gap-year.html">Gap Year</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume II — Theorycraft</span>
+<a class="nav-link" href="/theorycraft/systems.html">Systems</a>
+<a class="nav-link" href="/theorycraft/agility.html">Agility</a>
+<a class="nav-link" href="/theorycraft/alchemy.html">Alchemy</a>
+<a class="nav-link" href="/theorycraft/the-infinite-game.html">The Infinite Game</a>
+<a class="nav-link" href="/theorycraft/pathfinding.html">Pathfinding</a>
+<a class="nav-link" href="/theorycraft/delivery.html">Delivery</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">Volume III — Praxis</span>
+<a class="nav-link" href="/praxis/how-i-work.html">How I Work</a>
+<a class="nav-link" href="/praxis/case-study-aeoncore-personal-aiservices-platform.html">Case Study – Aeoncore Personal AI/Services Platform</a>
+<a class="nav-link" href="/praxis/case-study-bp-m365-and-digital-transformation.html">Case Study – BP M365 and Digital Transformation</a>
+<a class="nav-link" href="/praxis/case-study-cvs-enterprise-pc-refresh.html">Case Study – CVS Enterprise PC Refresh</a>
+<a class="nav-link" href="/praxis/curriculum-vitae.html">Curriculum Vitae</a>
+</div>
+<div class="nav-section">
+<span class="nav-section-label">End Matter</span>
+<a class="nav-link" href="/end-matter/afterword-moonshots.html">Afterword – Moonshots</a>
+<a class="nav-link" href="/end-matter/putting-the-war-in-world-of-warcraft.html">Putting the War in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/parsing-truth-epistemic-decision-making-in-world-of-warcraft.html">Parsing Truth: Epistemic Decision-Making in World of Warcraft</a>
+<a class="nav-link" href="/end-matter/when-games-grew-up-an-ode-to-final-fantasy-tactics.html">When Games Grew Up: An Ode to Final Fantasy Tactics</a>
+<a class="nav-link" href="/end-matter/whats-left-when-meaning-breaks-a-look-at-nier-automata.html">What’s Left When Meaning Breaks: A Look at Nier Automata</a>
+<a class="nav-link" href="/end-matter/dramatis-personae.html">Dramatis Personae</a>
+<a class="nav-link" href="/end-matter/acknowledgements.html">Acknowledgements</a>
+<a class="nav-link" href="/end-matter/about-the-author.html">About the Author</a>
+<a class="nav-link" href="/end-matter/about-the-book.html">About the Book</a>
+</div>
+</nav>
+<main class="content">
+<article class="essay">
+  <header class="essay-header">
+    <div class="volume-label">Volume I — Reflections</div>
+    <h1 class="essay-title">The Burden</h1>
+  </header>
+  <!-- HERO IMAGE: remove comment markers and set src/alt to enable
+  <img src="/assets/images/the-burden.jpg" alt="" class="essay-hero">
+  -->
+  <div class="essay-ornament">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+  <div class="essay-body">
+<p class="no-indent">The call to leadership often comes before you&#x27;re ready for it. I had spent <em>Classic TBC</em> as a passenger &ndash; deliberately, happily so. I&#x27;d served as an officer in Fully Rested, carried a portion of the weight, been useful in the specific ways that role officers are useful. I had parted ways from FR for <em>TBC</em>, because I wanted to be able to focus entirely on my play; I wanted to compete, wanted to master my class without the overhead of managing other people. I did all of that, and I don&#x27;t regret a single minute of it. But somewhere in the long tail of the Sunwell, while the expansion went down the final stretch of the inevitable march toward <em>Classic </em><em>Wrath</em>, I could feel something tugging.</p>
+<p>My wife Clover felt it too. One evening in the pre-patch interregnum before <em>Wrath</em> arrived, we talked it through properly and arrived at the obviously crazy conclusion: we were going to build a raid team from scratch, in the four weeks remaining prior to the launch of <em>Wrath</em>, and we&rsquo;d do our damnedest to make it competitive with the best teams on the server.</p>
+<p>This was, by any rational measure, a lunatic proposition. A brand-new team, competing against established guilds with rosters and histories and two full expansions and years of social infrastructure, with only a month to do so. But we had things going for us that we perhaps undersold. The two of us had two expansions worth of reputation as top-tier players. We had a network of connections on Pagle wide and deep enough to generate a roster if we worked at it. And we had each other &ndash; a genuine partnership, not just two players who happened to be in the same guild.</p>
+<p>A friend reached out with a lead on the infrastructure piece. On Pagle, a guild called Triumvirate<em> </em>had a history of hosting multiple independent raid teams under one banner; they&rsquo;d had three at launch in <em>Classic</em>, but were down to one heading into <em>Wrath</em>. They had room, and they had structure, and while we&rsquo;d be our own raid team, the Triumvirate name would confer a certain level of legitimacy that a new group would need. After a single conversation with the GM, it was obvious what the answer was.</p>
+<p>We still needed a name for our team. Clover suggested Starcaller. Nailed it in one.</p>
+<p>Our responsibilities diverged from the start, cleanly and naturally. She took the lead on the human side of the operation: recruitment, public relations, the endless texture of social management that keeps a raid team from dissolving into a collection of strangers with a shared calendar invite. I took the strategic side: in-raid tactical leadership, long-term planning and goal-setting, performance analysis, composition planning. I would play a prot paladin as our main tank. She would play retribution paladin and serve as melee lead. Neither of us had done this exact job before, but we&rsquo;d find a way to make it work.</p>
+<br>
+<p class="no-indent">The pre-patch ran four weeks, and they were filled with activity. Recruiting. Planning. And for me, hosting pickup raids in a nerfed version of Black Temple two or three nights a week &ndash; not because the content mattered anymore, but because <em>I</em> needed the practice raid leading. There is a meaningful difference between issuing the occasional call from the middle of a raid and speaking from the bridge, watching everything, directing everyone, being the voice that twenty-four other people are listening for while simultaneously doing your own job. I had never held that much responsibility at once. I needed to learn how to carry it before the real content hit.</p>
+<p>Those raids paid unexpected dividends. The other Triumvirate team, already established, sent members to our pickups; we went to theirs. Camaraderie formed without anyone deciding it should. By the time Naxxramas went live, we weren&#x27;t just two teams sharing a guild tag &ndash; we were neighbors who&#x27;d already started borrowing things.</p>
+<p>And then the miracle happened: everything worked out!</p>
+<p>By launch night we had a full team. Good players, with a decent raid composition. We&rsquo;d had some opportunities to play together, and so we wouldn&rsquo;t be starting from scratch with Naxx. We&rsquo;d self-organized into dungeon groups for leveling and gearing in preparation of the first raid. And the stars aligned in the way they almost never do, and Naxxramas fell cleanly, without the catastrophic first-week collapse that ends so many new teams before they can find their footing. To keep our team from getting complacent, we spent the back half of Phase 1 not just clearing content but <em>improving</em> &ndash; running speedrun weeks, pushing our limits for the pleasure of seeing exactly where our ceiling was.</p>
+<p>There is an achievement in Naxxramas called The Immortal. In a single raid clear, the group raid must clear every boss without a single player death. No errors, no bad luck, no lapses. There are many teams that never get it.</p>
+<p>We earned it twice.</p>
+<p>I was adamant about the need to complete it a second time. Like most 25-man teams, we kept a small bench &ndash; every week two or three players would rotate onto the bench, to provide a buffer for absences and last-minute callouts. I argued that everyone was part of the team, we all had put in the same work, and I wasn&#x27;t interested in a version of success that left any of them standing outside it. For the second clear of The Immortal, everyone on the roster who wanted it, got it. That meant more to me, honestly, than getting it the first time. Once can be a fluke, but twice is a trend.</p>
+<p>We also earned a 15th-server speed ranking for Naxxramas &ndash; which sounds modest until you account for the fact that the majority of our players had never attempted a speedrun of anything before joining Starcaller.</p>
+<p>Then Ulduar arrived, and the expansion showed its actual face.</p>
+<p>The hardmodes changed everything. Blizzard&#x27;s design philosophy &ndash; easy to enter, difficult to master &ndash; crystallized in Ulduar in a way that Naxxramas had deliberately avoided. We had planned to enter the first week and clear four or five hard modes on the strength of preparation and grit. We cleared zero.</p>
+<p>I do not think I could have scripted a better test of what we&#x27;d built, and our players passed it. It would have been easy for disappointment to get the better of us, for players to quietly seek greener pastures. Instead, our raiders chose to dig in, to learn, to get better, and to trust the process. We found our stride. We finished Ulduar with every hard mode completed &ndash; every single one.</p>
+<p>I should have been prouder of that than I was. What I was instead was tired.</p>
+<br>
+<p class="no-indent">This is where I have to be honest about the thing I failed to do, the absence that I could not fill and worried about constantly: I never found a suitable lieutenant.</p>
+<p>A raid leader who cannot be replaced is a single point of failure with twenty-four other people depending on it. I knew this from the beginning. I tried throughout Phase 1 and into Ulduar to identify someone &ndash; anyone &ndash; who could step into the tactical role if something happened to me. Nobody with the willingness and the capability appeared together in the same person. I found excellent role leads: a strong caster lead, and a healer lead I trusted (and depended on) completely. But the captain&rsquo;s chair was mine alone.</p>
+<p>It&#x27;s lonely at the top.</p>
+<p>In 25-man raiding that&#x27;s already a significant burden. In Ulduar it became something else, because the 10-man version of the same content was functionally required &ndash; not optional, but necessary for class-specific gear, for trinkets, for the pieces that rounded out a character&#x27;s power. Twenty-five raiders means you need to run multiple 10-man groups each week. And they needed to be led. And I felt the obligation.</p>
+<p>So I led them. I had to.</p>
+<p>Trial of the Crusader was simpler content &ndash; shorter, more focused, lower difficulty ceiling. That should have felt like relief. Mostly it felt like a chance to catch my breath before Icecrown.</p>
+<p>And Trial gave us the second great group achievement of the expansion: A Tribute to Immortality. Like The Immortal in Naxxramas, it requires a full clear without a single death. By contrast, it requires heroic difficulty &ndash; whereas Naxxramas only had normal difficulty &ndash;  which elevates raid mechanics to the point where they will simply kill a player if they&#x27;re not managed correctly. The difficulty was an order of magnitude higher.</p>
+<p>Again, there are many teams that never complete this. But as with The Immortal, we completed it twice, and everyone on the roster participated. I refused to count it otherwise.</p>
+<p>The final full raid dungeon, Icecrown Citadel, is more like a prolonged siege than a quick battle. It features twelve bosses strung across a fortress of undead, floor after floor of material to learn and re-learn, it was not the longest raid in <em>Wrath,</em><em> </em>but it was the most difficult of any raid tier to date. It was not easy, but we got there in the end, and we defeated Arthas on heroic difficulty before <em>Wrath&#x27;s</em> sunset &ndash; a goal I had held privately from the first week of Naxxramas, never said aloud in case I had to eat the words.</p>
+<p>There is technically one more raid in <em>Wrath</em>: Ruby Sanctum, a single-boss dungeon that arrived in the final weeks. Starcaller did not achieve the heroic kill. By that point the expansion had simply run out of runway, and so had we. I think we could have gotten there, but our raiders were tired, and the will simply wasn&rsquo;t there anymore. We cleared it on normal, declared a moral victory, and moved on. I am at peace with it.</p>
+<br>
+<p class="no-indent">I learned more in the year and a half of leading Starcaller than in any equivalent stretch of my professional life.</p>
+<p>I learned what it costs to sit in the captain&#x27;s chair with no relief crew. There was a week somewhere in the middle of the expansion &ndash; I can no longer pin the exact timing &ndash; where I had COVID. Not badly, but badly enough. I raided anyway. I didn&#x27;t feel like I had a choice. The fight could not happen without me, and I could not explain why not in a way that didn&#x27;t reveal the vulnerability I&#x27;d spent months trying not to have.</p>
+<p>There was nobody else.</p>
+<p>I learned about the roster boss &ndash; a problem that has no mechanical solution, only vigilance and luck. Even with a healthy bench, you are always three or four departures from non-viability. When a key player leaves, they sometimes take a friend. When two players leave simultaneously, it can destabilize the whole social structure of the team. I spent a year playing a game that was not entirely <em>Wrath of the Lich King</em>. I was also always playing <em>keep the roster intact</em>.</p>
+<p>I learned what it means to hold tactical responsibility for twenty-five people at once. An individual player tracks themselves. A role lead tracks their four or six players plus the broader fight. A raid leader tracks all twenty-five, plus themselves, plus the fight, plus the performance of every role, plus the calls that need to go out in the next three seconds, plus the strategic adjustment that might need to happen after this pull. The cognitive surface area is vast, and it is yours alone, and you have maybe a second to process any given piece of it.</p>
+<p>And yet, had I known all this going in, I still would have done it. </p>
+<p>Here is what I know about that year, looking back with the clarity that distance affords: I&rsquo;d estimate that ninety percent of our raiders performed beyond what their natural skill level, taken alone, would have predicted. We did this by being more than just a raid team, we built a community with conditions in which people discovered something better in themselves than they had arrived with<sup class='fn-ref'>14</sup>. I have watched players clear content they told me, at recruitment, they weren&#x27;t sure they were capable of. I have watched people who came to us as role-fillers leave as officers.</p>
+<p>Clover and I announced our retirement from leadership before the expansion formally ended. We weren&#x27;t secretive about the reason: we were done, fully, and we wanted to be able to direct our energy back into playing. We made it clear we&#x27;d stay as individual contributors if anyone wanted to continue under a new leader. Nobody stepped forward. Starcaller retired as an active raiding team and became a community of friends, which is a better ending than most teams get.</p>
+<p>In the end, Atlas shrugged. I had not realized, until I set it down, how heavy that burden had actually been.</p>
+  </div>
+<aside class='footnotes'><ol><li id='fn-14'><sup>14</sup>&ensp;One of my favorite leadership aphorisms comes from Simon Sinek, who says, &ldquo;The real job of a leader is not to be in charge, it&rsquo;s to <em>take care of those in our charge</em>.&rdquo; I hear the phrase &lsquo;servant leadership,&rsquo; but I think the real trick is &lsquo;supportive leadership.&rsquo;</li></ol></aside>
+<nav class="pg-nav"><div class="pg-prev"><span class="pg-label">← Previous</span><a href="/reflections/you-cant-go-home-again.html">You Can’t Go Home Again</a></div><div class="pg-next"><span class="pg-label">Next →</span><a href="/reflections/flow-state.html">Flow State</a></div></nav>
+</article>
+</main>
+</div>
+<script>
+function toggleNav() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var sb  = document.getElementById('sidebar');
+  var btn = document.querySelector('.menu-btn');
+  if (sb && sb.classList.contains('open') && !sb.contains(e.target) && e.target !== btn) {
+    sb.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>
